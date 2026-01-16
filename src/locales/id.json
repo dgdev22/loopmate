@@ -1,0 +1,299 @@
+{
+  "app": {
+    "title": "LoopMate",
+    "tagline": "Crie vídeos em 1 minuto, mesmo para iniciantes"
+  },
+  "time": {
+    "minutes": "mnt",
+    "seconds": "dtk"
+  },
+  "splash": {
+    "loading": "Memuat..."
+  },
+  "menu": {
+    "title": "Menu",
+    "imageMusic": "Imagem + Música",
+    "loopVideo": "Loop de Vídeo",
+    "concat": "Concatenar Vídeos",
+    "settings": "Configurações"
+  },
+  "tabs": {
+    "imageMusic": {
+      "title": "Criar Vídeo do YouTube",
+      "description": "Só música está OK! Cria um vídeo 16:9 do YouTube com fundo preto se nenhuma imagem for fornecida."
+    },
+    "loop": {
+      "title": "Estender Loop de Vídeo",
+      "description": "Estende um loop de vídeo curto para o comprimento desejado."
+    },
+    "concat": {
+      "title": "Concatenar Vídeos",
+      "description": "Mescla vários vídeos em um, ou aplica intro/outro a um único vídeo."
+    },
+    "settings": {
+      "title": "Configurações",
+      "description": "Defina vídeos de intro/outro que podem ser aplicados a cada tarefa via checkbox."
+    }
+  },
+  "buttons": {
+    "addToQueue": "Adicionar à Fila",
+    "addToQueueWithCount": "Adicionar à Fila ({{count}} itens)",
+    "addMusic": "Adicionar Música",
+    "addVideo": "Adicionar Vídeo",
+    "addImage": "Adicionar Imagem",
+    "selectFile": "Selecionar Arquivo",
+    "clear": "Limpar",
+    "remove": "Remover",
+    "change": "Ubah",
+    "save": "Salvar",
+    "cancel": "Batal",
+    "buyMeACoffee": "Beri saya kopi",
+    "duplicate": "Duplikat",
+    "addToQueueWithMusic": "Tambahkan ke antrian ({{count}} lagu)",
+    "addToQueueWithVideos": "Tambahkan ke antrian ({{count}} video)",
+    "addToQueueNeedsVideo": "Tambahkan ke antrian (Pilih video diperlukan)",
+    "needsAtLeast2Videos": "Membutuhkan minimal 2 video"
+  },
+  "labels": {
+    "selectImage": "1. Selecionar Imagem (Opcional)",
+    "selectImageSub": "Fundo preto (16:9) se não fornecido",
+    "musicPlaylist": "2. Lista de Reprodução (Reproduzir em ordem)",
+    "musicPlaylistSub": "Múltiplos arquivos podem ser selecionados de uma vez",
+    "itemsAdded": "{{count}} itens adicionados",
+    "selectVideo": "Arquivo de Vídeo",
+    "iterations": "Número de iterações (ex: 60)",
+    "videoList": "Lista de Vídeos",
+    "videoListMultiple": "Lista de Vídeos (Mesclar em ordem)"
+  },
+  "options": {
+    "title": "Opções",
+    "fadeOut": "Aplicar fade out no final de cada faixa",
+    "fadeOutDesc": "Faz as faixas terminarem naturalmente. Essencial para vídeos de compilação.",
+    "fadeOutDuration": "Durasi:",
+    "seconds": "detik",
+    "padding": "Tambah waktu istirahat (setelah setiap trek)",
+    "paddingDesc": "Menambahkan waktu istirahat setelah setiap trek. Gambar terus ditampilkan, hanya musik yang dijeda. Juga ditambahkan setelah trek terakhir untuk loop yang mulus!",
+    "paddingDuration": "Waktu istirahat:",
+    "secondsSilence": "detik (senyap, gambar berlanjut)",
+    "fadeIn": "Aplicar fade in no início (Opcional)",
+    "fadeInDesc": "Faz o vídeo começar suavemente.",
+    "videoFadeOut": "Aplicar fade out no final de cada vídeo",
+    "videoFadeOutDesc": "Faz os vídeos terminarem naturalmente. Essencial para vídeos de compilação.",
+    "videoPadding": "Adicionar espaço (Preenchimento) entre vídeos",
+    "videoPaddingDesc": "Insere tela preta entre vídeos. Recomendado para vídeos de compilação."
+  },
+  "settings": {
+    "language": "Bahasa",
+    "selectLanguage": "Pilih Bahasa",
+    "allowAnalytics": "Izinkan analitik penggunaan",
+    "fileExtensions": {
+      "title": "Ekstensi File yang Diizinkan",
+      "description": "Konfigurasi ekstensi file mana yang diizinkan untuk setiap jenis file. Pisahkan beberapa ekstensi dengan koma (contoh: .jpg, .png, .webp).",
+      "image": "Ekstensi Gambar",
+      "video": "Ekstensi Video",
+      "audio": "Ekstensi Audio",
+      "formatHint": "Pisahkan ekstensi dengan koma. Sertakan titik (contoh: .jpg, .png)",
+      "save": "Simpan",
+      "saving": "Menyimpan...",
+      "reset": "Reset ke Default",
+      "saveError": "Gagal menyimpan ekstensi file"
+    },
+    "analyticsDescription": "Bantu kami meningkatkan aplikasi dengan berbagi data penggunaan. Anda dapat mengubah pengaturan ini kapan saja.",
+    "fastMode": {
+      "title": "⚡ Mode Cepat (Disarankan)",
+      "description": "Gunakan kualitas audio asli untuk kecepatan maksimum (10-30x lebih cepat)",
+      "disabled": "Dinonaktifkan dalam Mode Cepat",
+      "slowWarning": "Pemrosesan akan jauh lebih lambat ketika Mode Cepat dinonaktifkan."
+    },
+    "audioQuality": {
+      "title": "Kualitas Audio",
+      "description": "Pilih kualitas audio untuk pembuatan video. Kualitas lebih tinggi = suara lebih baik, ukuran file lebih besar.",
+      "low": "Kualitas Rendah",
+      "medium": "Kualitas Sedang",
+      "high": "Kualitas Tinggi (Direkomendasikan)",
+      "studio": "Kualitas Studio",
+      "codec": "Codec",
+      "bitrate": "Bitrate",
+      "sampleRate": "Sample Rate",
+      "fileSize": "Ukuran File"
+    }
+  },
+  "status": {
+    "processing": "Memproses...",
+    "completed": "Selesai",
+    "failed": "Gagal",
+    "waiting": "Menunggu",
+    "cancelled": "Dibatalkan",
+    "interrupted": "Terputus",
+    "ready": "Siap"
+  },
+  "messages": {
+    "videoCreated": "Um vídeo MP4 1920x1080 (16:9) será criado ao lado do arquivo de música original quando concluído.",
+    "estimatedTime": "Duração estimada do vídeo:",
+    "noHistory": "Nenhum histórico de tarefas.",
+    "historyEmpty": "Tarefas concluídas ou falhadas aparecerão aqui.",
+    "noJobs": "Nenhuma tarefa na fila.",
+    "jobsEmpty": "Adicione tarefas para iniciar o processamento.",
+    "historyCount": "Histórico de tarefas {{count}} itens",
+    "completedCount": "Concluídos: {{count}}",
+    "failedCount": "Falhados: {{count}}",
+    "queueCount": "Fila ({{count}} itens)"
+  },
+  "rightPanel": {
+    "queue": "Antrian",
+    "history": "Riwayat"
+  },
+  "stepper": {
+    "upload": "Pilih File",
+    "processing": "Memproses",
+    "complete": "Selesai"
+  },
+  "videoGenerator": {
+    "steps": {
+      "selectMusic": "Pilih Musik",
+      "generateVideo": "Buat Video",
+      "complete": "Selesai"
+    }
+  },
+  "videoLoop": {
+    "step1": "Pilih Video",
+    "step2": "Memproses Loop",
+    "step3": "Selesai"
+  },
+  "videoConcat": {
+    "step1": "Pilih Video",
+    "step2": "Menggabungkan",
+    "step3": "Selesai"
+  },
+  "job": {
+    "musicVideo": "Vídeo Musical",
+    "videoLoop": "Loop de Vídeo",
+    "videoConcat": "Concatenar Vídeos",
+    "playlist": "Vídeo de Lista de Reprodução ({{count}} faixas)",
+    "loopIterations": "{{name}} ({{iterations}} iterações)",
+    "concatCount": "Concatenar Vídeos ({{count}} itens)",
+    "concatMultiple": "Tambahkan ke antrian ({{count}} video)",
+    "savedLocation": "Lokasi tersimpan",
+    "error": "Kesalahan",
+    "inputFiles": "{{count}} file input"
+  },
+  "common": {
+    "required": "Requerido",
+    "optional": "Opcional",
+    "close": "Fechar",
+    "delete": "Excluir",
+    "confirm": "Confirmar",
+    "dropHere": "Jatuhkan di sini!",
+    "invalidFileFormat": "Format file tidak valid.\nDiizinkan: {{extensions}}",
+    "waitingCount": "{{count}} menunggu",
+    "copied": "Disalin!"
+  },
+  "fileDropZone": {
+    "regionLabel": "Zona drop file untuk {{label}}",
+    "selectFile": "Pilih {{label}}. Format yang diizinkan: {{extensions}}. Klik untuk menjelajahi atau seret dan lepas file di sini.",
+    "selectedFile": "{{label}} dipilih: {{fileName}}. Klik untuk mengubah file.",
+    "currentFile": "File saat ini: {{fileName}}",
+    "allowedFormats": "Format yang diizinkan: {{extensions}}",
+    "dragActive": "File siap untuk dijatuhkan"
+  },
+  "tos": {
+    "title": "Termos de Serviço",
+    "content": "1. Isenção de Responsabilidade: Este software é fornecido \"como está\" sem garantia de qualquer tipo. O desenvolvedor não oferece garantias quanto ao desempenho ou confiabilidade do software.\n\n2. Limitação de Responsabilidade: Em nenhuma circunstância o desenvolvedor será responsável por quaisquer danos (incluindo, sem limitação, perda de dados ou interrupção de negócios) decorrentes do uso deste software. Sempre faça backup de seus arquivos.\n\n3. Código Aberto: Este software usa FFmpeg licenciado sob LGPLv2.1.",
+    "button_agree": "Eu Concordo e Inicio",
+    "notice": "Esta tradução é fornecida por conveniência. A versão em inglês é legalmente vinculativa."
+  },
+  "timestamps": {
+    "title": "Stempel Waktu YouTube",
+    "loading": "Memuat...",
+    "calculating": "Menghitung durasi video...",
+    "copy": "Salin ke clipboard",
+    "copied": "Disalin!",
+    "noVideos": "Tidak ada video yang tersedia",
+    "copyHistory": "Salin stempel waktu",
+    "copyTooltip": "Salin bab YouTube",
+    "copiedNotification": "Stempel waktu disalin ke clipboard!"
+  },
+  "about": {
+    "title": "Tentang Pengembang",
+    "version": "Versi",
+    "missionTitle": "Misi Kami",
+    "mission": "Kami tahu bahwa membuat musik menghabiskan lebih banyak energi emosional daripada yang Anda pikirkan. LoopMate dibuat untuk membuat proses itu sedikit kurang melelahkan dan sedikit kurang menyakitkan.",
+    "connect": "Terhubung",
+    "website": "Situs web",
+    "support": "Laporkan masalah"
+  },
+  "updater": {
+    "available": "Versi baru tersedia",
+    "downloading": "Mengunduh...",
+    "ready": "Pembaruan siap",
+    "error": "Kesalahan pembaruan",
+    "version": "Versi",
+    "download": "Unduh",
+    "restart": "Mulai ulang dan instal",
+    "downloadFailed": "Gagal mengunduh",
+    "restartFailed": "Gagal memulai ulang"
+  },
+  "errors": {
+    "somethingWentWrong": "Terjadi kesalahan",
+    "unknownError": "Terjadi kesalahan yang tidak diketahui",
+    "errorId": "Kode kesalahan",
+    "copyErrorId": "Salin kode kesalahan",
+    "openLogFolder": "Buka folder log",
+    "troubleshootingTips": "Tips pemecahan masalah",
+    "tip1": "Periksa apakah file tidak rusak",
+    "tip2": "Coba restart aplikasi",
+    "tip3": "Pastikan jalur file hanya berisi karakter bahasa Inggris (opsional)",
+    "label": "Kesalahan:",
+    "imageLoadFailed": "Gagal memuat gambar"
+  },
+  "errorBoundary": {
+    "title": "Terjadi kesalahan",
+    "description": "Aplikasi mengalami kesalahan yang tidak terduga. Silakan coba lagi atau hubungi dukungan jika masalah berlanjut.",
+    "errorMessage": "Pesan kesalahan",
+    "tryAgain": "Coba lagi",
+    "helpText": "Jika masalah ini berlanjut, silakan laporkan di GitHub Issues. Anda dapat menemukan file log dengan mengklik tombol 'Buka folder log' di atas."
+  },
+  "support": {
+    "title": "Bantuan dan dukungan",
+    "openLogs": "Buka direktori log",
+    "logsDescription": "Jika Anda mengalami masalah, silakan laporkan di GitHub Issues. File log membantu mendiagnosis masalah aplikasi.",
+    "supportEmail": "Silakan laporkan masalah di https://github.com/dgdev22/loopmate/issues"
+  },
+  "resetData": {
+    "title": "Reset Semua Data",
+    "button": "Hapus Semua Data",
+    "description": "Tindakan ini tidak dapat dibatalkan. Data berikut akan dihapus:",
+    "warning": "Peringatan: Tindakan ini tidak dapat dibatalkan.",
+    "items": {
+      "settings": "Pengaturan (bahasa, ekstensi file, intro/outro)",
+      "history": "Riwayat pekerjaan",
+      "queue": "Antrian pekerjaan",
+      "onboarding": "Status onboarding"
+    },
+    "confirm": "Hapus",
+    "cancel": "Batal",
+    "success": "Semua data telah dihapus.",
+    "error": "Terjadi kesalahan saat menghapus data."
+  },
+  "analytics": {
+    "consentModal": {
+      "title": "Bantu tingkatkan LoopMate",
+      "description": "Data penggunaan anonim membantu kami memperbaiki bug dan meningkatkan fitur.",
+      "details": "Data yang dikumpulkan:",
+      "benefit1": "Pola penggunaan aplikasi (fitur mana yang paling sering digunakan)",
+      "benefit2": "Frekuensi dan jenis kesalahan",
+      "benefit3": "Metrik kinerja (waktu pemrosesan, dll.)",
+      "allow": "Izinkan",
+      "dontAllow": "Tidak izinkan"
+    }
+  },
+  "warnings": {
+    "slowProcessing": "Dampak Performa",
+    "effectsRequireReencoding": "Efek fade/padding memerlukan re-encoding audio, yang lebih lambat. Untuk pemrosesan tercepat (10-30x lebih cepat), matikan efek ini.",
+    "fastMode": "Mode Cepat Aktif",
+    "fastModeDesc": "Menggunakan kualitas audio asli dengan stream copy (tanpa re-encoding). Pemrosesan akan 10-30x lebih cepat!"
+  },
+  "history": {
+    "duration": "Durasi"
+  }
+}

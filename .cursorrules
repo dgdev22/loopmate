@@ -1,0 +1,96 @@
+# Project Context: LoopMate
+You are an expert AI assistant for "LoopMate", a desktop video utility application built with Electron, React, TypeScript, and Vite.
+
+## 1. Tech Stack & Architecture
+- **Core:** Electron + React + TypeScript + Vite
+- **UI:** Tailwind CSS + shadcn/ui (Dark Theme)
+- **State/Storage:** `electron-store` (persistence), React `useState`, `zustand` (global state)
+- **Video Processing:** `ffmpeg-static`, `fluent-ffmpeg`
+- **Analytics:** PostHog, GA4
+- **Updates:** `electron-updater`
+- **I18n:** `react-i18next` with 15 languages (en, ko, ja, zh, es, fr, de, pt, ru, hi, ar, id, vi, th, it)
+
+## 2. Project Goals
+- Develop a robust, user-friendly video tool for creators.
+- Key features: Image+Audio to Video, Loop Video, Concatenation, and Settings.
+- Ensure cross-platform compatibility (primarily macOS/Windows) and production stability.
+
+## 3. Coding Guidelines
+- **Style:** Use Functional Components with Hooks. Strongly typed TypeScript.
+- **UI:** Reuse shadcn/ui components whenever possible. Maintain Dark Theme consistency.
+- **Paths:** Be careful with file paths (production vs. development) due to ASAR packing.
+
+## 4. Internationalization (i18n) - CRITICAL
+- **ALWAYS use translation keys** - Never hardcode user-facing text in Korean or English.
+- **Translation files:** All translations are in `src/locales/*.json` (15 languages supported).
+- **Usage:** Import `useTranslation` hook: `const { t } = useTranslation()` then use `t('key.path')`.
+- **Key structure:** Follow existing patterns (e.g., `buttons.addToQueue`, `labels.selectImage`, `timestamps.title`).
+- **Adding new keys:** Add to ALL locale files (en.json, ko.json, and 13 others). Use Python scripts for batch updates if needed.
+- **Common mistake:** Hardcoding Korean text like "작업 큐에 추가" or "이미지 선택" - these MUST use `t()` function.
+- **Example:** `t('buttons.addToQueue')` instead of `"작업 큐에 추가"`.
+
+## 5. Key Features & Components
+- **YouTube Timestamps:** Auto-generates timestamps for concat jobs. Saved in job history.
+- **About Dialog:** Settings tab → "개발자 정보" button. Shows mission statement and social links.
+- **IPC Pattern:** Main process handlers in `electron/main.ts`, exposed via `electron/preload.ts`, accessed via `window.electronAPI`.
+- **External Links:** Use `window.electronAPI.openExternal(url)` to open URLs in default browser.
+
+# Workflow Instructions (CRITICAL)
+
+When you finish a coding task, you MUST follow this workflow:
+
+1. **Self-Correction & Verification:**
+   - Double-check for potential errors (especially FFmpeg paths or IPC communication).
+   - Ensure no "any" types are used unless absolutely necessary.
+   - **Check for hardcoded text:** Verify all user-facing strings use `t()` translation function.
+   - **Verify translations:** Ensure new translation keys are added to ALL locale files.
+
+2. **Automated Testing:**
+   - Run unit tests: `npm run test` (or relevant script).
+   - Run E2E tests: `npm run e2e` (ensure the app launches and performs the main flow).
+   - **Constraint:** Do not consider the task complete if tests fail. Fix them first.
+
+3. **Git Commit:**
+   - Once tests pass, generate a Git commit message following **Conventional Commits** (e.g., `feat:`, `fix:`, `refactor:`).
+   - Example: `feat: add new video processing feature`
+   - Ask me for confirmation before committing, or provide the command for me to run.
+
+## 6. File Structure & Patterns
+- **Components:** `src/components/` - Reusable UI components
+- **Store:** `src/store/` - Zustand stores for global state (e.g., `useSettingsStore.ts`)
+- **Utils:** `src/lib/` - Utility functions (e.g., `timestampUtils.ts`, `utils.ts`)
+- **Locales:** `src/locales/` - Translation JSON files (15 languages)
+- **IPC Handlers:** `electron/main.ts` - Main process handlers
+- **Preload:** `electron/preload.ts` - Exposes safe APIs to renderer via `window.electronAPI`
+
+## 7. Common Patterns & Best Practices
+- **IPC Communication:** Main → Preload → Renderer via `window.electronAPI`
+- **File Paths:** Always use absolute paths, handle ASAR unpacked paths for binaries (FFmpeg, FFprobe)
+- **State Management:** 
+  - Local state: `useState` for component-specific state
+  - Global state: Zustand stores (e.g., settings store)
+  - Persistence: `electron-store` for app settings and data
+- **Error Handling:** Try-catch blocks for async operations, user-friendly error messages via translations
+- **Type Safety:** Define interfaces for all data structures (Job, HistoryItem, etc.)
+- **Component Organization:** Keep components focused, extract reusable logic to utilities
+
+## 8. Testing Guidelines
+- **Unit Tests:** Jest for utility functions and business logic (`src/lib/__tests__/`, `electron/__tests__/`)
+- **E2E Tests:** Playwright for end-to-end user flows (`tests/`, `playwright.config.ts`)
+- **Test Coverage:** Aim for >80% coverage on critical paths (video processing, IPC handlers)
+- **Mocking:** Mock `electron-store` and IPC handlers in tests
+
+## 9. Performance Considerations
+- **Large Files:** Handle video file operations asynchronously, show progress indicators
+- **Memory Management:** Clean up temporary files after processing
+- **State Updates:** Use functional updates for state to avoid stale closures
+- **Re-renders:** Memoize expensive computations with `useMemo`, prevent unnecessary re-renders
+
+## 10. Security & Best Practices
+- **Context Isolation:** Always use `contextBridge` in preload, never expose Node.js APIs directly
+- **Input Validation:** Validate file paths and user inputs before processing
+- **Error Messages:** Don't expose internal paths or system details in user-facing errors
+- **File Operations:** Always validate file existence and permissions before operations
+
+---
+Always keep the "Production Readiness" in mind (signing, notarization, file paths, i18n completeness, error handling, security).

@@ -1,0 +1,299 @@
+{
+  "app": {
+    "title": "LoopMate",
+    "tagline": "Crie vídeos em 1 minuto, mesmo para iniciantes"
+  },
+  "time": {
+    "minutes": "मिनट",
+    "seconds": "सेकंड"
+  },
+  "splash": {
+    "loading": "लोड हो रहा है..."
+  },
+  "menu": {
+    "title": "Menu",
+    "imageMusic": "Imagem + Música",
+    "loopVideo": "Loop de Vídeo",
+    "concat": "Concatenar Vídeos",
+    "settings": "Configurações"
+  },
+  "tabs": {
+    "imageMusic": {
+      "title": "Criar Vídeo do YouTube",
+      "description": "Só música está OK! Cria um vídeo 16:9 do YouTube com fundo preto se nenhuma imagem for fornecida."
+    },
+    "loop": {
+      "title": "Estender Loop de Vídeo",
+      "description": "Estende um loop de vídeo curto para o comprimento desejado."
+    },
+    "concat": {
+      "title": "Concatenar Vídeos",
+      "description": "Mescla vários vídeos em um, ou aplica intro/outro a um único vídeo."
+    },
+    "settings": {
+      "title": "Configurações",
+      "description": "Defina vídeos de intro/outro que podem ser aplicados a cada tarefa via checkbox."
+    }
+  },
+  "buttons": {
+    "addToQueue": "Adicionar à Fila",
+    "addToQueueWithCount": "Adicionar à Fila ({{count}} itens)",
+    "addMusic": "Adicionar Música",
+    "addVideo": "Adicionar Vídeo",
+    "addImage": "Adicionar Imagem",
+    "selectFile": "Selecionar Arquivo",
+    "clear": "Limpar",
+    "remove": "Remover",
+    "change": "बदलें",
+    "save": "Salvar",
+    "cancel": "रद्द करें",
+    "buyMeACoffee": "मुझे कॉफी खरीदें",
+    "duplicate": "डुप्लिकेट",
+    "addToQueueWithMusic": "कतार में जोड़ें ({{count}} ट्रैक)",
+    "addToQueueWithVideos": "कतार में जोड़ें ({{count}} वीडियो)",
+    "addToQueueNeedsVideo": "कतार में जोड़ें (वीडियो चयन आवश्यक)",
+    "needsAtLeast2Videos": "कम से कम 2 वीडियो चाहिए"
+  },
+  "labels": {
+    "selectImage": "1. Selecionar Imagem (Opcional)",
+    "selectImageSub": "Fundo preto (16:9) se não fornecido",
+    "musicPlaylist": "2. Lista de Reprodução (Reproduzir em ordem)",
+    "musicPlaylistSub": "Múltiplos arquivos podem ser selecionados de uma vez",
+    "itemsAdded": "{{count}} itens adicionados",
+    "selectVideo": "Arquivo de Vídeo",
+    "iterations": "Número de iterações (ex: 60)",
+    "videoList": "Lista de Vídeos",
+    "videoListMultiple": "Lista de Vídeos (Mesclar em ordem)"
+  },
+  "options": {
+    "title": "Opções",
+    "fadeOut": "Aplicar fade out no final de cada faixa",
+    "fadeOutDesc": "Faz as faixas terminarem naturalmente. Essencial para vídeos de compilação.",
+    "fadeOutDuration": "अवधि:",
+    "seconds": "सेकंड",
+    "padding": "आराम का समय जोड़ें (प्रत्येक ट्रैक के बाद)",
+    "paddingDesc": "प्रत्येक ट्रैक के बाद आराम का समय जोड़ता है। चित्र जारी रहता है, केवल संगीत रुकता है। सहज लूपिंग के लिए अंतिम ट्रैक के बाद भी जोड़ा जाता है!",
+    "paddingDuration": "आराम का समय:",
+    "secondsSilence": "सेकंड (मौन, चित्र जारी)",
+    "fadeIn": "Aplicar fade in no início (Opcional)",
+    "fadeInDesc": "Faz o vídeo começar suavemente.",
+    "videoFadeOut": "Aplicar fade out no final de cada vídeo",
+    "videoFadeOutDesc": "Faz os vídeos terminarem naturalmente. Essencial para vídeos de compilação.",
+    "videoPadding": "Adicionar espaço (Preenchimento) entre vídeos",
+    "videoPaddingDesc": "Insere tela preta entre vídeos. Recomendado para vídeos de compilação."
+  },
+  "settings": {
+    "language": "भाषा",
+    "selectLanguage": "भाषा चुनें",
+    "allowAnalytics": "उपयोग विश्लेषण की अनुमति दें",
+    "fileExtensions": {
+      "title": "अनुमतित फ़ाइल एक्सटेंशन",
+      "description": "कॉन्फ़िगर करें कि प्रत्येक फ़ाइल प्रकार के लिए कौन से फ़ाइल एक्सटेंशन अनुमतित हैं। कई एक्सटेंशन को अल्पविराम से अलग करें (उदा: .jpg, .png, .webp)।",
+      "image": "छवि एक्सटेंशन",
+      "video": "वीडियो एक्सटेंशन",
+      "audio": "ऑडियो एक्सटेंशन",
+      "formatHint": "एक्सटेंशन को अल्पविराम से अलग करें। बिंदु शामिल करें (उदा: .jpg, .png)",
+      "save": "सहेजें",
+      "saving": "सहेजा जा रहा है...",
+      "reset": "डिफ़ॉल्ट पर रीसेट करें",
+      "saveError": "फ़ाइल एक्सटेंशन सहेजने में विफल"
+    },
+    "analyticsDescription": "उपयोग डेटा साझा करके ऐप में सुधार करने में हमारी मदद करें। आप इस सेटिंग को कभी भी बदल सकते हैं।",
+    "fastMode": {
+      "title": "⚡ फास्ट मोड (अनुशंसित)",
+      "description": "अधिकतम गति के लिए मूल ऑडियो गुणवत्ता का उपयोग करें (10-30 गुना तेज़)",
+      "disabled": "फास्ट मोड में अक्षम",
+      "slowWarning": "फास्ट मोड अक्षम होने पर प्रोसेसिंग काफी धीमी होगी।"
+    },
+    "audioQuality": {
+      "title": "ऑडियो गुणवत्ता",
+      "description": "वीडियो निर्माण के लिए ऑडियो गुणवत्ता चुनें। उच्च गुणवत्ता = बेहतर ध्वनि, बड़ी फ़ाइल आकार।",
+      "low": "निम्न गुणवत्ता",
+      "medium": "मध्यम गुणवत्ता",
+      "high": "उच्च गुणवत्ता (अनुशंसित)",
+      "studio": "स्टूडियो गुणवत्ता",
+      "codec": "कोडेक",
+      "bitrate": "बिटरेट",
+      "sampleRate": "नमूना दर",
+      "fileSize": "फ़ाइल का आकार"
+    }
+  },
+  "status": {
+    "processing": "प्रसंस्करण...",
+    "completed": "पूर्ण",
+    "failed": "असफल",
+    "waiting": "प्रतीक्षा",
+    "cancelled": "रद्द",
+    "interrupted": "बाधित",
+    "ready": "तैयार"
+  },
+  "messages": {
+    "videoCreated": "Um vídeo MP4 1920x1080 (16:9) será criado ao lado do arquivo de música original quando concluído.",
+    "estimatedTime": "Duração estimada do vídeo:",
+    "noHistory": "Nenhum histórico de tarefas.",
+    "historyEmpty": "Tarefas concluídas ou falhadas aparecerão aqui.",
+    "noJobs": "Nenhuma tarefa na fila.",
+    "jobsEmpty": "Adicione tarefas para iniciar o processamento.",
+    "historyCount": "Histórico de tarefas {{count}} itens",
+    "completedCount": "Concluídos: {{count}}",
+    "failedCount": "Falhados: {{count}}",
+    "queueCount": "Fila ({{count}} itens)"
+  },
+  "rightPanel": {
+    "queue": "कतार",
+    "history": "इतिहास"
+  },
+  "stepper": {
+    "upload": "फ़ाइल चुनें",
+    "processing": "प्रसंस्करण",
+    "complete": "पूर्ण"
+  },
+  "videoGenerator": {
+    "steps": {
+      "selectMusic": "संगीत चुनें",
+      "generateVideo": "वीडियो बनाएं",
+      "complete": "पूर्ण"
+    }
+  },
+  "videoLoop": {
+    "step1": "वीडियो चुनें",
+    "step2": "लूप प्रसंस्करण",
+    "step3": "पूर्ण"
+  },
+  "videoConcat": {
+    "step1": "वीडियो चुनें",
+    "step2": "मर्ज करना",
+    "step3": "पूर्ण"
+  },
+  "job": {
+    "musicVideo": "Vídeo Musical",
+    "videoLoop": "Loop de Vídeo",
+    "videoConcat": "Concatenar Vídeos",
+    "playlist": "Vídeo de Lista de Reprodução ({{count}} faixas)",
+    "loopIterations": "{{name}} ({{iterations}} iterações)",
+    "concatCount": "Concatenar Vídeos ({{count}} itens)",
+    "concatMultiple": "कतार में जोड़ें ({{count}} वीडियो)",
+    "savedLocation": "सहेजा गया स्थान",
+    "error": "त्रुटि",
+    "inputFiles": "{{count}} इनपुट फ़ाइलें"
+  },
+  "common": {
+    "required": "Requerido",
+    "optional": "Opcional",
+    "close": "Fechar",
+    "delete": "Excluir",
+    "confirm": "Confirmar",
+    "dropHere": "यहाँ छोड़ें!",
+    "invalidFileFormat": "अमान्य फ़ाइल प्रारूप।\nअनुमत: {{extensions}}",
+    "waitingCount": "{{count}} प्रतीक्षा कर रहे हैं",
+    "copied": "कॉपी किया गया!"
+  },
+  "fileDropZone": {
+    "regionLabel": "{{label}} के लिए फ़ाइल ड्रॉप क्षेत्र",
+    "selectFile": "{{label}} चुनें। अनुमत प्रारूप: {{extensions}}। ब्राउज़ करने के लिए क्लिक करें या यहाँ एक फ़ाइल खींचें और छोड़ें।",
+    "selectedFile": "{{label}} चुना गया: {{fileName}}। फ़ाइल बदलने के लिए क्लिक करें।",
+    "currentFile": "वर्तमान फ़ाइल: {{fileName}}",
+    "allowedFormats": "अनुमत प्रारूप: {{extensions}}",
+    "dragActive": "फ़ाइल ड्रॉप करने के लिए तैयार"
+  },
+  "tos": {
+    "title": "Termos de Serviço",
+    "content": "1. Isenção de Responsabilidade: Este software é fornecido \"como está\" sem garantia de qualquer tipo. O desenvolvedor não oferece garantias quanto ao desempenho ou confiabilidade do software.\n\n2. Limitação de Responsabilidade: Em nenhuma circunstância o desenvolvedor será responsável por quaisquer danos (incluindo, sem limitação, perda de dados ou interrupção de negócios) decorrentes do uso deste software. Sempre faça backup de seus arquivos.\n\n3. Código Aberto: Este software usa FFmpeg licenciado sob LGPLv2.1.",
+    "button_agree": "Eu Concordo e Inicio",
+    "notice": "Esta tradução é fornecida por conveniência. A versão em inglês é legalmente vinculativa."
+  },
+  "timestamps": {
+    "title": "YouTube टाइमस्टैम्प",
+    "loading": "लोड हो रहा है...",
+    "calculating": "वीडियो अवधि की गणना कर रहा है...",
+    "copy": "क्लिपबोर्ड पर कॉपी करें",
+    "copied": "कॉपी किया गया!",
+    "noVideos": "कोई वीडियो उपलब्ध नहीं",
+    "copyHistory": "टाइमस्टैम्प कॉपी करें",
+    "copyTooltip": "YouTube अध्याय कॉपी करें",
+    "copiedNotification": "टाइमस्टैम्प क्लिपबोर्ड पर कॉपी किए गए!"
+  },
+  "about": {
+    "title": "डेवलपर के बारे में",
+    "version": "संस्करण",
+    "missionTitle": "हमारा मिशन",
+    "mission": "हम जानते हैं कि संगीत बनाना आपकी सोच से अधिक भावनात्मक ऊर्जा लेता है। LoopMate उस प्रक्रिया को थोड़ा कम थकाऊ और थोड़ा कम दर्दनाक बनाने के लिए बनाया गया था।",
+    "connect": "कनेक्ट करें",
+    "website": "वेबसाइट",
+    "support": "समस्या रिपोर्ट करें"
+  },
+  "updater": {
+    "available": "नया संस्करण उपलब्ध",
+    "downloading": "डाउनलोड हो रहा है...",
+    "ready": "अपडेट तैयार",
+    "error": "अपडेट त्रुटि",
+    "version": "संस्करण",
+    "download": "डाउनलोड",
+    "restart": "पुनरारंभ करें और स्थापित करें",
+    "downloadFailed": "डाउनलोड विफल",
+    "restartFailed": "पुनरारंभ विफल"
+  },
+  "errors": {
+    "somethingWentWrong": "कुछ गलत हो गया",
+    "unknownError": "एक अज्ञात त्रुटि हुई",
+    "errorId": "त्रुटि कोड",
+    "copyErrorId": "त्रुटि कोड कॉपी करें",
+    "openLogFolder": "लॉग फ़ोल्डर खोलें",
+    "troubleshootingTips": "समस्या निवारण सुझाव",
+    "tip1": "जांचें कि फ़ाइल खराब नहीं है",
+    "tip2": "ऐप को पुनरारंभ करने का प्रयास करें",
+    "tip3": "सुनिश्चित करें कि फ़ाइल पथ में केवल अंग्रेजी वर्ण हैं (वैकल्पिक)",
+    "label": "त्रुटि:",
+    "imageLoadFailed": "छवि लोड करने में विफल"
+  },
+  "errorBoundary": {
+    "title": "कुछ गलत हो गया",
+    "description": "एप्लिकेशन में एक अप्रत्याशित त्रुटि आई। कृपया पुनः प्रयास करें या यदि समस्या बनी रहती है तो सहायता से संपर्क करें।",
+    "errorMessage": "त्रुटि संदेश",
+    "tryAgain": "पुनः प्रयास करें",
+    "helpText": "यदि यह समस्या जारी रहती है, कृपया GitHub Issues पर रिपोर्ट करें। आप ऊपर 'लॉग फ़ोल्डर खोलें' बटन पर क्लिक करके लॉग फ़ाइल पा सकते हैं।"
+  },
+  "support": {
+    "title": "सहायता और समर्थन",
+    "openLogs": "लॉग निर्देशिका खोलें",
+    "logsDescription": "यदि आपको समस्याएं आती हैं, तो कृपया GitHub Issues पर रिपोर्ट करें। लॉग फ़ाइल ऐप समस्याओं का निदान करने में मदद करती है।",
+    "supportEmail": "कृपया समस्याओं को https://github.com/dgdev22/loopmate/issues पर रिपोर्ट करें"
+  },
+  "resetData": {
+    "title": "सभी डेटा रीसेट करें",
+    "button": "सभी डेटा साफ़ करें",
+    "description": "इस क्रिया को पूर्ववत नहीं किया जा सकता। निम्नलिखित डेटा हटा दिए जाएंगे:",
+    "warning": "चेतावनी: इस क्रिया को पूर्ववत नहीं किया जा सकता।",
+    "items": {
+      "settings": "सेटिंग्स (भाषा, फ़ाइल एक्सटेंशन, इंट्रो/आउट्रो)",
+      "history": "नौकरी इतिहास",
+      "queue": "नौकरी कतार",
+      "onboarding": "ऑनबोर्डिंग स्थिति"
+    },
+    "confirm": "हटाएं",
+    "cancel": "रद्द करें",
+    "success": "सभी डेटा साफ़ कर दिए गए हैं।",
+    "error": "डेटा साफ़ करते समय एक त्रुटि हुई।"
+  },
+  "analytics": {
+    "consentModal": {
+      "title": "LoopMate को बेहतर बनाने में मदद करें",
+      "description": "अनाम उपयोग डेटा हमें बग ठीक करने और सुविधाओं में सुधार करने में मदद करता है।",
+      "details": "एकत्रित डेटा:",
+      "benefit1": "ऐप उपयोग पैटर्न (कौन सी सुविधाएं सबसे अधिक उपयोग की जाती हैं)",
+      "benefit2": "त्रुटि आवृत्ति और प्रकार",
+      "benefit3": "प्रदर्शन मेट्रिक्स (प्रसंस्करण समय आदि)",
+      "allow": "अनुमति दें",
+      "dontAllow": "अनुमति न दें"
+    }
+  },
+  "warnings": {
+    "slowProcessing": "प्रदर्शन प्रभाव",
+    "effectsRequireReencoding": "फ़ेड/पैडिंग प्रभावों के लिए ऑडियो री-एन्कोडिंग की आवश्यकता होती है, जो धीमा है। सबसे तेज़ प्रोसेसिंग (10-30 गुना तेज़) के लिए, इन प्रभावों को बंद करें।",
+    "fastMode": "फास्ट मोड सक्रिय",
+    "fastModeDesc": "स्ट्रीम कॉपी के साथ मूल ऑडियो गुणवत्ता का उपयोग (कोई री-एन्कोडिंग नहीं)। प्रोसेसिंग 10-30 गुना तेज़ होगी!"
+  },
+  "history": {
+    "duration": "अवधि"
+  }
+}

@@ -1,0 +1,420 @@
+{
+  "app": {
+    "title": "LoopMate",
+    "tagline": "초보자도 1분 만에 끝내는 영상 제작"
+  },
+  "time": {
+    "minutes": "분",
+    "seconds": "초"
+  },
+  "splash": {
+    "loading": "로딩 중..."
+  },
+  "menu": {
+    "title": "메뉴",
+    "imageMusic": "이미지 + 음악",
+    "loopVideo": "영상 반복 루프",
+    "concat": "영상 합치기",
+    "settings": "설정"
+  },
+  "tabs": {
+    "imageMusic": {
+      "title": "유튜브 영상 만들기",
+      "description": "음악만 있으면 OK! 이미지 없으면 검은 배경으로 16:9 유튜브 영상을 만듭니다."
+    },
+    "loop": {
+      "title": "영상 반복 늘리기",
+      "description": "짧은 비디오 루프를 원하는 시간만큼 길게 늘립니다."
+    },
+    "concat": {
+      "title": "영상 합치기",
+      "description": "여러 영상을 하나로 합칩니다."
+    },
+    "settings": {
+      "title": "설정",
+      "description": "언어, 파일 확장자, 오디오 품질 등을 설정합니다."
+    }
+  },
+  "buttons": {
+    "addToQueue": "작업 큐에 추가",
+    "addToQueueWithCount": "작업 큐에 추가 ({{count}}개)",
+    "addToQueueWithMusic": "작업 큐에 추가 ({{count}}개 음악)",
+    "addToQueueWithVideos": "작업 큐에 추가 ({{count}}개 영상)",
+    "addToQueueNeedsVideo": "작업 큐에 추가 (영상 선택 필요)",
+    "needsAtLeast2Videos": "최소 2개 영상 필요",
+    "addMusic": "음악 추가",
+    "addVideo": "영상 추가",
+    "addImage": "이미지 추가",
+    "selectFile": "파일 선택",
+    "clear": "지우기",
+    "remove": "제거",
+    "change": "변경",
+    "save": "저장",
+    "cancel": "취소",
+    "buyMeACoffee": "커피 사주기",
+    "duplicate": "복제"
+  },
+  "labels": {
+    "selectImage": "1. 이미지 선택 (선택)",
+    "selectImageSub": "없으면 검은 배경 (16:9)",
+    "musicPlaylist": "2. 음악 플레이리스트 (순서대로 재생)",
+    "musicPlaylistSub": "여러 파일 한 번에 선택 가능",
+    "itemsAdded": "{{count}}개 추가됨",
+    "selectVideo": "영상 파일",
+    "selectLoopVideo": "반복할 영상 선택",
+    "videoFileFormats": "MP4, MOV, AVI 파일",
+    "iterations": "반복 횟수 (예: 60회)",
+    "videoList": "영상 목록",
+    "videoListMultiple": "영상 목록 (순서대로 합쳐짐)",
+    "videoListSub": "여러 파일: 순서대로 합치기"
+  },
+  "options": {
+    "title": "옵션 설정",
+    "advanced": "고급 옵션",
+    "showAdvanced": "고급 옵션 보기",
+    "hideAdvanced": "고급 옵션 숨기기",
+    "fadeOut": "각 음악 끝에 페이드 아웃 적용",
+    "fadeOutDesc": "음악이 자연스럽게 끝나도록 처리합니다. 모음집 영상에 필수입니다.",
+    "fadeOutDuration": "시간:",
+    "seconds": "초",
+    "padding": "쉬는 시간 추가 (각 음악 뒤)",
+    "paddingDesc": "각 음악이 끝난 후 쉬는 시간을 넣습니다. 이미지는 계속 표시되고 음악만 정지합니다. Loop 반복 시 자연스러운 연결을 위해 마지막 곡 뒤에도 추가됩니다!",
+    "paddingDuration": "쉬는 시간:",
+    "secondsSilence": "초 (무음, 이미지는 계속 표시)",
+    "fadeIn": "영상 시작 시 페이드 인 적용 (선택사항)",
+    "fadeInDesc": "영상이 부드럽게 시작됩니다.",
+    "videoFadeOut": "각 영상 끝에 페이드 아웃 적용",
+    "videoFadeOutDesc": "영상이 자연스럽게 끝나도록 처리합니다. 모음집 영상에 필수입니다.",
+    "videoPadding": "영상 사이 검은 화면 추가",
+    "videoPaddingDesc": "영상 사이에 검은 화면을 삽입합니다 (영상 전환 효과). 모음집 영상에 추천됩니다.",
+    "requiresMultipleTracks": "여러 음악이 필요합니다",
+    "requiresMultipleVideos": "여러 영상이 필요합니다",
+    "activeOptions": "활성화된 옵션",
+    "active": "활성화됨",
+    "inactive": "비활성화됨",
+    "fadeOutShort": "페이드 아웃",
+    "fadeInShort": "페이드 인",
+    "paddingShort": "패딩",
+    "noActiveOptions": "활성화된 옵션 없음"
+  },
+  "settings": {
+    "language": "언어",
+    "selectLanguage": "언어 선택",
+    "allowAnalytics": "사용 분석 데이터 수집 허용",
+    "analyticsDescription": "앱 사용 패턴을 분석하여 서비스를 개선하는 데 도움이 됩니다. 언제든지 설정에서 변경할 수 있습니다.",
+    "fastMode": {
+      "title": "⚡ 빠른 모드 (권장)",
+      "description": "원본 오디오 품질을 그대로 사용하여 최대 속도로 처리 (10-30배 빠름)",
+      "disabled": "빠른 모드에서 비활성화됨",
+      "slowWarning": "빠른 모드가 꺼져 있으면 처리가 상당히 느려집니다."
+    },
+    "audioQuality": {
+      "title": "음질 설정",
+      "description": "비디오 생성 시 사용할 음질을 선택하세요. 높은 음질 = 더 좋은 소리, 더 큰 파일 크기",
+      "low": "낮은 음질",
+      "medium": "중간 음질",
+      "high": "높은 음질 (권장)",
+      "studio": "스튜디오 음질",
+      "codec": "코덱",
+      "bitrate": "비트레이트",
+      "sampleRate": "샘플레이트",
+      "fileSize": "파일 크기"
+    },
+    "fileExtensions": {
+      "title": "허용 파일 확장자",
+      "description": "각 파일 유형에 대해 허용할 파일 확장자를 설정합니다. 여러 확장자는 쉼표로 구분하세요 (예: .jpg, .png, .webp).",
+      "image": "이미지 확장자",
+      "video": "비디오 확장자",
+      "audio": "음악 확장자",
+      "formatHint": "확장자는 쉼표로 구분하세요. 점을 포함하세요 (예: .jpg, .png)",
+      "save": "저장",
+      "saving": "저장 중...",
+      "reset": "기본값으로 재설정",
+      "saveError": "파일 확장자 저장 실패"
+    }
+  },
+  "tos": {
+    "title": "서비스 약관",
+    "content": "1. 면책 조항: 본 소프트웨어는 어떠한 종류의 보증 없이 '있는 그대로' 제공됩니다. 개발자는 소프트웨어의 성능이나 신뢰성에 대해 어떠한 보장도 하지 않습니다.\n\n2. 책임의 제한: 어떠한 경우에도 개발자는 본 소프트웨어 사용으로 인해 발생하는 손해(데이터 손실 또는 비즈니스 중단을 포함하되 이에 국한되지 않음)에 대해 책임을 지지 않습니다. 항상 파일을 백업하시기 바랍니다.\n\n3. 오픈 소스: 본 소프트웨어는 LGPLv2.1 라이선스 하에 제공되는 FFmpeg를 사용합니다.",
+    "button_agree": "동의하고 시작하기",
+    "notice": "이 번역은 편의를 위해 제공됩니다. 법적으로 구속력 있는 것은 영어 버전입니다."
+  },
+  "status": {
+    "processing": "처리 중...",
+    "completed": "완료",
+    "failed": "실패",
+    "waiting": "대기 중",
+    "cancelled": "취소됨",
+    "interrupted": "중단됨",
+    "ready": "준비됨"
+  },
+  "messages": {
+    "videoCreated": "완료 시 원본 음악 파일 옆에 1920x1080 (16:9) MP4 영상이 생성됩니다.",
+    "estimatedTime": "예상 영상 시간:",
+    "noHistory": "작업 히스토리가 없습니다.",
+    "historyEmpty": "작업을 완료하거나 실패하면 여기에 표시됩니다.",
+    "noJobs": "작업 큐가 비어있습니다.",
+    "jobsEmpty": "작업을 추가하여 처리를 시작하세요.",
+    "historyCount": "작업 내역 {{count}}개",
+    "completedCount": "완료: {{count}}",
+    "failedCount": "실패: {{count}}",
+    "queueCount": "큐 ({{count}}개)"
+  },
+  "history": {
+    "duration": "실행시간"
+  },
+  "rightPanel": {
+    "queue": "작업 큐",
+    "history": "히스토리"
+  },
+  "stepper": {
+    "upload": "파일 선택",
+    "processing": "변환 처리",
+    "complete": "완료"
+  },
+  "videoGenerator": {
+    "steps": {
+      "selectMusic": "음악 선택",
+      "generateVideo": "영상 생성",
+      "complete": "완료"
+    }
+  },
+  "videoLoop": {
+    "step1": "영상 선택",
+    "step2": "반복 처리",
+    "step3": "완료"
+  },
+  "videoConcat": {
+    "step1": "영상 선택",
+    "step2": "합치기 처리",
+    "step3": "완료"
+  },
+  "job": {
+    "musicVideo": "뮤직비디오",
+    "videoLoop": "영상 반복",
+    "videoConcat": "영상 합치기",
+    "playlist": "플레이리스트 영상 ({{count}}개 음악)",
+    "loopIterations": "{{name}} ({{iterations}}회 반복)",
+    "concatCount": "영상 합치기 ({{count}}개)",
+    "concatMultiple": "영상 합치기 ({{count}}개 영상)",
+    "savedLocation": "저장위치",
+    "error": "오류",
+    "inputFiles": "{{count}}개 입력 파일"
+  },
+  "common": {
+    "required": "필수",
+    "optional": "선택사항",
+    "close": "닫기",
+    "delete": "삭제",
+    "confirm": "확인",
+    "dropHere": "여기에 놓으세요!",
+    "invalidFileFormat": "허용되지 않는 파일 형식입니다.\n허용됨: {{extensions}}",
+    "waitingCount": "{{count}}개 대기 중",
+    "video": "영상",
+    "copied": "복사됨!",
+    "tracks": "개 음악",
+    "singleTrack": "1개 음악",
+    "videos": "개 영상",
+    "singleVideo": "1개 영상",
+    "iterations": "회 반복",
+    "openFile": "파일 열기"
+  },
+  "fileDropZone": {
+    "regionLabel": "{{label}} 파일 드롭 영역",
+    "selectFile": "{{label}} 선택. 허용 형식: {{extensions}}. 클릭하여 찾아보거나 파일을 여기에 드래그하세요.",
+    "selectedFile": "{{label}} 선택됨: {{fileName}}. 클릭하여 파일 변경.",
+    "currentFile": "현재 파일: {{fileName}}",
+    "allowedFormats": "허용 형식: {{extensions}}",
+    "dragActive": "파일을 놓을 준비가 되었습니다"
+  },
+  "emptyState": {
+    "title": "파일을 드래그하거나 클릭하세요",
+    "description": "이미지 1장 + 음악 파일 = 유튜브 영상 완성!"
+  },
+  "notifications": {
+    "jobCompleted": "작업 완료",
+    "jobCompletedBody": "{{jobName}} 작업이 완료되었습니다.",
+    "jobFailed": "작업 실패",
+    "jobFailedBody": "{{jobName}} 작업이 실패했습니다."
+  },
+  "resume": {
+    "title": "미완료 작업 감지",
+    "description": "이전 세션에서 완료되지 않은 작업 {{count}}개가 있습니다. 지금 다시 시작하시겠습니까?",
+    "cancel": "취소",
+    "resume": "예, 재시작"
+  },
+  "timestamps": {
+    "title": "YouTube 타임스탬프",
+    "loading": "로딩 중...",
+    "calculating": "비디오 길이를 계산하는 중...",
+    "copy": "클립보드에 복사",
+    "copyHistory": "타임스탬프 복사",
+    "copyTooltip": "YouTube 챕터 복사",
+    "copied": "복사됨!",
+    "copiedNotification": "타임스탬프가 클립보드에 복사되었습니다!",
+    "noVideos": "비디오가 없습니다"
+  },
+  "about": {
+    "title": "개발자 정보",
+    "version": "버전",
+    "missionTitle": "우리의 미션",
+    "mission": "우리는 음악을 만드는 과정이 생각보다 많은 감정적 에너지를 소모한다는 걸 알고 있습니다. LoopMate는 그 과정이 조금 덜 피곤하고, 덜 상처받도록 만들고 싶다는 생각에서 시작되었습니다.",
+    "connect": "연결하기",
+    "website": "웹사이트",
+    "support": "이슈 문의하기"
+  },
+  "updater": {
+    "available": "새 버전 사용 가능",
+    "downloading": "다운로드 중...",
+    "ready": "업데이트 준비 완료",
+    "error": "업데이트 오류",
+    "version": "버전",
+    "download": "다운로드",
+    "restart": "재시작 및 설치",
+    "downloadFailed": "다운로드 실패",
+    "restartFailed": "재시작 실패"
+  },
+  "errors": {
+    "somethingWentWrong": "문제가 발생했습니다",
+    "unknownError": "알 수 없는 오류가 발생했습니다",
+    "errorId": "오류 코드",
+    "copyErrorId": "오류 코드 복사",
+    "openLogFolder": "로그 폴더 열기",
+    "troubleshootingTips": "문제 해결 팁",
+    "tip1": "파일이 손상되지 않았는지 확인하세요",
+    "tip2": "앱을 재시작해 보세요",
+    "tip3": "파일 경로에 영문자만 포함되어 있는지 확인하세요 (선택사항)",
+    "label": "오류:",
+    "imageLoadFailed": "이미지를 불러올 수 없습니다"
+  },
+  "errorBoundary": {
+    "title": "문제가 발생했습니다",
+    "description": "애플리케이션에서 예기치 않은 오류가 발생했습니다. 다시 시도하거나 문제가 계속되면 지원팀에 문의하세요.",
+    "errorMessage": "오류 메시지",
+    "tryAgain": "다시 시도",
+    "helpText": "이 문제가 계속되면 GitHub Issues에 보고해주세요. 위의 '로그 폴더 열기' 버튼을 클릭하여 로그 파일을 찾을 수 있습니다."
+  },
+  "support": {
+    "title": "도움말 및 지원",
+    "openLogs": "로그 폴더 열기",
+    "logsDescription": "문제가 발생하면 GitHub Issues에 보고해주세요. 로그 파일은 앱의 문제를 진단하는 데 도움이 됩니다.",
+    "supportEmail": "이슈는 https://github.com/dgdev22/loopmate/issues 에서 보고해주세요"
+  },
+  "resetData": {
+    "title": "모든 데이터 초기화",
+    "button": "모든 데이터 삭제",
+    "description": "이 작업은 되돌릴 수 없습니다. 다음 데이터가 모두 삭제됩니다:",
+    "warning": "경고: 이 작업은 되돌릴 수 없습니다.",
+    "items": {
+      "settings": "설정 (언어, 파일 확장자, 오디오 품질)",
+      "history": "작업 히스토리",
+      "queue": "작업 큐",
+      "onboarding": "온보딩 상태"
+    },
+    "confirm": "삭제",
+    "cancel": "취소",
+    "success": "모든 데이터가 삭제되었습니다.",
+    "error": "데이터 삭제 중 오류가 발생했습니다."
+  },
+  "analytics": {
+    "consentModal": {
+      "title": "LoopMate 개선에 참여해주세요",
+      "description": "익명화된 사용 통계 데이터를 보내주시면 앱의 버그를 잡고 기능을 개선하는 데 큰 도움이 됩니다.",
+      "details": "수집되는 데이터:",
+      "benefit1": "앱 사용 패턴 (어떤 기능을 자주 사용하는지)",
+      "benefit2": "오류 발생 빈도 및 유형",
+      "benefit3": "성능 메트릭 (처리 시간 등)",
+      "allow": "허용",
+      "dontAllow": "허용 안 함"
+    }
+  },
+  "onboarding": {
+    "welcome": "LoopMate에 오신 것을 환영합니다! 👋",
+    "subtitle": "몇 분 만에 전문 영상 제작",
+    "description": "LoopMate는 3가지 간단한 작업만 합니다:",
+    "feature1": {
+      "title": "음악 → 영상",
+      "description": "음악 파일 + 이미지 1장 = 유튜브 영상"
+    },
+    "feature2": {
+      "title": "영상 반복",
+      "description": "1분 영상 → 10시간 노동요"
+    },
+    "feature3": {
+      "title": "영상 합치기",
+      "description": "여러 영상 → 하나로 결합"
+    },
+    "getStarted": "시작하기"
+  },
+  "toast": {
+    "addedToQueue": "큐에 추가됨",
+    "jobWillStartSoon": "작업이 곧 시작됩니다",
+    "jobCompleted": "작업 완료!",
+    "jobFailed": "작업 실패"
+  },
+  "warnings": {
+    "slowProcessing": "성능 영향",
+    "effectsRequireReencoding": "페이드/패딩 효과는 오디오 재인코딩이 필요하여 처리 속도가 느려집니다. 최대 속도(10-30배 빠름)로 처리하려면 이 효과들을 끄세요.",
+    "fastMode": "빠른 모드 활성화",
+    "fastModeDesc": "원본 오디오 품질을 그대로 사용합니다 (재인코딩 없음). 처리 속도가 10-30배 빠릅니다!"
+  },
+  "progress": {
+    "analyzing": "영상 분석 중...",
+    "preparing": "인코딩 준비 중...",
+    "rendering": "영상 렌더링 중...",
+    "processing": "오디오 처리 중...",
+    "finalizing": "최종 마무리 중...",
+    "almostDone": "거의 완료!"
+  },
+  "preview": {
+    "title": "미리보기",
+    "backgroundImage": "배경 이미지",
+    "musicTracks": "음악 트랙",
+    "estimatedDuration": "예상 영상 길이",
+    "multipleTracks": "{{count}}개 트랙",
+    "audioLength": "음악 길이에 따라 결정",
+    "playlistMode": "플레이리스트 모드"
+  },
+  "quickStart": {
+    "title": "빠른 시작",
+    "description": "샘플 파일로 바로 체험해보세요 (클릭 한 번!)",
+    "lofi": {
+      "name": "로파이 음악",
+      "description": "차분한 비트 · 3분"
+    },
+    "playlist": {
+      "name": "플레이리스트",
+      "description": "3곡 모음 · 9분"
+    },
+    "relaxing": {
+      "name": "휴식 음악",
+      "description": "명상/수면용 · 5분"
+    },
+    "loading": "템플릿 로딩 중...",
+    "loadSuccess": "템플릿 로드 완료!",
+    "loadSuccessDesc": "\"{{name}}\"이(가) 준비되었습니다. 이제 큐에 추가해보세요.",
+    "loadError": "템플릿 로드 실패",
+    "sampleNotFound": "샘플 파일을 찾을 수 없습니다",
+    "orSelectFiles": "또는 직접 파일 선택"
+  },
+  "processing": {
+    "stage": {
+      "preparing": "작업 준비 중...",
+      "analyzing": "파일 분석 중...",
+      "encoding": "영상 인코딩 중...",
+      "processing": "오디오 처리 중...",
+      "compositing": "합성 작업 중...",
+      "finalizing": "최종 마무리 중...",
+      "almostDone": "거의 완료!"
+    },
+    "timeRemaining": "약 {{seconds}}초 남음"
+  },
+  "shortcuts": {
+    "title": "단축키",
+    "openFile": "파일 열기",
+    "addToQueue": "큐에 추가",
+    "cancel": "취소",
+    "settings": "설정"
+  }
+}
+

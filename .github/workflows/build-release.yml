@@ -1,0 +1,136 @@
+name: Build Release (Mac + Windows)
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  build-mac:
+    name: Build macOS
+    runs-on: macos-latest
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build macOS (DMG + ZIP)
+        run: npm run build:mac
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH: never
+
+      - name: Upload macOS artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: macos-build
+          path: |
+            release/**/*.dmg
+            release/**/mac-unpacked/**
+          retention-days: 30
+          if-no-files-found: error
+
+  build-windows:
+    name: Build Windows
+    runs-on: windows-latest
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate Windows icon (if needed)
+        run: |
+          if (!(Test-Path "build/icon.ico")) {
+            Write-Host "ICO file not found, generating from PNG..."
+            if (Test-Path "build/icon.png") {
+              # Use -icop to preserve transparency (all sizes as PNG)
+              # -icop: ICO format with PNG encoding (preserves alpha channel)
+              npx --yes png2icons build/icon.png build/icon -icop -i
+            } else {
+              Write-Host "Warning: icon.png not found, build will continue without icon"
+            }
+          } else {
+            Write-Host "ICO file already exists, skipping generation"
+          }
+        shell: pwsh
+        continue-on-error: true
+
+      - name: Build Windows (Portable only)
+        run: npm run build:win:portable
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH: never
+
+      - name: Upload Windows artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-build
+          path: |
+            release/**/*-Portable.exe
+            release/**/win-unpacked/**
+          retention-days: 30
+          if-no-files-found: error
+
+      # Note: MSIX build is now in separate workflow (build-msix.yml)
+      # to avoid blocking releases if MSIX build fails
+
+  create-release:
+    name: Create GitHub Release
+    needs: [build-mac, build-windows]
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/v')
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Download macOS artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: macos-build
+          path: artifacts/macos
+
+      - name: Download Windows artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name: windows-build
+          path: artifacts/windows
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            artifacts/macos/**/*.dmg
+            artifacts/windows/**/*-Portable.exe
+          draft: false
+          prerelease: false
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

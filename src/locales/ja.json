@@ -1,0 +1,293 @@
+{
+  "app": {
+    "title": "LoopMate",
+    "tagline": "初心者でも1分で完了する動画制作"
+  },
+  "time": {
+    "minutes": "分",
+    "seconds": "秒"
+  },
+  "splash": {
+    "loading": "読み込み中..."
+  },
+  "menu": {
+    "title": "メニュー",
+    "imageMusic": "画像 + 音楽",
+    "loopVideo": "動画ループ",
+    "concat": "動画結合",
+    "settings": "設定"
+  },
+  "tabs": {
+    "imageMusic": {
+      "title": "YouTube動画作成",
+      "description": "音楽だけでもOK！画像がなければ黒背景で16:9のYouTube動画を作成します。"
+    },
+    "loop": {
+      "title": "動画ループ延長",
+      "description": "短い動画ループを希望の長さまで延長します。"
+    },
+    "concat": {
+      "title": "動画結合",
+      "description": "複数の動画を1つに結合するか、単一動画にイントロ/アウトロを適用します。"
+    },
+    "settings": {
+      "title": "設定",
+      "description": "イントロ/アウトロ動画を設定すると、各タスクでチェックボックスで選択して適用できます。"
+    }
+  },
+  "buttons": {
+    "addToQueue": "キューに追加",
+    "addToQueueWithCount": "キューに追加 ({{count}}件)",
+    "addMusic": "音楽追加",
+    "addVideo": "動画追加",
+    "addImage": "画像追加",
+    "selectFile": "ファイル選択",
+    "clear": "クリア",
+    "remove": "削除",
+    "change": "変更",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "buyMeACoffee": "コーヒーを奢る",
+    "duplicate": "複製",
+    "addToQueueWithMusic": "キューに追加 ({{count}}曲)",
+    "addToQueueWithVideos": "キューに追加 ({{count}}本の動画)",
+    "addToQueueNeedsVideo": "キューに追加 (動画選択が必要)",
+    "needsAtLeast2Videos": "最低2つの動画が必要です"
+  },
+  "labels": {
+    "selectImage": "1. 画像選択 (オプション)",
+    "selectImageSub": "ない場合は黒背景 (16:9)",
+    "musicPlaylist": "2. 音楽プレイリスト (順番に再生)",
+    "musicPlaylistSub": "複数ファイルを一度に選択可能",
+    "itemsAdded": "{{count}}件追加済み",
+    "selectVideo": "動画ファイル",
+    "iterations": "繰り返し回数 (例: 60回)",
+    "videoList": "動画リスト",
+    "videoListMultiple": "動画リスト (順番に結合)"
+  },
+  "options": {
+    "title": "オプション設定",
+    "fadeOut": "各トラックの終わりにフェードアウトを適用",
+    "fadeOutDesc": "トラックが自然に終わるように処理します。コンピレーション動画に必須です。",
+    "fadeOutDuration": "時間:",
+    "seconds": "秒",
+    "padding": "休憩時間を追加（各曲の後）",
+    "paddingDesc": "各曲の後に休憩時間を追加します。画像は表示されたまま、音楽のみ停止します。ループ再生時も自然につながるよう、最後の曲の後にも追加されます！",
+    "paddingDuration": "休憩時間:",
+    "secondsSilence": "秒（無音、画像は表示継続）",
+    "fadeIn": "開始時にフェードインを適用 (オプション)",
+    "fadeInDesc": "動画がスムーズに開始されます。",
+    "videoFadeOut": "各動画の終わりにフェードアウトを適用",
+    "videoFadeOutDesc": "動画が自然に終わるように処理します。コンピレーション動画に必須です。",
+    "videoPadding": "動画間に間隔(パディング)を追加",
+    "videoPaddingDesc": "動画間に黒画面を挿入します。コンピレーション動画に推奨されます。"
+  },
+  "settings": {
+    "language": "言語",
+    "selectLanguage": "言語選択",
+    "allowAnalytics": "使用分析データの収集を許可",
+    "fastMode": {
+      "title": "⚡ 高速モード (推奨)",
+      "description": "元のオーディオ品質を使用して最高速度で処理 (10〜30倍高速)",
+      "disabled": "高速モードで無効",
+      "slowWarning": "高速モードが無効になっていると、処理が大幅に遅くなります。"
+    },
+    "audioQuality": {
+      "title": "音質設定",
+      "description": "動画生成時の音質を選択してください。高音質 = 良い音質、大きいファイルサイズ",
+      "low": "低音質",
+      "medium": "中音質",
+      "high": "高音質（推奨）",
+      "studio": "スタジオ音質",
+      "codec": "コーデック",
+      "bitrate": "ビットレート",
+      "sampleRate": "サンプルレート",
+      "fileSize": "ファイルサイズ"
+    },
+    "fileExtensions": {
+      "title": "許可ファイル拡張子",
+      "description": "各ファイルタイプで許可するファイル拡張子を設定します。複数の拡張子はカンマで区切ってください（例：.jpg, .png, .webp）。",
+      "image": "画像拡張子",
+      "video": "動画拡張子",
+      "audio": "音声拡張子",
+      "formatHint": "拡張子はカンマで区切ってください。ドットを含めてください（例：.jpg, .png）",
+      "save": "保存",
+      "saving": "保存中...",
+      "reset": "デフォルトにリセット",
+      "saveError": "ファイル拡張子の保存に失敗しました"
+    },
+    "analyticsDescription": "アプリの使用パターンを分析してサービスを改善するのに役立ちます。設定からいつでも変更できます。"
+  },
+  "status": {
+    "processing": "処理中...",
+    "completed": "完了",
+    "failed": "失敗",
+    "waiting": "待機中",
+    "cancelled": "キャンセル済み",
+    "interrupted": "中断されました",
+    "ready": "準備完了"
+  },
+  "messages": {
+    "videoCreated": "完了時、元の音楽ファイルの横に1920x1080 (16:9) MP4動画が作成されます。",
+    "estimatedTime": "予想動画時間:",
+    "noHistory": "ジョブ履歴がありません。",
+    "historyEmpty": "完了または失敗したジョブがここに表示されます。",
+    "noJobs": "キューにジョブがありません。",
+    "jobsEmpty": "ジョブを追加して処理を開始してください。",
+    "historyCount": "ジョブ履歴 {{count}}件",
+    "completedCount": "完了: {{count}}",
+    "failedCount": "失敗: {{count}}",
+    "queueCount": "キュー ({{count}}件)"
+  },
+  "rightPanel": {
+    "queue": "キュー",
+    "history": "履歴"
+  },
+  "stepper": {
+    "upload": "ファイル選択",
+    "processing": "変換処理",
+    "complete": "完了"
+  },
+  "videoGenerator": {
+    "steps": {
+      "selectMusic": "音楽選択",
+      "generateVideo": "動画生成",
+      "complete": "完了"
+    }
+  },
+  "videoLoop": {
+    "step1": "動画選択",
+    "step2": "ループ処理",
+    "step3": "完了"
+  },
+  "videoConcat": {
+    "step1": "動画選択",
+    "step2": "結合処理",
+    "step3": "完了"
+  },
+  "job": {
+    "musicVideo": "ミュージックビデオ",
+    "videoLoop": "動画ループ",
+    "videoConcat": "動画結合",
+    "playlist": "プレイリスト動画 ({{count}}トラック)",
+    "loopIterations": "{{name}} ({{iterations}}回繰り返し)",
+    "concatCount": "動画結合 ({{count}}件)",
+    "concatMultiple": "動画結合 ({{count}}件)",
+    "savedLocation": "保存場所",
+    "error": "エラー",
+    "inputFiles": "{{count}}件の入力ファイル"
+  },
+  "common": {
+    "required": "必須",
+    "optional": "オプション",
+    "close": "閉じる",
+    "delete": "削除",
+    "confirm": "確認",
+    "dropHere": "ここにドロップ！",
+    "invalidFileFormat": "無効なファイル形式です。\n許可: {{extensions}}",
+    "waitingCount": "{{count}}件待機中",
+    "copied": "コピーしました！"
+  },
+  "fileDropZone": {
+    "regionLabel": "{{label}}のファイルドロップゾーン",
+    "selectFile": "{{label}}を選択。許可形式: {{extensions}}。クリックして参照するか、ファイルをここにドラッグしてください。",
+    "selectedFile": "{{label}}が選択されました: {{fileName}}。クリックしてファイルを変更。",
+    "currentFile": "現在のファイル: {{fileName}}",
+    "allowedFormats": "許可形式: {{extensions}}",
+    "dragActive": "ファイルをドロップする準備ができました"
+  },
+  "timestamps": {
+    "title": "YouTubeタイムスタンプ",
+    "loading": "読み込み中...",
+    "calculating": "動画の長さを計算中...",
+    "copy": "クリップボードにコピー",
+    "copied": "コピーしました！",
+    "noVideos": "動画がありません",
+    "copyHistory": "タイムスタンプをコピー",
+    "copyTooltip": "YouTubeチャプターをコピー",
+    "copiedNotification": "タイムスタンプがクリップボードにコピーされました！"
+  },
+  "about": {
+    "title": "開発者について",
+    "version": "バージョン",
+    "missionTitle": "私たちのミッション",
+    "mission": "音楽を作る過程が、思っているよりも多くの感情的エネルギーを消費することを私たちは知っています。LoopMateは、その過程をもう少し疲れず、もう少し傷つかないようにしたいという思いから生まれました。",
+    "connect": "接続",
+    "website": "ウェブサイト",
+    "support": "問題を報告"
+  },
+  "updater": {
+    "available": "新しいバージョンが利用可能",
+    "downloading": "ダウンロード中...",
+    "ready": "アップデート準備完了",
+    "error": "アップデートエラー",
+    "version": "バージョン",
+    "download": "ダウンロード",
+    "restart": "再起動してインストール",
+    "downloadFailed": "ダウンロードに失敗しました",
+    "restartFailed": "再起動に失敗しました"
+  },
+  "errors": {
+    "somethingWentWrong": "問題が発生しました",
+    "unknownError": "不明なエラーが発生しました",
+    "errorId": "エラーコード",
+    "copyErrorId": "エラーコードをコピー",
+    "openLogFolder": "ログフォルダを開く",
+    "troubleshootingTips": "トラブルシューティングのヒント",
+    "tip1": "ファイルが破損していないか確認してください",
+    "tip2": "アプリを再起動してみてください",
+    "tip3": "ファイルパスに英数字のみが含まれているか確認してください（オプション）",
+    "label": "エラー:",
+    "imageLoadFailed": "画像の読み込みに失敗しました"
+  },
+  "errorBoundary": {
+    "title": "問題が発生しました",
+    "description": "アプリケーションで予期しないエラーが発生しました。もう一度お試しいただくか、問題が続く場合はサポートにお問い合わせください。",
+    "errorMessage": "エラーメッセージ",
+    "tryAgain": "再試行",
+    "helpText": "この問題が続く場合は、GitHub Issuesに報告してください。上の「ログフォルダを開く」ボタンをクリックしてログファイルを見つけることができます。"
+  },
+  "support": {
+    "title": "ヘルプとサポート",
+    "openLogs": "ログディレクトリを開く",
+    "logsDescription": "問題が発生した場合は、GitHub Issuesに報告してください。ログファイルはアプリの問題を診断するのに役立ちます。",
+    "supportEmail": "問題は https://github.com/dgdev22/loopmate/issues で報告してください"
+  },
+  "resetData": {
+    "title": "すべてのデータをリセット",
+    "button": "すべてのデータを削除",
+    "description": "この操作は元に戻せません。以下のデータがすべて削除されます:",
+    "warning": "警告: この操作は元に戻せません。",
+    "items": {
+      "settings": "設定 (言語、ファイル拡張子、イントロ/アウトロ)",
+      "history": "ジョブ履歴",
+      "queue": "ジョブキュー",
+      "onboarding": "オンボーディング状態"
+    },
+    "confirm": "削除",
+    "cancel": "キャンセル",
+    "success": "すべてのデータが削除されました。",
+    "error": "データ削除中にエラーが発生しました。"
+  },
+  "analytics": {
+    "consentModal": {
+      "title": "LoopMateの改善にご協力ください",
+      "description": "匿名化された使用統計データを送信していただくと、アプリのバグを修正し、機能を改善するのに大いに役立ちます。",
+      "details": "収集されるデータ:",
+      "benefit1": "アプリの使用パターン（どの機能がよく使われるか）",
+      "benefit2": "エラー発生頻度と種類",
+      "benefit3": "パフォーマンスメトリクス（処理時間など）",
+      "allow": "許可",
+      "dontAllow": "許可しない"
+    }
+  },
+  "warnings": {
+    "slowProcessing": "パフォーマンスへの影響",
+    "effectsRequireReencoding": "フェード/パディング効果にはオーディオの再エンコードが必要で、処理が遅くなります。最速処理（10〜30倍高速）を行うには、これらの効果をオフにしてください。",
+    "fastMode": "高速モード有効",
+    "fastModeDesc": "元のオーディオ品質をストリームコピーで使用（再エンコードなし）。処理速度が10〜30倍速くなります！"
+  },
+  "history": {
+    "duration": "実行時間"
+  }
+}

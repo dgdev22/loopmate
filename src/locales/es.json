@@ -1,0 +1,293 @@
+{
+  "app": {
+    "title": "LoopMate",
+    "tagline": "Crea videos en 1 minuto, incluso para principiantes"
+  },
+  "time": {
+    "minutes": "min",
+    "seconds": "seg"
+  },
+  "splash": {
+    "loading": "Cargando..."
+  },
+  "menu": {
+    "title": "Menú",
+    "imageMusic": "Imagen + Música",
+    "loopVideo": "Bucle de Video",
+    "concat": "Concatenar Videos",
+    "settings": "Configuración"
+  },
+  "tabs": {
+    "imageMusic": {
+      "title": "Crear Video de YouTube",
+      "description": "¡Solo música está bien! Crea un video de YouTube 16:9 con fondo negro si no se proporciona imagen."
+    },
+    "loop": {
+      "title": "Extender Bucle de Video",
+      "description": "Extiende un bucle de video corto a la longitud deseada."
+    },
+    "concat": {
+      "title": "Concatenar Videos",
+      "description": "Combina múltiples videos en uno, o aplica intro/outro a un video único."
+    },
+    "settings": {
+      "title": "Configuración",
+      "description": "Establece videos de intro/outro que se pueden aplicar a cada tarea mediante casilla de verificación."
+    }
+  },
+  "buttons": {
+    "addToQueue": "Agregar a Cola",
+    "addToQueueWithCount": "Agregar a Cola ({{count}} elementos)",
+    "addMusic": "Agregar Música",
+    "addVideo": "Agregar Video",
+    "addImage": "Agregar Imagen",
+    "selectFile": "Seleccionar Archivo",
+    "clear": "Limpiar",
+    "remove": "Eliminar",
+    "change": "Cambiar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "buyMeACoffee": "Invítame un café",
+    "duplicate": "Duplicar",
+    "addToQueueWithMusic": "Agregar a la cola ({{count}} pistas)",
+    "addToQueueWithVideos": "Agregar a la cola ({{count}} videos)",
+    "addToQueueNeedsVideo": "Agregar a la cola (Se requiere seleccionar video)",
+    "needsAtLeast2Videos": "Se necesitan al menos 2 videos"
+  },
+  "labels": {
+    "selectImage": "1. Seleccionar Imagen (Opcional)",
+    "selectImageSub": "Fondo negro (16:9) si no se proporciona",
+    "musicPlaylist": "2. Lista de Reproducción (Reproducir en orden)",
+    "musicPlaylistSub": "Se pueden seleccionar múltiples archivos a la vez",
+    "itemsAdded": "{{count}} elementos agregados",
+    "selectVideo": "Archivo de Video",
+    "iterations": "Número de iteraciones (ej: 60)",
+    "videoList": "Lista de Videos",
+    "videoListMultiple": "Lista de Videos (Combinar en orden)"
+  },
+  "options": {
+    "title": "Opciones",
+    "fadeOut": "Aplicar desvanecimiento al final de cada pista",
+    "fadeOutDesc": "Hace que las pistas terminen naturalmente. Esencial para videos de compilación.",
+    "fadeOutDuration": "Duración:",
+    "seconds": "segundos",
+    "padding": "Agregar tiempo de descanso (después de cada pista)",
+    "paddingDesc": "Agrega tiempo de descanso después de cada pista. La imagen continúa, solo la música se pausa. ¡También se agrega después de la última pista para bucles sin interrupciones!",
+    "paddingDuration": "Tiempo de descanso:",
+    "secondsSilence": "segundos (silencio, imagen continúa)",
+    "fadeIn": "Aplicar desvanecimiento al inicio (Opcional)",
+    "fadeInDesc": "Hace que el video comience suavemente.",
+    "videoFadeOut": "Aplicar desvanecimiento al final de cada video",
+    "videoFadeOutDesc": "Hace que los videos terminen naturalmente. Esencial para videos de compilación.",
+    "videoPadding": "Agregar espacio (Relleno) entre videos",
+    "videoPaddingDesc": "Inserta pantalla negra entre videos. Recomendado para videos de compilación."
+  },
+  "settings": {
+    "language": "Idioma",
+    "selectLanguage": "Seleccionar Idioma",
+    "allowAnalytics": "Permitir análisis de uso",
+    "fileExtensions": {
+      "title": "Extensiones de Archivo Permitidas",
+      "description": "Configure qué extensiones de archivo se permiten para cada tipo de archivo. Separe múltiples extensiones con comas (ej: .jpg, .png, .webp).",
+      "image": "Extensiones de Imagen",
+      "video": "Extensiones de Video",
+      "audio": "Extensiones de Audio",
+      "formatHint": "Separe las extensiones con comas. Incluya el punto (ej: .jpg, .png)",
+      "save": "Guardar",
+      "saving": "Guardando...",
+      "reset": "Restablecer a Predeterminado",
+      "saveError": "Error al guardar extensiones de archivo"
+    },
+    "analyticsDescription": "Ayúdanos a mejorar la aplicación compartiendo datos de uso. Puedes cambiar esta configuración en cualquier momento.",
+    "fastMode": {
+      "title": "⚡ Modo Rápido (Recomendado)",
+      "description": "Use la calidad de audio original para máxima velocidad (10-30 veces más rápido)",
+      "disabled": "Deshabilitado en Modo Rápido",
+      "slowWarning": "El procesamiento será significativamente más lento cuando el Modo Rápido esté deshabilitado."
+    },
+    "audioQuality": {
+      "title": "Calidad de Audio",
+      "description": "Elija la calidad de audio para la generación de video. Mayor calidad = mejor sonido pero archivo más grande.",
+      "low": "Baja Calidad",
+      "medium": "Calidad Media",
+      "high": "Alta Calidad (Recomendado)",
+      "studio": "Calidad de Estudio",
+      "codec": "Códec",
+      "bitrate": "Tasa de Bits",
+      "sampleRate": "Frecuencia de Muestreo",
+      "fileSize": "Tamaño del Archivo"
+    }
+  },
+  "status": {
+    "processing": "Procesando...",
+    "completed": "Completado",
+    "failed": "Fallido",
+    "waiting": "Esperando",
+    "cancelled": "Cancelado",
+    "interrupted": "Interrumpido",
+    "ready": "Listo"
+  },
+  "messages": {
+    "videoCreated": "Se creará un video MP4 1920x1080 (16:9) junto al archivo de música original cuando se complete.",
+    "estimatedTime": "Duración estimada del video:",
+    "noHistory": "No hay historial de trabajos.",
+    "historyEmpty": "Los trabajos completados o fallidos aparecerán aquí.",
+    "noJobs": "No hay trabajos en la cola.",
+    "jobsEmpty": "Agrega trabajos para comenzar el procesamiento.",
+    "historyCount": "Historial de trabajos {{count}} elementos",
+    "completedCount": "Completados: {{count}}",
+    "failedCount": "Fallidos: {{count}}",
+    "queueCount": "Cola ({{count}} elementos)"
+  },
+  "rightPanel": {
+    "queue": "Cola",
+    "history": "Historial"
+  },
+  "stepper": {
+    "upload": "Subir archivo",
+    "processing": "Procesando",
+    "complete": "Completado"
+  },
+  "videoGenerator": {
+    "steps": {
+      "selectMusic": "Seleccionar música",
+      "generateVideo": "Generar video",
+      "complete": "Completado"
+    }
+  },
+  "videoLoop": {
+    "step1": "Seleccionar video",
+    "step2": "Procesando bucle",
+    "step3": "Completado"
+  },
+  "videoConcat": {
+    "step1": "Seleccionar videos",
+    "step2": "Combinando",
+    "step3": "Completado"
+  },
+  "job": {
+    "musicVideo": "Video Musical",
+    "videoLoop": "Bucle de Video",
+    "videoConcat": "Concatenar Videos",
+    "playlist": "Video de Lista de Reproducción ({{count}} pistas)",
+    "loopIterations": "{{name}} ({{iterations}} iteraciones)",
+    "concatCount": "Concatenar Videos ({{count}} elementos)",
+    "concatMultiple": "Concatenar Videos ({{count}} videos)",
+    "savedLocation": "Ubicación guardada",
+    "error": "Error",
+    "inputFiles": "{{count}} archivos de entrada"
+  },
+  "common": {
+    "required": "Requerido",
+    "optional": "Opcional",
+    "close": "Cerrar",
+    "delete": "Eliminar",
+    "confirm": "Confirmar",
+    "dropHere": "¡Suelta aquí!",
+    "invalidFileFormat": "Formato de archivo no válido.\nPermitido: {{extensions}}",
+    "waitingCount": "{{count}} en espera",
+    "copied": "¡Copiado!"
+  },
+  "fileDropZone": {
+    "regionLabel": "Zona de arrastre de archivos para {{label}}",
+    "selectFile": "Seleccionar {{label}}. Formatos permitidos: {{extensions}}. Haga clic para explorar o arrastre y suelte un archivo aquí.",
+    "selectedFile": "{{label}} seleccionado: {{fileName}}. Haga clic para cambiar el archivo.",
+    "currentFile": "Archivo actual: {{fileName}}",
+    "allowedFormats": "Formatos permitidos: {{extensions}}",
+    "dragActive": "Archivo listo para soltar"
+  },
+  "timestamps": {
+    "title": "Marcas de tiempo de YouTube",
+    "loading": "Cargando...",
+    "calculating": "Calculando duración de videos...",
+    "copy": "Copiar al portapapeles",
+    "copied": "¡Copiado!",
+    "noVideos": "No hay videos disponibles",
+    "copyHistory": "Copiar marcas de tiempo",
+    "copyTooltip": "Copiar capítulos de YouTube",
+    "copiedNotification": "¡Marcas de tiempo copiadas al portapapeles!"
+  },
+  "about": {
+    "title": "Acerca del desarrollador",
+    "version": "Versión",
+    "missionTitle": "Nuestra misión",
+    "mission": "Sabemos que hacer música consume más energía emocional de lo que piensas. LoopMate fue creado para hacer ese proceso un poco menos agotador y un poco menos doloroso.",
+    "connect": "Conectar",
+    "website": "Sitio web",
+    "support": "Reportar un problema"
+  },
+  "updater": {
+    "available": "Nueva versión disponible",
+    "downloading": "Descargando...",
+    "ready": "Actualización lista",
+    "error": "Error de actualización",
+    "version": "Versión",
+    "download": "Descargar",
+    "restart": "Reiniciar e instalar",
+    "downloadFailed": "Error al descargar",
+    "restartFailed": "Error al reiniciar"
+  },
+  "errors": {
+    "somethingWentWrong": "Algo salió mal",
+    "unknownError": "Ocurrió un error desconocido",
+    "errorId": "Código de error",
+    "copyErrorId": "Copiar código de error",
+    "openLogFolder": "Abrir carpeta de registros",
+    "troubleshootingTips": "Consejos para solucionar problemas",
+    "tip1": "Verifique que el archivo no esté dañado",
+    "tip2": "Intente reiniciar la aplicación",
+    "tip3": "Asegúrese de que la ruta del archivo contenga solo caracteres en inglés (opcional)",
+    "label": "Error:",
+    "imageLoadFailed": "Error al cargar la imagen"
+  },
+  "errorBoundary": {
+    "title": "Algo salió mal",
+    "description": "La aplicación encontró un error inesperado. Por favor, inténtelo de nuevo o contacte con soporte si el problema persiste.",
+    "errorMessage": "Mensaje de error",
+    "tryAgain": "Intentar de nuevo",
+    "helpText": "Si este problema continúa, por favor repórtelo en GitHub Issues. Puede encontrar el archivo de registro haciendo clic en el botón 'Abrir carpeta de registros' arriba."
+  },
+  "support": {
+    "title": "Ayuda y soporte",
+    "openLogs": "Abrir directorio de registros",
+    "logsDescription": "Si encuentra problemas, repórtelos en GitHub Issues. El archivo de registro ayuda a diagnosticar problemas de la aplicación.",
+    "supportEmail": "Por favor reporte problemas en https://github.com/dgdev22/loopmate/issues"
+  },
+  "resetData": {
+    "title": "Restablecer todos los datos",
+    "button": "Borrar todos los datos",
+    "description": "Esta acción no se puede deshacer. Se eliminarán los siguientes datos:",
+    "warning": "Advertencia: Esta acción no se puede deshacer.",
+    "items": {
+      "settings": "Configuración (idioma, extensiones de archivo, intro/outro)",
+      "history": "Historial de trabajos",
+      "queue": "Cola de trabajos",
+      "onboarding": "Estado de incorporación"
+    },
+    "confirm": "Eliminar",
+    "cancel": "Cancelar",
+    "success": "Todos los datos han sido borrados.",
+    "error": "Ocurrió un error al borrar los datos."
+  },
+  "analytics": {
+    "consentModal": {
+      "title": "Ayuda a mejorar LoopMate",
+      "description": "Los datos de uso anónimos nos ayudan a corregir errores y mejorar las funciones.",
+      "details": "Datos recopilados:",
+      "benefit1": "Patrones de uso de la aplicación (qué funciones se usan más)",
+      "benefit2": "Frecuencia y tipos de errores",
+      "benefit3": "Métricas de rendimiento (tiempos de procesamiento, etc.)",
+      "allow": "Permitir",
+      "dontAllow": "No permitir"
+    }
+  },
+  "warnings": {
+    "slowProcessing": "Impacto en el rendimiento",
+    "effectsRequireReencoding": "Los efectos de fundido/relleno requieren recodificación de audio, lo que es más lento. Para el procesamiento más rápido (10-30 veces más rápido), desactiva estos efectos.",
+    "fastMode": "Modo rápido activo",
+    "fastModeDesc": "Usando calidad de audio original con copia de flujo (sin recodificación). ¡El procesamiento será 10-30 veces más rápido!"
+  },
+  "history": {
+    "duration": "Duración"
+  }
+}

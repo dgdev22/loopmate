@@ -1,0 +1,100 @@
+// @see - https://www.electron.build/configuration/configuration
+{
+  "$schema": "https://raw.githubusercontent.com/electron-userland/electron-builder/master/packages/app-builder-lib/scheme.json",
+  "appId": "com.loopmate.app",
+  "asar": true,
+  "productName": "LoopMate",
+  "directories": {
+    "output": "release/${version}",
+    "buildResources": "build"
+  },
+  "files": [
+    "dist",
+    "dist-electron",
+    "node_modules/ffmpeg-static",
+    "node_modules/ffprobe-static"
+  ],
+  "asarUnpack": [
+    "**/node_modules/ffmpeg-static/**/*",
+    "**/node_modules/ffprobe-static/**/*"
+  ],
+  "mac": {
+    "target": [
+      {
+        "target": "dmg",
+        "arch": ["x64", "arm64"]
+      }
+    ],
+    "icon": "build/icon.icns",
+    "artifactName": "${productName}-Mac-${version}.${ext}",
+    "category": "public.app-category.utilities"
+  },
+  "win": {
+    "target": [
+      {
+        "target": "portable",
+        "arch": ["x64"]
+      }
+    ],
+    "icon": "build/icon.ico",
+    "artifactName": "${productName}-Windows-${version}.${ext}"
+  },
+  "portable": {
+    "artifactName": "${productName}-Windows-${version}-Portable.${ext}"
+  },
+  "appx": {
+    // Microsoft Store 등록용 MSIX 설정
+    // electron-builder의 appx 타겟은 MSIX 형식의 .appx 파일을 생성합니다
+    // 자세한 가이드는 MICROSOFT_STORE_GUIDE.md 참조
+    // 
+    // Microsoft Partner Center 정보:
+    // - Package/Identity/Name: DaegeonLee.LoopMate
+    // - Package/Identity/Publisher: CN=56A50446-8D95-41BF-8A73-A8A2DC880384
+    // - Package/Properties/PublisherDisplayName: Daegeon Lee
+    // - Package Family Name (PFN): DaegeonLee.LoopMate_bythk74cy8k08
+    // - Store ID: 9MT1X7N9VQM4
+    "publisher": "CN=56A50446-8D95-41BF-8A73-A8A2DC880384",
+    "publisherDisplayName": "Daegeon Lee",
+    "identityName": "DaegeonLee.LoopMate",
+    "applicationId": "LoopMate",
+    // 지원 언어 목록 (앱에서 지원하는 15개 언어)
+    "languages": [
+      "ko-KR",
+      "en-US",
+      "ja-JP",
+      "zh-CN",
+      "es-ES",
+      "fr-FR",
+      "de-DE",
+      "pt-BR",
+      "ru-RU",
+      "hi-IN",
+      "ar-SA",
+      "id-ID",
+      "vi-VN",
+      "th-TH",
+      "it-IT"
+    ],
+    "artifactName": "${productName}-Store-${version}.${ext}",
+    "backgroundColor": "#020617",
+    "displayName": "LoopMate"
+  },
+  // NSIS 설치 프로그램은 더 이상 기본으로 사용하지 않습니다 (포터블이 트렌드)
+  // 필요시 아래 설정을 사용하세요:
+  // "nsis": {
+  //   "target": "nsis",
+  //   "oneClick": false,
+  //   "perMachine": false,
+  //   "allowToChangeInstallationDirectory": true,
+  //   "deleteAppDataOnUninstall": false,
+  //   "artifactName": "${productName}-Windows-${version}-Setup.${ext}"
+  // },
+  "linux": {
+    "target": [
+      "AppImage"
+    ],
+    "icon": "build/icon.png",
+    "artifactName": "${productName}-Linux-${version}.${ext}"
+  },
+  "publish": null
+}

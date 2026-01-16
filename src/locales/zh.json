@@ -1,0 +1,293 @@
+{
+  "app": {
+    "title": "LoopMate",
+    "tagline": "即使是初学者也能在1分钟内完成视频制作"
+  },
+  "time": {
+    "minutes": "分钟",
+    "seconds": "秒"
+  },
+  "splash": {
+    "loading": "加载中..."
+  },
+  "menu": {
+    "title": "菜单",
+    "imageMusic": "图片 + 音乐",
+    "loopVideo": "视频循环",
+    "concat": "视频合并",
+    "settings": "设置"
+  },
+  "tabs": {
+    "imageMusic": {
+      "title": "创建YouTube视频",
+      "description": "只有音乐也可以！如果没有图片，将创建黑色背景的16:9 YouTube视频。"
+    },
+    "loop": {
+      "title": "延长视频循环",
+      "description": "将短视频循环延长到您想要的长度。"
+    },
+    "concat": {
+      "title": "合并视频",
+      "description": "将多个视频合并为一个，或对单个视频应用片头/片尾。"
+    },
+    "settings": {
+      "title": "设置",
+      "description": "设置片头/片尾视频，可以通过复选框在每个任务中应用。"
+    }
+  },
+  "buttons": {
+    "addToQueue": "添加到队列",
+    "addToQueueWithCount": "添加到队列 ({{count}}项)",
+    "addMusic": "添加音乐",
+    "addVideo": "添加视频",
+    "addImage": "添加图片",
+    "selectFile": "选择文件",
+    "clear": "清除",
+    "remove": "删除",
+    "change": "更改",
+    "save": "保存",
+    "cancel": "取消",
+    "buyMeACoffee": "请我喝咖啡",
+    "duplicate": "复制",
+    "addToQueueWithMusic": "添加到队列 ({{count}}首)",
+    "addToQueueWithVideos": "添加到队列 ({{count}}个视频)",
+    "addToQueueNeedsVideo": "添加到队列 (需要选择视频)",
+    "needsAtLeast2Videos": "至少需要2个视频"
+  },
+  "labels": {
+    "selectImage": "1. 选择图片 (可选)",
+    "selectImageSub": "如果没有则使用黑色背景 (16:9)",
+    "musicPlaylist": "2. 音乐播放列表 (按顺序播放)",
+    "musicPlaylistSub": "可以一次选择多个文件",
+    "itemsAdded": "已添加 {{count}} 项",
+    "selectVideo": "视频文件",
+    "iterations": "循环次数 (例如: 60次)",
+    "videoList": "视频列表",
+    "videoListMultiple": "视频列表 (按顺序合并)"
+  },
+  "options": {
+    "title": "选项设置",
+    "fadeOut": "在每个音轨结尾应用淡出",
+    "fadeOutDesc": "使音轨自然结束。合辑视频必需。",
+    "fadeOutDuration": "时长:",
+    "seconds": "秒",
+    "padding": "添加休息时间（每首歌后）",
+    "paddingDesc": "在每首歌后添加休息时间。图像继续显示，仅音乐暂停。为了循环播放时自然衔接，最后一首歌后也会添加！",
+    "paddingDuration": "休息时间:",
+    "secondsSilence": "秒（静音，图像继续显示）",
+    "fadeIn": "在开始时应用淡入 (可选)",
+    "fadeInDesc": "使视频平滑开始。",
+    "videoFadeOut": "在每个视频结尾应用淡出",
+    "videoFadeOutDesc": "使视频自然结束。合辑视频必需。",
+    "videoPadding": "在视频之间添加间隔(填充)",
+    "videoPaddingDesc": "在视频之间插入黑屏。推荐用于合辑视频。"
+  },
+  "settings": {
+    "language": "语言",
+    "selectLanguage": "选择语言",
+    "allowAnalytics": "允许使用分析数据",
+    "fileExtensions": {
+      "title": "允许的文件扩展名",
+      "description": "配置每种文件类型允许的文件扩展名。多个扩展名用逗号分隔（例如：.jpg, .png, .webp）。",
+      "image": "图像扩展名",
+      "video": "视频扩展名",
+      "audio": "音频扩展名",
+      "formatHint": "扩展名用逗号分隔。包含点（例如：.jpg, .png）",
+      "save": "保存",
+      "saving": "保存中...",
+      "reset": "重置为默认值",
+      "saveError": "保存文件扩展名失败"
+    },
+    "analyticsDescription": "通过分析应用使用模式帮助我们改进服务。您可以随时更改此设置。",
+    "fastMode": {
+      "title": "⚡ 快速模式（推荐）",
+      "description": "使用原始音频质量以获得最大速度（快10-30倍）",
+      "disabled": "在快速模式下禁用",
+      "slowWarning": "禁用快速模式时，处理速度会明显变慢。"
+    },
+    "audioQuality": {
+      "title": "音质设置",
+      "description": "选择视频生成时使用的音质。高音质 = 更好的声音，更大的文件",
+      "low": "低音质",
+      "medium": "中音质",
+      "high": "高音质（推荐）",
+      "studio": "录音室音质",
+      "codec": "编解码器",
+      "bitrate": "比特率",
+      "sampleRate": "采样率",
+      "fileSize": "文件大小"
+    }
+  },
+  "status": {
+    "processing": "处理中...",
+    "completed": "已完成",
+    "failed": "失败",
+    "waiting": "等待中",
+    "cancelled": "已取消",
+    "interrupted": "已中断",
+    "ready": "就绪"
+  },
+  "messages": {
+    "videoCreated": "完成时，将在原始音乐文件旁边创建1920x1080 (16:9) MP4视频。",
+    "estimatedTime": "预计视频时长:",
+    "noHistory": "没有任务历史记录。",
+    "historyEmpty": "已完成或失败的任务将显示在这里。",
+    "noJobs": "队列中没有任务。",
+    "jobsEmpty": "添加任务以开始处理。",
+    "historyCount": "任务历史记录 {{count}} 项",
+    "completedCount": "已完成: {{count}}",
+    "failedCount": "失败: {{count}}",
+    "queueCount": "队列 ({{count}}项)"
+  },
+  "rightPanel": {
+    "queue": "队列",
+    "history": "历史记录"
+  },
+  "stepper": {
+    "upload": "文件选择",
+    "processing": "转换处理",
+    "complete": "完成"
+  },
+  "videoGenerator": {
+    "steps": {
+      "selectMusic": "选择音乐",
+      "generateVideo": "生成视频",
+      "complete": "完成"
+    }
+  },
+  "videoLoop": {
+    "step1": "视频选择",
+    "step2": "循环处理",
+    "step3": "完成"
+  },
+  "videoConcat": {
+    "step1": "视频选择",
+    "step2": "合并处理",
+    "step3": "完成"
+  },
+  "job": {
+    "musicVideo": "音乐视频",
+    "videoLoop": "视频循环",
+    "videoConcat": "合并视频",
+    "playlist": "播放列表视频 ({{count}}首音乐)",
+    "loopIterations": "{{name}} ({{iterations}}次循环)",
+    "concatCount": "合并视频 ({{count}}项)",
+    "concatMultiple": "合并视频 ({{count}}个视频)",
+    "savedLocation": "保存位置",
+    "error": "错误",
+    "inputFiles": "{{count}}个输入文件"
+  },
+  "common": {
+    "required": "必需",
+    "optional": "可选",
+    "close": "关闭",
+    "delete": "删除",
+    "confirm": "确认",
+    "dropHere": "拖放到这里！",
+    "invalidFileFormat": "无效的文件格式。\n允许: {{extensions}}",
+    "waitingCount": "{{count}}个等待中",
+    "copied": "已复制！"
+  },
+  "fileDropZone": {
+    "regionLabel": "{{label}}文件拖放区域",
+    "selectFile": "选择{{label}}。允许格式: {{extensions}}。点击浏览或将文件拖放到此处。",
+    "selectedFile": "已选择{{label}}: {{fileName}}。点击更改文件。",
+    "currentFile": "当前文件: {{fileName}}",
+    "allowedFormats": "允许格式: {{extensions}}",
+    "dragActive": "文件已准备好放置"
+  },
+  "timestamps": {
+    "title": "YouTube时间戳",
+    "loading": "加载中...",
+    "calculating": "正在计算视频时长...",
+    "copy": "复制到剪贴板",
+    "copied": "已复制！",
+    "noVideos": "没有可用的视频",
+    "copyHistory": "复制时间戳",
+    "copyTooltip": "复制YouTube章节",
+    "copiedNotification": "时间戳已复制到剪贴板！"
+  },
+  "about": {
+    "title": "关于开发者",
+    "version": "版本",
+    "missionTitle": "我们的使命",
+    "mission": "我们知道制作音乐的过程比想象中消耗更多的情感能量。LoopMate的诞生是为了让这个过程不那么累，不那么受伤。",
+    "connect": "连接",
+    "website": "网站",
+    "support": "报告问题"
+  },
+  "updater": {
+    "available": "新版本可用",
+    "downloading": "下载中...",
+    "ready": "更新就绪",
+    "error": "更新错误",
+    "version": "版本",
+    "download": "下载",
+    "restart": "重启并安装",
+    "downloadFailed": "下载失败",
+    "restartFailed": "重启失败"
+  },
+  "errors": {
+    "somethingWentWrong": "出现了问题",
+    "unknownError": "发生未知错误",
+    "errorId": "错误代码",
+    "copyErrorId": "复制错误代码",
+    "openLogFolder": "打开日志文件夹",
+    "troubleshootingTips": "故障排除提示",
+    "tip1": "检查文件是否未损坏",
+    "tip2": "尝试重启应用",
+    "tip3": "确保文件路径仅包含英文字符（可选）",
+    "label": "错误：",
+    "imageLoadFailed": "无法加载图像"
+  },
+  "errorBoundary": {
+    "title": "出现了问题",
+    "description": "应用程序遇到了意外错误。请重试，如果问题持续存在，请联系支持。",
+    "errorMessage": "错误消息",
+    "tryAgain": "重试",
+    "helpText": "如果此问题持续存在，请在GitHub Issues上报告。您可以单击上方的\"打开日志文件夹\"按钮找到日志文件。"
+  },
+  "support": {
+    "title": "帮助和支持",
+    "openLogs": "打开日志目录",
+    "logsDescription": "如果遇到问题，请在GitHub Issues上报告。日志文件有助于诊断应用程序问题。",
+    "supportEmail": "请在 https://github.com/dgdev22/loopmate/issues 报告问题"
+  },
+  "resetData": {
+    "title": "重置所有数据",
+    "button": "清除所有数据",
+    "description": "此操作无法撤消。以下数据将被删除:",
+    "warning": "警告: 此操作无法撤消。",
+    "items": {
+      "settings": "设置 (语言、文件扩展名、片头/片尾)",
+      "history": "作业历史",
+      "queue": "作业队列",
+      "onboarding": "入门状态"
+    },
+    "confirm": "删除",
+    "cancel": "取消",
+    "success": "所有数据已清除。",
+    "error": "清除数据时发生错误。"
+  },
+  "analytics": {
+    "consentModal": {
+      "title": "帮助改进 LoopMate",
+      "description": "匿名使用数据帮助我们修复错误并改进功能。",
+      "details": "收集的数据:",
+      "benefit1": "应用使用模式（最常用的功能）",
+      "benefit2": "错误频率和类型",
+      "benefit3": "性能指标（处理时间等）",
+      "allow": "允许",
+      "dontAllow": "不允许"
+    }
+  },
+  "warnings": {
+    "slowProcessing": "性能影响",
+    "effectsRequireReencoding": "淡入淡出/填充效果需要重新编码音频，速度较慢。若要最快处理（快10-30倍），请关闭这些效果。",
+    "fastMode": "快速模式已启用",
+    "fastModeDesc": "使用原始音频质量进行流复制（无重新编码）。处理速度将快10-30倍！"
+  },
+  "history": {
+    "duration": "执行时间"
+  }
+}

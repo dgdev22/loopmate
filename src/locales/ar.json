@@ -1,0 +1,299 @@
+{
+  "app": {
+    "title": "LoopMate",
+    "tagline": "Crie vídeos em 1 minuto, mesmo para iniciantes"
+  },
+  "time": {
+    "minutes": "دقيقة",
+    "seconds": "ثانية"
+  },
+  "splash": {
+    "loading": "جاري التحميل..."
+  },
+  "menu": {
+    "title": "Menu",
+    "imageMusic": "Imagem + Música",
+    "loopVideo": "Loop de Vídeo",
+    "concat": "Concatenar Vídeos",
+    "settings": "Configurações"
+  },
+  "tabs": {
+    "imageMusic": {
+      "title": "Criar Vídeo do YouTube",
+      "description": "Só música está OK! Cria um vídeo 16:9 do YouTube com fundo preto se nenhuma imagem for fornecida."
+    },
+    "loop": {
+      "title": "Estender Loop de Vídeo",
+      "description": "Estende um loop de vídeo curto para o comprimento desejado."
+    },
+    "concat": {
+      "title": "Concatenar Vídeos",
+      "description": "Mescla vários vídeos em um, ou aplica intro/outro a um único vídeo."
+    },
+    "settings": {
+      "title": "Configurações",
+      "description": "Defina vídeos de intro/outro que podem ser aplicados a cada tarefa via checkbox."
+    }
+  },
+  "buttons": {
+    "addToQueue": "Adicionar à Fila",
+    "addToQueueWithCount": "Adicionar à Fila ({{count}} itens)",
+    "addMusic": "Adicionar Música",
+    "addVideo": "Adicionar Vídeo",
+    "addImage": "Adicionar Imagem",
+    "selectFile": "Selecionar Arquivo",
+    "clear": "Limpar",
+    "remove": "Remover",
+    "change": "تغيير",
+    "save": "Salvar",
+    "cancel": "إلغاء",
+    "buyMeACoffee": "اشتري لي قهوة",
+    "duplicate": "تكرار",
+    "addToQueueWithMusic": "إضافة إلى قائمة الانتظار ({{count}} مسارات)",
+    "addToQueueWithVideos": "إضافة إلى قائمة الانتظار ({{count}} فيديو)",
+    "addToQueueNeedsVideo": "إضافة إلى قائمة الانتظار (يتطلب اختيار فيديو)",
+    "needsAtLeast2Videos": "يجب أن يكون هناك مقطعا فيديو على الأقل"
+  },
+  "labels": {
+    "selectImage": "1. Selecionar Imagem (Opcional)",
+    "selectImageSub": "Fundo preto (16:9) se não fornecido",
+    "musicPlaylist": "2. Lista de Reprodução (Reproduzir em ordem)",
+    "musicPlaylistSub": "Múltiplos arquivos podem ser selecionados de uma vez",
+    "itemsAdded": "{{count}} itens adicionados",
+    "selectVideo": "Arquivo de Vídeo",
+    "iterations": "Número de iterações (ex: 60)",
+    "videoList": "Lista de Vídeos",
+    "videoListMultiple": "Lista de Vídeos (Mesclar em ordem)"
+  },
+  "options": {
+    "title": "Opções",
+    "fadeOut": "Aplicar fade out no final de cada faixa",
+    "fadeOutDesc": "Faz as faixas terminarem naturalmente. Essencial para vídeos de compilação.",
+    "fadeOutDuration": "المدة:",
+    "seconds": "ثواني",
+    "padding": "إضافة وقت راحة (بعد كل مقطع)",
+    "paddingDesc": "يضيف وقت راحة بعد كل مقطع. تستمر الصورة، والموسيقى فقط تتوقف. يُضاف أيضًا بعد المقطع الأخير للحلقات السلسة!",
+    "paddingDuration": "وقت الراحة:",
+    "secondsSilence": "ثواني (صمت، الصورة مستمرة)",
+    "fadeIn": "Aplicar fade in no início (Opcional)",
+    "fadeInDesc": "Faz o vídeo começar suavemente.",
+    "videoFadeOut": "Aplicar fade out no final de cada vídeo",
+    "videoFadeOutDesc": "Faz os vídeos terminarem naturalmente. Essencial para vídeos de compilação.",
+    "videoPadding": "Adicionar espaço (Preenchimento) entre vídeos",
+    "videoPaddingDesc": "Insere tela preta entre vídeos. Recomendado para vídeos de compilação."
+  },
+  "settings": {
+    "language": "اللغة",
+    "selectLanguage": "اختر اللغة",
+    "allowAnalytics": "السماح بتحليل الاستخدام",
+    "fileExtensions": {
+      "title": "امتدادات الملفات المسموحة",
+      "description": "قم بتكوين امتدادات الملفات المسموحة لكل نوع ملف. افصل بين عدة امتدادات بفواصل (مثال: .jpg, .png, .webp).",
+      "image": "امتدادات الصور",
+      "video": "امتدادات الفيديو",
+      "audio": "امتدادات الصوت",
+      "formatHint": "افصل بين الامتدادات بفواصل. قم بتضمين النقطة (مثال: .jpg, .png)",
+      "save": "حفظ",
+      "saving": "جاري الحفظ...",
+      "reset": "إعادة تعيين إلى الافتراضي",
+      "saveError": "فشل حفظ امتدادات الملفات"
+    },
+    "analyticsDescription": "ساعدنا في تحسين التطبيق من خلال مشاركة بيانات الاستخدام. يمكنك تغيير هذا الإعداد في أي وقت.",
+    "fastMode": {
+      "title": "⚡ الوضع السريع (موصى به)",
+      "description": "استخدم جودة الصوت الأصلية للحصول على أقصى سرعة (أسرع 10-30 مرة)",
+      "disabled": "معطل في الوضع السريع",
+      "slowWarning": "ستكون المعالجة أبطأ بكثير عند تعطيل الوضع السريع."
+    },
+    "audioQuality": {
+      "title": "جودة الصوت",
+      "description": "اختر جودة الصوت لإنشاء الفيديو. جودة أعلى = صوت أفضل، حجم ملف أكبر.",
+      "low": "جودة منخفضة",
+      "medium": "جودة متوسطة",
+      "high": "جودة عالية (موصى به)",
+      "studio": "جودة الاستوديو",
+      "codec": "الترميز",
+      "bitrate": "معدل البت",
+      "sampleRate": "معدل العينة",
+      "fileSize": "حجم الملف"
+    }
+  },
+  "status": {
+    "processing": "جاري المعالجة...",
+    "completed": "مكتمل",
+    "failed": "فشل",
+    "waiting": "في الانتظار",
+    "cancelled": "ملغي",
+    "interrupted": "مقاطَع",
+    "ready": "جاهز"
+  },
+  "messages": {
+    "videoCreated": "Um vídeo MP4 1920x1080 (16:9) será criado ao lado do arquivo de música original quando concluído.",
+    "estimatedTime": "Duração estimada do vídeo:",
+    "noHistory": "Nenhum histórico de tarefas.",
+    "historyEmpty": "Tarefas concluídas ou falhadas aparecerão aqui.",
+    "noJobs": "Nenhuma tarefa na fila.",
+    "jobsEmpty": "Adicione tarefas para iniciar o processamento.",
+    "historyCount": "Histórico de tarefas {{count}} itens",
+    "completedCount": "Concluídos: {{count}}",
+    "failedCount": "Falhados: {{count}}",
+    "queueCount": "Fila ({{count}} itens)"
+  },
+  "rightPanel": {
+    "queue": "قائمة الانتظار",
+    "history": "السجل"
+  },
+  "stepper": {
+    "upload": "اختيار الملف",
+    "processing": "المعالجة",
+    "complete": "مكتمل"
+  },
+  "videoGenerator": {
+    "steps": {
+      "selectMusic": "اختيار الموسيقى",
+      "generateVideo": "إنشاء الفيديو",
+      "complete": "مكتمل"
+    }
+  },
+  "videoLoop": {
+    "step1": "اختيار الفيديو",
+    "step2": "معالجة الحلقة",
+    "step3": "مكتمل"
+  },
+  "videoConcat": {
+    "step1": "اختيار الفيديوهات",
+    "step2": "الدمج",
+    "step3": "مكتمل"
+  },
+  "job": {
+    "musicVideo": "Vídeo Musical",
+    "videoLoop": "Loop de Vídeo",
+    "videoConcat": "Concatenar Vídeos",
+    "playlist": "Vídeo de Lista de Reprodução ({{count}} faixas)",
+    "loopIterations": "{{name}} ({{iterations}} iterações)",
+    "concatCount": "Concatenar Vídeos ({{count}} itens)",
+    "concatMultiple": "إضافة إلى قائمة الانتظار ({{count}} فيديو)",
+    "savedLocation": "الموقع المحفوظ",
+    "error": "خطأ",
+    "inputFiles": "{{count}} ملفات الإدخال"
+  },
+  "common": {
+    "required": "Requerido",
+    "optional": "Opcional",
+    "close": "Fechar",
+    "delete": "Excluir",
+    "confirm": "Confirmar",
+    "dropHere": "أسقط هنا!",
+    "invalidFileFormat": "تنسيق الملف غير صالح.\nمسموح: {{extensions}}",
+    "waitingCount": "{{count}} في الانتظار",
+    "copied": "تم النسخ!"
+  },
+  "fileDropZone": {
+    "regionLabel": "منطقة إسقاط الملفات لـ {{label}}",
+    "selectFile": "اختر {{label}}. التنسيقات المسموحة: {{extensions}}. انقر للتصفح أو اسحب وأفلت ملفًا هنا.",
+    "selectedFile": "تم اختيار {{label}}: {{fileName}}. انقر لتغيير الملف.",
+    "currentFile": "الملف الحالي: {{fileName}}",
+    "allowedFormats": "التنسيقات المسموحة: {{extensions}}",
+    "dragActive": "الملف جاهز للإسقاط"
+  },
+  "tos": {
+    "title": "Termos de Serviço",
+    "content": "1. Isenção de Responsabilidade: Este software é fornecido \"como está\" sem garantia de qualquer tipo. O desenvolvedor não oferece garantias quanto ao desempenho ou confiabilidade do software.\n\n2. Limitação de Responsabilidade: Em nenhuma circunstância o desenvolvedor será responsável por quaisquer danos (incluindo, sem limitação, perda de dados ou interrupção de negócios) decorrentes do uso deste software. Sempre faça backup de seus arquivos.\n\n3. Código Aberto: Este software usa FFmpeg licenciado sob LGPLv2.1.",
+    "button_agree": "Eu Concordo e Inicio",
+    "notice": "Esta tradução é fornecida por conveniência. A versão em inglês é legalmente vinculativa."
+  },
+  "timestamps": {
+    "title": "طوابع زمنية لـ YouTube",
+    "loading": "جاري التحميل...",
+    "calculating": "جاري حساب مدة الفيديو...",
+    "copy": "نسخ إلى الحافظة",
+    "copied": "تم النسخ!",
+    "noVideos": "لا توجد مقاطع فيديو متاحة",
+    "copyHistory": "نسخ الطوابع الزمنية",
+    "copyTooltip": "نسخ فصول YouTube",
+    "copiedNotification": "تم نسخ الطوابع الزمنية إلى الحافظة!"
+  },
+  "about": {
+    "title": "حول المطور",
+    "version": "الإصدار",
+    "missionTitle": "مهمتنا",
+    "mission": "نحن نعلم أن صنع الموسيقى يتطلب طاقة عاطفية أكثر مما تعتقد. تم إنشاء LoopMate لجعل هذه العملية أقل إرهاقًا وأقل إيلامًا.",
+    "connect": "الاتصال",
+    "website": "الموقع الإلكتروني",
+    "support": "الإبلاغ عن مشكلة"
+  },
+  "updater": {
+    "available": "إصدار جديد متاح",
+    "downloading": "جاري التنزيل...",
+    "ready": "التحديث جاهز",
+    "error": "خطأ في التحديث",
+    "version": "الإصدار",
+    "download": "تنزيل",
+    "restart": "إعادة التشغيل والتثبيت",
+    "downloadFailed": "فشل التنزيل",
+    "restartFailed": "فشلت إعادة التشغيل"
+  },
+  "errors": {
+    "somethingWentWrong": "حدث خطأ ما",
+    "unknownError": "حدث خطأ غير معروف",
+    "errorId": "رمز الخطأ",
+    "copyErrorId": "نسخ رمز الخطأ",
+    "openLogFolder": "فتح مجلد السجلات",
+    "troubleshootingTips": "نصائح استكشاف الأخطاء",
+    "tip1": "تحقق من أن الملف غير تالف",
+    "tip2": "حاول إعادة تشغيل التطبيق",
+    "tip3": "تأكد من أن مسار الملف يحتوي فقط على أحرف إنجليزية (اختياري)",
+    "label": "خطأ:",
+    "imageLoadFailed": "فشل في تحميل الصورة"
+  },
+  "errorBoundary": {
+    "title": "حدث خطأ ما",
+    "description": "واجه التطبيق خطأ غير متوقع. يرجى المحاولة مرة أخرى أو الاتصال بالدعم إذا استمرت المشكلة.",
+    "errorMessage": "رسالة الخطأ",
+    "tryAgain": "حاول مرة أخرى",
+    "helpText": "إذا استمرت هذه المشكلة، يرجى الإبلاغ عنها على GitHub Issues. يمكنك العثور على ملف السجل بالنقر فوق الزر 'فتح مجلد السجلات' أعلاه."
+  },
+  "support": {
+    "title": "المساعدة والدعم",
+    "openLogs": "فتح دليل السجلات",
+    "logsDescription": "إذا واجهت مشاكل، يرجى الإبلاغ عنها على GitHub Issues. يساعد ملف السجل في تشخيص مشاكل التطبيق.",
+    "supportEmail": "يرجى الإبلاغ عن المشاكل على https://github.com/dgdev22/loopmate/issues"
+  },
+  "resetData": {
+    "title": "إعادة تعيين جميع البيانات",
+    "button": "مسح جميع البيانات",
+    "description": "لا يمكن التراجع عن هذا الإجراء. سيتم حذف البيانات التالية:",
+    "warning": "تحذير: لا يمكن التراجع عن هذا الإجراء.",
+    "items": {
+      "settings": "الإعدادات (اللغة، ملحقات الملفات، المقدمة/الخاتمة)",
+      "history": "سجل المهام",
+      "queue": "قائمة انتظار المهام",
+      "onboarding": "حالة التمهيد"
+    },
+    "confirm": "حذف",
+    "cancel": "إلغاء",
+    "success": "تم مسح جميع البيانات.",
+    "error": "حدث خطأ أثناء مسح البيانات."
+  },
+  "analytics": {
+    "consentModal": {
+      "title": "ساعد في تحسين LoopMate",
+      "description": "البيانات المجهولة تساعدنا على إصلاح الأخطاء وتحسين الميزات.",
+      "details": "البيانات المجمعة:",
+      "benefit1": "أنماط استخدام التطبيق (الميزات الأكثر استخدامًا)",
+      "benefit2": "تكرار وأنواع الأخطاء",
+      "benefit3": "مقاييس الأداء (أوقات المعالجة وما إلى ذلك)",
+      "allow": "السماح",
+      "dontAllow": "عدم السماح"
+    }
+  },
+  "warnings": {
+    "slowProcessing": "تأثير الأداء",
+    "effectsRequireReencoding": "تتطلب تأثيرات التلاشي/الحشو إعادة ترميز الصوت، وهو أبطأ. للمعالجة الأسرع (أسرع 10-30 مرة)، قم بإيقاف تشغيل هذه التأثيرات.",
+    "fastMode": "الوضع السريع نشط",
+    "fastModeDesc": "استخدام جودة الصوت الأصلية مع نسخ التدفق (بدون إعادة ترميز). ستكون المعالجة أسرع 10-30 مرة!"
+  },
+  "history": {
+    "duration": "المدة"
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "app": {
+    "title": "LoopMate",
+    "tagline": "Erstellen Sie Videos in 1 Minute, auch für Anfänger"
+  },
+  "time": {
+    "minutes": "Min",
+    "seconds": "Sek"
+  },
+  "splash": {
+    "loading": "Laden..."
+  },
+  "menu": {
+    "title": "Menü",
+    "imageMusic": "Bild + Musik",
+    "loopVideo": "Video-Schleife",
+    "concat": "Videos verketten",
+    "settings": "Einstellungen"
+  },
+  "tabs": {
+    "imageMusic": {
+      "title": "YouTube-Video erstellen",
+      "description": "Nur Musik ist OK! Erstellt ein 16:9 YouTube-Video mit schwarzem Hintergrund, wenn kein Bild bereitgestellt wird."
+    },
+    "loop": {
+      "title": "Video-Schleife verlängern",
+      "description": "Verlängert eine kurze Video-Schleife auf die gewünschte Länge."
+    },
+    "concat": {
+      "title": "Videos verketten",
+      "description": "Mehrere Videos zu einem zusammenführen oder Intro/Outro auf ein einzelnes Video anwenden."
+    },
+    "settings": {
+      "title": "Einstellungen",
+      "description": "Legen Sie Intro/Outro-Videos fest, die über eine Checkbox auf jede Aufgabe angewendet werden können."
+    }
+  },
+  "buttons": {
+    "addToQueue": "Zur Warteschlange hinzufügen",
+    "addToQueueWithCount": "Zur Warteschlange hinzufügen ({{count}} Elemente)",
+    "addMusic": "Musik hinzufügen",
+    "addVideo": "Video hinzufügen",
+    "addImage": "Bild hinzufügen",
+    "selectFile": "Datei auswählen",
+    "clear": "Löschen",
+    "remove": "Entfernen",
+    "change": "Ändern",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "buyMeACoffee": "Kauf mir einen Kaffee",
+    "duplicate": "Duplizieren",
+    "addToQueueWithMusic": "Zur Warteschlange hinzufügen ({{count}} Titel)",
+    "addToQueueWithVideos": "Zur Warteschlange hinzufügen ({{count}} Videos)",
+    "addToQueueNeedsVideo": "Zur Warteschlange hinzufügen (Video auswählen erforderlich)",
+    "needsAtLeast2Videos": "Mindestens 2 Videos erforderlich"
+  },
+  "labels": {
+    "selectImage": "1. Bild auswählen (Optional)",
+    "selectImageSub": "Schwarzer Hintergrund (16:9) falls nicht bereitgestellt",
+    "musicPlaylist": "2. Musik-Playlist (In Reihenfolge abspielen)",
+    "musicPlaylistSub": "Mehrere Dateien können gleichzeitig ausgewählt werden",
+    "itemsAdded": "{{count}} Elemente hinzugefügt",
+    "selectVideo": "Videodatei",
+    "iterations": "Anzahl der Wiederholungen (z.B. 60)",
+    "videoList": "Videoliste",
+    "videoListMultiple": "Videoliste (In Reihenfolge zusammenführen)"
+  },
+  "options": {
+    "title": "Optionen",
+    "fadeOut": "Ausblenden am Ende jedes Tracks anwenden",
+    "fadeOutDesc": "Lässt Tracks natürlich enden. Wesentlich für Kompilationsvideos.",
+    "fadeOutDuration": "Dauer:",
+    "seconds": "Sekunden",
+    "padding": "Pausenzeit hinzufügen (nach jedem Track)",
+    "paddingDesc": "Fügt Pausenzeit nach jedem Track hinzu. Bild wird weiter angezeigt, nur Musik pausiert. Auch nach dem letzten Track hinzugefügt für nahtlose Schleifen!",
+    "paddingDuration": "Pausenzeit:",
+    "secondsSilence": "Sekunden (Stille, Bild läuft weiter)",
+    "fadeIn": "Einblenden am Anfang anwenden (Optional)",
+    "fadeInDesc": "Lässt das Video sanft beginnen.",
+    "videoFadeOut": "Ausblenden am Ende jedes Videos anwenden",
+    "videoFadeOutDesc": "Lässt Videos natürlich enden. Wesentlich für Kompilationsvideos.",
+    "videoPadding": "Abstand (Auffüllung) zwischen Videos hinzufügen",
+    "videoPaddingDesc": "Fügt schwarzen Bildschirm zwischen Videos ein. Empfohlen für Kompilationsvideos."
+  },
+  "settings": {
+    "language": "Sprache",
+    "selectLanguage": "Sprache auswählen",
+    "allowAnalytics": "Nutzungsanalyse zulassen",
+    "fileExtensions": {
+      "title": "Erlaubte Dateierweiterungen",
+      "description": "Konfigurieren Sie, welche Dateierweiterungen für jeden Dateityp erlaubt sind. Trennen Sie mehrere Erweiterungen durch Kommas (z.B.: .jpg, .png, .webp).",
+      "image": "Bild-Erweiterungen",
+      "video": "Video-Erweiterungen",
+      "audio": "Audio-Erweiterungen",
+      "formatHint": "Trennen Sie Erweiterungen durch Kommas. Fügen Sie den Punkt ein (z.B.: .jpg, .png)",
+      "save": "Speichern",
+      "saving": "Speichern...",
+      "reset": "Auf Standard zurücksetzen",
+      "saveError": "Fehler beim Speichern der Dateierweiterungen"
+    },
+    "analyticsDescription": "Helfen Sie uns, die App zu verbessern, indem Sie Nutzungsdaten teilen. Sie können diese Einstellung jederzeit ändern.",
+    "fastMode": {
+      "title": "⚡ Schnellmodus (Empfohlen)",
+      "description": "Verwenden Sie die ursprüngliche Audioqualität für maximale Geschwindigkeit (10-30x schneller)",
+      "disabled": "Im Schnellmodus deaktiviert",
+      "slowWarning": "Die Verarbeitung wird erheblich langsamer sein, wenn der Schnellmodus deaktiviert ist."
+    },
+    "audioQuality": {
+      "title": "Audioqualität",
+      "description": "Wählen Sie die Audioqualität für die Videogenerierung. Höhere Qualität = besserer Klang, größere Datei.",
+      "low": "Niedrige Qualität",
+      "medium": "Mittlere Qualität",
+      "high": "Hohe Qualität (Empfohlen)",
+      "studio": "Studioqualität",
+      "codec": "Codec",
+      "bitrate": "Bitrate",
+      "sampleRate": "Abtastrate",
+      "fileSize": "Dateigröße"
+    }
+  },
+  "status": {
+    "processing": "Wird verarbeitet...",
+    "completed": "Abgeschlossen",
+    "failed": "Fehlgeschlagen",
+    "waiting": "Wartend",
+    "cancelled": "Abgebrochen",
+    "interrupted": "Unterbrochen",
+    "ready": "Bereit"
+  },
+  "messages": {
+    "videoCreated": "Ein 1920x1080 (16:9) MP4-Video wird neben der ursprünglichen Musikdatei erstellt, wenn es abgeschlossen ist.",
+    "estimatedTime": "Geschätzte Videodauer:",
+    "noHistory": "Keine Aufgabenhistorie.",
+    "historyEmpty": "Abgeschlossene oder fehlgeschlagene Aufgaben erscheinen hier.",
+    "noJobs": "Keine Aufgaben in der Warteschlange.",
+    "jobsEmpty": "Fügen Sie Aufgaben hinzu, um die Verarbeitung zu starten.",
+    "historyCount": "Aufgabenhistorie {{count}} Elemente",
+    "completedCount": "Abgeschlossen: {{count}}",
+    "failedCount": "Fehlgeschlagen: {{count}}",
+    "queueCount": "Warteschlange ({{count}} Elemente)"
+  },
+  "rightPanel": {
+    "queue": "Warteschlange",
+    "history": "Verlauf"
+  },
+  "stepper": {
+    "upload": "Datei auswählen",
+    "processing": "Verarbeitung",
+    "complete": "Abgeschlossen"
+  },
+  "videoGenerator": {
+    "steps": {
+      "selectMusic": "Musik auswählen",
+      "generateVideo": "Video erstellen",
+      "complete": "Abgeschlossen"
+    }
+  },
+  "videoLoop": {
+    "step1": "Video auswählen",
+    "step2": "Schleifen-Verarbeitung",
+    "step3": "Abgeschlossen"
+  },
+  "videoConcat": {
+    "step1": "Videos auswählen",
+    "step2": "Zusammenführen",
+    "step3": "Abgeschlossen"
+  },
+  "job": {
+    "musicVideo": "Musikvideo",
+    "videoLoop": "Video-Schleife",
+    "videoConcat": "Videos verketten",
+    "playlist": "Playlist-Video ({{count}} Tracks)",
+    "loopIterations": "{{name}} ({{iterations}} Wiederholungen)",
+    "concatCount": "Videos verketten ({{count}} Elemente)",
+    "concatMultiple": "Videos verketten ({{count}} Videos)",
+    "savedLocation": "Gespeicherter Speicherort",
+    "error": "Fehler",
+    "inputFiles": "{{count}} Eingabedateien"
+  },
+  "common": {
+    "required": "Erforderlich",
+    "optional": "Optional",
+    "close": "Schließen",
+    "delete": "Löschen",
+    "confirm": "Bestätigen",
+    "dropHere": "Hier ablegen!",
+    "invalidFileFormat": "Ungültiges Dateiformat.\nErlaubt: {{extensions}}",
+    "waitingCount": "{{count}} wartend",
+    "copied": "Kopiert!"
+  },
+  "fileDropZone": {
+    "regionLabel": "Datei-Drop-Zone für {{label}}",
+    "selectFile": "{{label}} auswählen. Erlaubte Formate: {{extensions}}. Klicken Sie zum Durchsuchen oder ziehen Sie eine Datei hierher.",
+    "selectedFile": "{{label}} ausgewählt: {{fileName}}. Klicken Sie, um die Datei zu ändern.",
+    "currentFile": "Aktuelle Datei: {{fileName}}",
+    "allowedFormats": "Erlaubte Formate: {{extensions}}",
+    "dragActive": "Datei bereit zum Ablegen"
+  },
+  "tos": {
+    "title": "Nutzungsbedingungen",
+    "content": "1. Haftungsausschluss: Diese Software wird \"wie besehen\" ohne Gewährleistung jeglicher Art bereitgestellt. Der Entwickler gibt keine Garantien bezüglich der Leistung oder Zuverlässigkeit der Software.\n\n2. Haftungsbeschränkung: In keinem Fall haftet der Entwickler für Schäden (einschließlich, aber nicht beschränkt auf Datenverlust oder Geschäftsunterbrechung), die aus der Nutzung dieser Software entstehen. Bitte sichern Sie Ihre Dateien immer.\n\n3. Open Source: Diese Software verwendet FFmpeg, lizenziert unter LGPLv2.1.",
+    "button_agree": "Ich stimme zu & Start",
+    "notice": "Diese Übersetzung wird der Bequemlichkeit halber bereitgestellt. Die englische Version ist rechtlich bindend."
+  },
+  "timestamps": {
+    "title": "YouTube-Zeitstempel",
+    "loading": "Laden...",
+    "calculating": "Berechne Videolängen...",
+    "copy": "In Zwischenablage kopieren",
+    "copied": "Kopiert!",
+    "noVideos": "Keine Videos verfügbar",
+    "copyHistory": "Zeitstempel kopieren",
+    "copyTooltip": "YouTube-Kapitel kopieren",
+    "copiedNotification": "Zeitstempel in Zwischenablage kopiert!"
+  },
+  "about": {
+    "title": "Über den Entwickler",
+    "version": "Version",
+    "missionTitle": "Unsere Mission",
+    "mission": "Wir wissen, dass Musik zu machen mehr emotionale Energie erfordert, als man denkt. LoopMate wurde geschaffen, um diesen Prozess etwas weniger ermüdend und etwas weniger verletzend zu gestalten.",
+    "connect": "Verbinden",
+    "website": "Website",
+    "support": "Problem melden"
+  },
+  "updater": {
+    "available": "Neue Version verfügbar",
+    "downloading": "Wird heruntergeladen...",
+    "ready": "Update bereit",
+    "error": "Update-Fehler",
+    "version": "Version",
+    "download": "Herunterladen",
+    "restart": "Neu starten und installieren",
+    "downloadFailed": "Download fehlgeschlagen",
+    "restartFailed": "Neustart fehlgeschlagen"
+  },
+  "errors": {
+    "somethingWentWrong": "Etwas ist schief gelaufen",
+    "unknownError": "Ein unbekannter Fehler ist aufgetreten",
+    "errorId": "Fehlercode",
+    "copyErrorId": "Fehlercode kopieren",
+    "openLogFolder": "Protokollordner öffnen",
+    "troubleshootingTips": "Fehlerbehebungstipps",
+    "tip1": "Überprüfen Sie, ob die Datei nicht beschädigt ist",
+    "tip2": "Versuchen Sie, die App neu zu starten",
+    "tip3": "Stellen Sie sicher, dass der Dateipfad nur englische Zeichen enthält (optional)",
+    "label": "Fehler:",
+    "imageLoadFailed": "Bild konnte nicht geladen werden"
+  },
+  "errorBoundary": {
+    "title": "Etwas ist schief gelaufen",
+    "description": "Die Anwendung ist auf einen unerwarteten Fehler gestoßen. Bitte versuchen Sie es erneut oder kontaktieren Sie den Support, wenn das Problem weiterhin besteht.",
+    "errorMessage": "Fehlermeldung",
+    "tryAgain": "Erneut versuchen",
+    "helpText": "Wenn dieses Problem weiterhin besteht, melden Sie es bitte auf GitHub Issues. Sie finden die Protokolldatei, indem Sie oben auf die Schaltfläche 'Protokollordner öffnen' klicken."
+  },
+  "support": {
+    "title": "Hilfe und Support",
+    "openLogs": "Protokollverzeichnis öffnen",
+    "logsDescription": "Wenn Sie Probleme haben, melden Sie diese bitte auf GitHub Issues. Die Protokolldatei hilft bei der Diagnose von App-Problemen.",
+    "supportEmail": "Bitte melden Sie Probleme auf https://github.com/dgdev22/loopmate/issues"
+  },
+  "resetData": {
+    "title": "Alle Daten zurücksetzen",
+    "button": "Alle Daten löschen",
+    "description": "Diese Aktion kann nicht rückgängig gemacht werden. Die folgenden Daten werden gelöscht:",
+    "warning": "Warnung: Diese Aktion kann nicht rückgängig gemacht werden.",
+    "items": {
+      "settings": "Einstellungen (Sprache, Dateierweiterungen, Intro/Outro)",
+      "history": "Job-Verlauf",
+      "queue": "Job-Warteschlange",
+      "onboarding": "Onboarding-Status"
+    },
+    "confirm": "Löschen",
+    "cancel": "Abbrechen",
+    "success": "Alle Daten wurden gelöscht.",
+    "error": "Beim Löschen der Daten ist ein Fehler aufgetreten."
+  },
+  "analytics": {
+    "consentModal": {
+      "title": "Helfen Sie, LoopMate zu verbessern",
+      "description": "Anonyme Nutzungsdaten helfen uns, Fehler zu beheben und Funktionen zu verbessern.",
+      "details": "Gesammelte Daten:",
+      "benefit1": "Nutzungsmuster der App (welche Funktionen am häufigsten verwendet werden)",
+      "benefit2": "Fehlerhäufigkeit und -typen",
+      "benefit3": "Leistungsmetriken (Verarbeitungszeiten usw.)",
+      "allow": "Erlauben",
+      "dontAllow": "Nicht erlauben"
+    }
+  },
+  "warnings": {
+    "slowProcessing": "Leistungseinfluss",
+    "effectsRequireReencoding": "Fade-/Padding-Effekte erfordern eine Audio-Neukodierung, was langsamer ist. Für die schnellste Verarbeitung (10-30x schneller) schalten Sie diese Effekte aus.",
+    "fastMode": "Schnellmodus aktiv",
+    "fastModeDesc": "Verwendung der ursprünglichen Audioqualität mit Stream-Kopie (keine Neukodierung). Die Verarbeitung wird 10-30x schneller sein!"
+  },
+  "history": {
+    "duration": "Dauer"
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "app": {
+    "title": "LoopMate",
+    "tagline": "Crie vídeos em 1 minuto, mesmo para iniciantes"
+  },
+  "time": {
+    "minutes": "min",
+    "seconds": "sec"
+  },
+  "splash": {
+    "loading": "Caricamento..."
+  },
+  "menu": {
+    "title": "Menu",
+    "imageMusic": "Imagem + Música",
+    "loopVideo": "Loop de Vídeo",
+    "concat": "Concatenar Vídeos",
+    "settings": "Configurações"
+  },
+  "tabs": {
+    "imageMusic": {
+      "title": "Criar Vídeo do YouTube",
+      "description": "Só música está OK! Cria um vídeo 16:9 do YouTube com fundo preto se nenhuma imagem for fornecida."
+    },
+    "loop": {
+      "title": "Estender Loop de Vídeo",
+      "description": "Estende um loop de vídeo curto para o comprimento desejado."
+    },
+    "concat": {
+      "title": "Concatenar Vídeos",
+      "description": "Mescla vários vídeos em um, ou aplica intro/outro a um único vídeo."
+    },
+    "settings": {
+      "title": "Configurações",
+      "description": "Defina vídeos de intro/outro que podem ser aplicados a cada tarefa via checkbox."
+    }
+  },
+  "buttons": {
+    "addToQueue": "Adicionar à Fila",
+    "addToQueueWithCount": "Adicionar à Fila ({{count}} itens)",
+    "addMusic": "Adicionar Música",
+    "addVideo": "Adicionar Vídeo",
+    "addImage": "Adicionar Imagem",
+    "selectFile": "Selecionar Arquivo",
+    "clear": "Limpar",
+    "remove": "Remover",
+    "change": "Cambia",
+    "save": "Salvar",
+    "cancel": "Annulla",
+    "buyMeACoffee": "Offrimi un caffè",
+    "duplicate": "Duplica",
+    "addToQueueWithMusic": "Aggiungi alla coda ({{count}} brani)",
+    "addToQueueWithVideos": "Aggiungi alla coda ({{count}} video)",
+    "addToQueueNeedsVideo": "Aggiungi alla coda (Selezione video richiesta)",
+    "needsAtLeast2Videos": "Sono necessari almeno 2 video"
+  },
+  "labels": {
+    "selectImage": "1. Selecionar Imagem (Opcional)",
+    "selectImageSub": "Fundo preto (16:9) se não fornecido",
+    "musicPlaylist": "2. Lista de Reprodução (Reproduzir em ordem)",
+    "musicPlaylistSub": "Múltiplos arquivos podem ser selecionados de uma vez",
+    "itemsAdded": "{{count}} itens adicionados",
+    "selectVideo": "Arquivo de Vídeo",
+    "iterations": "Número de iterações (ex: 60)",
+    "videoList": "Lista de Vídeos",
+    "videoListMultiple": "Lista de Vídeos (Mesclar em ordem)"
+  },
+  "options": {
+    "title": "Opções",
+    "fadeOut": "Aplicar fade out no final de cada faixa",
+    "fadeOutDesc": "Faz as faixas terminarem naturalmente. Essencial para vídeos de compilação.",
+    "fadeOutDuration": "Durata:",
+    "seconds": "secondi",
+    "padding": "Aggiungi tempo di riposo (dopo ogni traccia)",
+    "paddingDesc": "Aggiunge tempo di riposo dopo ogni traccia. L'immagine continua, solo la musica si ferma. Aggiunto anche dopo l'ultima traccia per loop fluidi!",
+    "paddingDuration": "Tempo di riposo:",
+    "secondsSilence": "secondi (silenzio, immagine continua)",
+    "fadeIn": "Aplicar fade in no início (Opcional)",
+    "fadeInDesc": "Faz o vídeo começar suavemente.",
+    "videoFadeOut": "Aplicar fade out no final de cada vídeo",
+    "videoFadeOutDesc": "Faz os vídeos terminarem naturalmente. Essencial para vídeos de compilação.",
+    "videoPadding": "Adicionar espaço (Preenchimento) entre vídeos",
+    "videoPaddingDesc": "Insere tela preta entre vídeos. Recomendado para vídeos de compilação."
+  },
+  "settings": {
+    "language": "Lingua",
+    "selectLanguage": "Seleziona Lingua",
+    "allowAnalytics": "Consenti analisi utilizzo",
+    "fileExtensions": {
+      "title": "Estensioni File Consentite",
+      "description": "Configura quali estensioni di file sono consentite per ogni tipo di file. Separa più estensioni con virgole (es: .jpg, .png, .webp).",
+      "image": "Estensioni Immagine",
+      "video": "Estensioni Video",
+      "audio": "Estensioni Audio",
+      "formatHint": "Separa le estensioni con virgole. Includi il punto (es: .jpg, .png)",
+      "save": "Salva",
+      "saving": "Salvataggio...",
+      "reset": "Ripristina Predefinito",
+      "saveError": "Errore nel salvataggio delle estensioni file"
+    },
+    "analyticsDescription": "Aiutaci a migliorare l'app condividendo i dati di utilizzo. Puoi modificare questa impostazione in qualsiasi momento.",
+    "fastMode": {
+      "title": "⚡ Modalità Veloce (Consigliata)",
+      "description": "Usa la qualità audio originale per la massima velocità (10-30 volte più veloce)",
+      "disabled": "Disabilitato in Modalità Veloce",
+      "slowWarning": "L'elaborazione sarà significativamente più lenta quando la Modalità Veloce è disabilitata."
+    },
+    "audioQuality": {
+      "title": "Qualità Audio",
+      "description": "Scegli la qualità audio per la generazione video. Qualità superiore = suono migliore, file più grande.",
+      "low": "Bassa Qualità",
+      "medium": "Qualità Media",
+      "high": "Alta Qualità (Consigliato)",
+      "studio": "Qualità Studio",
+      "codec": "Codec",
+      "bitrate": "Bitrate",
+      "sampleRate": "Frequenza di Campionamento",
+      "fileSize": "Dimensione File"
+    }
+  },
+  "status": {
+    "processing": "Elaborazione...",
+    "completed": "Completato",
+    "failed": "Fallito",
+    "waiting": "In attesa",
+    "cancelled": "Annullato",
+    "interrupted": "Interrotto",
+    "ready": "Pronto"
+  },
+  "messages": {
+    "videoCreated": "Um vídeo MP4 1920x1080 (16:9) será criado ao lado do arquivo de música original quando concluído.",
+    "estimatedTime": "Duração estimada do vídeo:",
+    "noHistory": "Nenhum histórico de tarefas.",
+    "historyEmpty": "Tarefas concluídas ou falhadas aparecerão aqui.",
+    "noJobs": "Nenhuma tarefa na fila.",
+    "jobsEmpty": "Adicione tarefas para iniciar o processamento.",
+    "historyCount": "Histórico de tarefas {{count}} itens",
+    "completedCount": "Concluídos: {{count}}",
+    "failedCount": "Falhados: {{count}}",
+    "queueCount": "Fila ({{count}} itens)"
+  },
+  "rightPanel": {
+    "queue": "Coda",
+    "history": "Cronologia"
+  },
+  "stepper": {
+    "upload": "Carica file",
+    "processing": "Elaborazione",
+    "complete": "Completato"
+  },
+  "videoGenerator": {
+    "steps": {
+      "selectMusic": "Seleziona musica",
+      "generateVideo": "Genera video",
+      "complete": "Completato"
+    }
+  },
+  "videoLoop": {
+    "step1": "Seleziona video",
+    "step2": "Elaborazione loop",
+    "step3": "Completato"
+  },
+  "videoConcat": {
+    "step1": "Seleziona video",
+    "step2": "Unione",
+    "step3": "Completato"
+  },
+  "job": {
+    "musicVideo": "Vídeo Musical",
+    "videoLoop": "Loop de Vídeo",
+    "videoConcat": "Concatenar Vídeos",
+    "playlist": "Vídeo de Lista de Reprodução ({{count}} faixas)",
+    "loopIterations": "{{name}} ({{iterations}} iterações)",
+    "concatCount": "Concatenar Vídeos ({{count}} itens)",
+    "concatMultiple": "Aggiungi alla coda ({{count}} video)",
+    "savedLocation": "Posizione salvata",
+    "error": "Errore",
+    "inputFiles": "{{count}} file di input"
+  },
+  "common": {
+    "required": "Requerido",
+    "optional": "Opcional",
+    "close": "Fechar",
+    "delete": "Excluir",
+    "confirm": "Confirmar",
+    "dropHere": "Rilascia qui!",
+    "invalidFileFormat": "Formato file non valido.\nConsentito: {{extensions}}",
+    "waitingCount": "{{count}} in attesa",
+    "copied": "Copiato!"
+  },
+  "fileDropZone": {
+    "regionLabel": "Area di rilascio file per {{label}}",
+    "selectFile": "Seleziona {{label}}. Formati consentiti: {{extensions}}. Fai clic per sfogliare o trascina e rilascia un file qui.",
+    "selectedFile": "{{label}} selezionato: {{fileName}}. Fai clic per cambiare il file.",
+    "currentFile": "File corrente: {{fileName}}",
+    "allowedFormats": "Formati consentiti: {{extensions}}",
+    "dragActive": "File pronto per il rilascio"
+  },
+  "tos": {
+    "title": "Termos de Serviço",
+    "content": "1. Isenção de Responsabilidade: Este software é fornecido \"como está\" sem garantia de qualquer tipo. O desenvolvedor não oferece garantias quanto ao desempenho ou confiabilidade do software.\n\n2. Limitação de Responsabilidade: Em nenhuma circunstância o desenvolvedor será responsável por quaisquer danos (incluindo, sem limitação, perda de dados ou interrupção de negócios) decorrentes do uso deste software. Sempre faça backup de seus arquivos.\n\n3. Código Aberto: Este software usa FFmpeg licenciado sob LGPLv2.1.",
+    "button_agree": "Eu Concordo e Inicio",
+    "notice": "Esta tradução é fornecida por conveniência. A versão em inglês é legalmente vinculativa."
+  },
+  "timestamps": {
+    "title": "Timestamp YouTube",
+    "loading": "Caricamento...",
+    "calculating": "Calcolo della durata dei video...",
+    "copy": "Copia negli appunti",
+    "copied": "Copiato!",
+    "noVideos": "Nessun video disponibile",
+    "copyHistory": "Copia timestamp",
+    "copyTooltip": "Copia capitoli YouTube",
+    "copiedNotification": "Timestamp copiati negli appunti!"
+  },
+  "about": {
+    "title": "Informazioni sullo sviluppatore",
+    "version": "Versione",
+    "missionTitle": "La nostra missione",
+    "mission": "Sappiamo che creare musica richiede più energia emotiva di quanto si pensi. LoopMate è stato creato per rendere quel processo un po' meno faticoso e un po' meno doloroso.",
+    "connect": "Connetti",
+    "website": "Sito web",
+    "support": "Segnala un problema"
+  },
+  "updater": {
+    "available": "Nuova versione disponibile",
+    "downloading": "Download in corso...",
+    "ready": "Aggiornamento pronto",
+    "error": "Errore di aggiornamento",
+    "version": "Versione",
+    "download": "Scarica",
+    "restart": "Riavvia e installa",
+    "downloadFailed": "Download fallito",
+    "restartFailed": "Riavvio fallito"
+  },
+  "errors": {
+    "somethingWentWrong": "Qualcosa è andato storto",
+    "unknownError": "Si è verificato un errore sconosciuto",
+    "errorId": "Codice errore",
+    "copyErrorId": "Copia codice errore",
+    "openLogFolder": "Apri cartella log",
+    "troubleshootingTips": "Suggerimenti per la risoluzione dei problemi",
+    "tip1": "Verifica che il file non sia danneggiato",
+    "tip2": "Prova a riavviare l'app",
+    "tip3": "Assicurati che il percorso del file contenga solo caratteri inglesi (opzionale)",
+    "label": "Errore:",
+    "imageLoadFailed": "Impossibile caricare l'immagine"
+  },
+  "errorBoundary": {
+    "title": "Qualcosa è andato storto",
+    "description": "L'applicazione ha riscontrato un errore imprevisto. Si prega di riprovare o contattare il supporto se il problema persiste.",
+    "errorMessage": "Messaggio di errore",
+    "tryAgain": "Riprova",
+    "helpText": "Se questo problema continua, si prega di segnalarlo su GitHub Issues. È possibile trovare il file di log facendo clic sul pulsante 'Apri cartella log' sopra."
+  },
+  "support": {
+    "title": "Aiuto e supporto",
+    "openLogs": "Apri directory log",
+    "logsDescription": "Se riscontri problemi, segnalali su GitHub Issues. Il file di log aiuta a diagnosticare i problemi dell'app.",
+    "supportEmail": "Si prega di segnalare i problemi su https://github.com/dgdev22/loopmate/issues"
+  },
+  "resetData": {
+    "title": "Reimposta tutti i dati",
+    "button": "Cancella tutti i dati",
+    "description": "Questa azione non può essere annullata. I seguenti dati saranno eliminati:",
+    "warning": "Avviso: Questa azione non può essere annullata.",
+    "items": {
+      "settings": "Impostazioni (lingua, estensioni file, intro/outro)",
+      "history": "Cronologia lavori",
+      "queue": "Coda lavori",
+      "onboarding": "Stato onboarding"
+    },
+    "confirm": "Elimina",
+    "cancel": "Annulla",
+    "success": "Tutti i dati sono stati cancellati.",
+    "error": "Si è verificato un errore durante la cancellazione dei dati."
+  },
+  "analytics": {
+    "consentModal": {
+      "title": "Aiuta a migliorare LoopMate",
+      "description": "I dati di utilizzo anonimi ci aiutano a correggere i bug e migliorare le funzionalità.",
+      "details": "Dati raccolti:",
+      "benefit1": "Modelli di utilizzo dell'app (quali funzionalità sono utilizzate di più)",
+      "benefit2": "Frequenza e tipi di errori",
+      "benefit3": "Metriche delle prestazioni (tempi di elaborazione, ecc.)",
+      "allow": "Consenti",
+      "dontAllow": "Non consentire"
+    }
+  },
+  "warnings": {
+    "slowProcessing": "Impatto sulle prestazioni",
+    "effectsRequireReencoding": "Gli effetti di dissolvenza/riempimento richiedono la ricodifica audio, che è più lenta. Per l'elaborazione più veloce (10-30 volte più veloce), disattiva questi effetti.",
+    "fastMode": "Modalità veloce attiva",
+    "fastModeDesc": "Utilizzo della qualità audio originale con copia stream (nessuna ricodifica). L'elaborazione sarà 10-30 volte più veloce!"
+  },
+  "history": {
+    "duration": "Durata"
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "app": {
+    "title": "LoopMate",
+    "tagline": "Crie vídeos em 1 minuto, mesmo para iniciantes"
+  },
+  "time": {
+    "minutes": "phút",
+    "seconds": "giây"
+  },
+  "splash": {
+    "loading": "Đang tải..."
+  },
+  "menu": {
+    "title": "Menu",
+    "imageMusic": "Imagem + Música",
+    "loopVideo": "Loop de Vídeo",
+    "concat": "Concatenar Vídeos",
+    "settings": "Configurações"
+  },
+  "tabs": {
+    "imageMusic": {
+      "title": "Criar Vídeo do YouTube",
+      "description": "Só música está OK! Cria um vídeo 16:9 do YouTube com fundo preto se nenhuma imagem for fornecida."
+    },
+    "loop": {
+      "title": "Estender Loop de Vídeo",
+      "description": "Estende um loop de vídeo curto para o comprimento desejado."
+    },
+    "concat": {
+      "title": "Concatenar Vídeos",
+      "description": "Mescla vários vídeos em um, ou aplica intro/outro a um único vídeo."
+    },
+    "settings": {
+      "title": "Configurações",
+      "description": "Defina vídeos de intro/outro que podem ser aplicados a cada tarefa via checkbox."
+    }
+  },
+  "buttons": {
+    "addToQueue": "Adicionar à Fila",
+    "addToQueueWithCount": "Adicionar à Fila ({{count}} itens)",
+    "addMusic": "Adicionar Música",
+    "addVideo": "Adicionar Vídeo",
+    "addImage": "Adicionar Imagem",
+    "selectFile": "Selecionar Arquivo",
+    "clear": "Limpar",
+    "remove": "Remover",
+    "change": "Thay đổi",
+    "save": "Salvar",
+    "cancel": "Hủy",
+    "buyMeACoffee": "Mua cà phê cho tôi",
+    "duplicate": "Nhân đôi",
+    "addToQueueWithMusic": "Thêm vào hàng đợi ({{count}} bài hát)",
+    "addToQueueWithVideos": "Thêm vào hàng đợi ({{count}} video)",
+    "addToQueueNeedsVideo": "Thêm vào hàng đợi (Cần chọn video)",
+    "needsAtLeast2Videos": "Cần ít nhất 2 video"
+  },
+  "labels": {
+    "selectImage": "1. Selecionar Imagem (Opcional)",
+    "selectImageSub": "Fundo preto (16:9) se não fornecido",
+    "musicPlaylist": "2. Lista de Reprodução (Reproduzir em ordem)",
+    "musicPlaylistSub": "Múltiplos arquivos podem ser selecionados de uma vez",
+    "itemsAdded": "{{count}} itens adicionados",
+    "selectVideo": "Arquivo de Vídeo",
+    "iterations": "Número de iterações (ex: 60)",
+    "videoList": "Lista de Vídeos",
+    "videoListMultiple": "Lista de Vídeos (Mesclar em ordem)"
+  },
+  "options": {
+    "title": "Opções",
+    "fadeOut": "Aplicar fade out no final de cada faixa",
+    "fadeOutDesc": "Faz as faixas terminarem naturalmente. Essencial para vídeos de compilação.",
+    "fadeOutDuration": "Thời lượng:",
+    "seconds": "giây",
+    "padding": "Thêm thời gian nghỉ (sau mỗi bản nhạc)",
+    "paddingDesc": "Thêm thời gian nghỉ sau mỗi bản nhạc. Hình ảnh tiếp tục, chỉ nhạc tạm dừng. Cũng được thêm sau bản nhạc cuối cùng để lặp mượt mà!",
+    "paddingDuration": "Thời gian nghỉ:",
+    "secondsSilence": "giây (im lặng, hình ảnh tiếp tục)",
+    "fadeIn": "Aplicar fade in no início (Opcional)",
+    "fadeInDesc": "Faz o vídeo começar suavemente.",
+    "videoFadeOut": "Aplicar fade out no final de cada vídeo",
+    "videoFadeOutDesc": "Faz os vídeos terminarem naturalmente. Essencial para vídeos de compilação.",
+    "videoPadding": "Adicionar espaço (Preenchimento) entre vídeos",
+    "videoPaddingDesc": "Insere tela preta entre vídeos. Recomendado para vídeos de compilação."
+  },
+  "settings": {
+    "language": "Ngôn ngữ",
+    "selectLanguage": "Chọn Ngôn ngữ",
+    "allowAnalytics": "Cho phép phân tích sử dụng",
+    "fileExtensions": {
+      "title": "Phần Mở Rộng Tệp Được Phép",
+      "description": "Cấu hình phần mở rộng tệp nào được phép cho từng loại tệp. Phân tách nhiều phần mở rộng bằng dấu phẩy (vd: .jpg, .png, .webp).",
+      "image": "Phần Mở Rộng Hình Ảnh",
+      "video": "Phần Mở Rộng Video",
+      "audio": "Phần Mở Rộng Âm Thanh",
+      "formatHint": "Phân tách phần mở rộng bằng dấu phẩy. Bao gồm dấu chấm (vd: .jpg, .png)",
+      "save": "Lưu",
+      "saving": "Đang lưu...",
+      "reset": "Đặt lại về Mặc định",
+      "saveError": "Lưu phần mở rộng tệp thất bại"
+    },
+    "analyticsDescription": "Giúp chúng tôi cải thiện ứng dụng bằng cách chia sẻ dữ liệu sử dụng. Bạn có thể thay đổi cài đặt này bất cứ lúc nào.",
+    "fastMode": {
+      "title": "⚡ Chế độ nhanh (Khuyến nghị)",
+      "description": "Sử dụng chất lượng âm thanh gốc để đạt tốc độ tối đa (nhanh hơn 10-30 lần)",
+      "disabled": "Bị vô hiệu hóa trong Chế độ nhanh",
+      "slowWarning": "Xử lý sẽ chậm hơn đáng kể khi Chế độ nhanh bị tắt."
+    },
+    "audioQuality": {
+      "title": "Chất Lượng Âm Thanh",
+      "description": "Chọn chất lượng âm thanh cho tạo video. Chất lượng cao hơn = âm thanh tốt hơn, kích thước tệp lớn hơn.",
+      "low": "Chất Lượng Thấp",
+      "medium": "Chất Lượng Trung Bình",
+      "high": "Chất Lượng Cao (Khuyến Nghị)",
+      "studio": "Chất Lượng Studio",
+      "codec": "Codec",
+      "bitrate": "Tốc Độ Bit",
+      "sampleRate": "Tần Số Lấy Mẫu",
+      "fileSize": "Kích Thước Tệp"
+    }
+  },
+  "status": {
+    "processing": "Đang xử lý...",
+    "completed": "Hoàn thành",
+    "failed": "Thất bại",
+    "waiting": "Đang chờ",
+    "cancelled": "Đã hủy",
+    "interrupted": "Bị gián đoạn",
+    "ready": "Sẵn sàng"
+  },
+  "messages": {
+    "videoCreated": "Um vídeo MP4 1920x1080 (16:9) será criado ao lado do arquivo de música original quando concluído.",
+    "estimatedTime": "Duração estimada do vídeo:",
+    "noHistory": "Nenhum histórico de tarefas.",
+    "historyEmpty": "Tarefas concluídas ou falhadas aparecerão aqui.",
+    "noJobs": "Nenhuma tarefa na fila.",
+    "jobsEmpty": "Adicione tarefas para iniciar o processamento.",
+    "historyCount": "Histórico de tarefas {{count}} itens",
+    "completedCount": "Concluídos: {{count}}",
+    "failedCount": "Falhados: {{count}}",
+    "queueCount": "Fila ({{count}} itens)"
+  },
+  "rightPanel": {
+    "queue": "Hàng đợi",
+    "history": "Lịch sử"
+  },
+  "stepper": {
+    "upload": "Chọn tệp",
+    "processing": "Đang xử lý",
+    "complete": "Hoàn thành"
+  },
+  "videoGenerator": {
+    "steps": {
+      "selectMusic": "Chọn nhạc",
+      "generateVideo": "Tạo video",
+      "complete": "Hoàn thành"
+    }
+  },
+  "videoLoop": {
+    "step1": "Chọn video",
+    "step2": "Xử lý lặp",
+    "step3": "Hoàn thành"
+  },
+  "videoConcat": {
+    "step1": "Chọn video",
+    "step2": "Đang hợp nhất",
+    "step3": "Hoàn thành"
+  },
+  "job": {
+    "musicVideo": "Vídeo Musical",
+    "videoLoop": "Loop de Vídeo",
+    "videoConcat": "Concatenar Vídeos",
+    "playlist": "Vídeo de Lista de Reprodução ({{count}} faixas)",
+    "loopIterations": "{{name}} ({{iterations}} iterações)",
+    "concatCount": "Concatenar Vídeos ({{count}} itens)",
+    "concatMultiple": "Thêm vào hàng đợi ({{count}} video)",
+    "savedLocation": "Vị trí đã lưu",
+    "error": "Lỗi",
+    "inputFiles": "{{count}} tệp đầu vào"
+  },
+  "common": {
+    "required": "Requerido",
+    "optional": "Opcional",
+    "close": "Fechar",
+    "delete": "Excluir",
+    "confirm": "Confirmar",
+    "dropHere": "Thả vào đây!",
+    "invalidFileFormat": "Định dạng tệp không hợp lệ.\nĐược phép: {{extensions}}",
+    "waitingCount": "{{count}} đang chờ",
+    "copied": "Đã sao chép!"
+  },
+  "fileDropZone": {
+    "regionLabel": "Vùng thả tệp cho {{label}}",
+    "selectFile": "Chọn {{label}}. Định dạng được phép: {{extensions}}. Nhấp để duyệt hoặc kéo và thả tệp vào đây.",
+    "selectedFile": "{{label}} đã chọn: {{fileName}}. Nhấp để thay đổi tệp.",
+    "currentFile": "Tệp hiện tại: {{fileName}}",
+    "allowedFormats": "Định dạng được phép: {{extensions}}",
+    "dragActive": "Tệp sẵn sàng để thả"
+  },
+  "tos": {
+    "title": "Termos de Serviço",
+    "content": "1. Isenção de Responsabilidade: Este software é fornecido \"como está\" sem garantia de qualquer tipo. O desenvolvedor não oferece garantias quanto ao desempenho ou confiabilidade do software.\n\n2. Limitação de Responsabilidade: Em nenhuma circunstância o desenvolvedor será responsável por quaisquer danos (incluindo, sem limitação, perda de dados ou interrupção de negócios) decorrentes do uso deste software. Sempre faça backup de seus arquivos.\n\n3. Código Aberto: Este software usa FFmpeg licenciado sob LGPLv2.1.",
+    "button_agree": "Eu Concordo e Inicio",
+    "notice": "Esta tradução é fornecida por conveniência. A versão em inglês é legalmente vinculativa."
+  },
+  "timestamps": {
+    "title": "Dấu thời gian YouTube",
+    "loading": "Đang tải...",
+    "calculating": "Đang tính toán thời lượng video...",
+    "copy": "Sao chép vào clipboard",
+    "copied": "Đã sao chép!",
+    "noVideos": "Không có video nào",
+    "copyHistory": "Sao chép dấu thời gian",
+    "copyTooltip": "Sao chép chương YouTube",
+    "copiedNotification": "Dấu thời gian đã được sao chép vào clipboard!"
+  },
+  "about": {
+    "title": "Về nhà phát triển",
+    "version": "Phiên bản",
+    "missionTitle": "Sứ mệnh của chúng tôi",
+    "mission": "Chúng tôi biết rằng việc tạo ra âm nhạc tiêu tốn nhiều năng lượng cảm xúc hơn bạn nghĩ. LoopMate được tạo ra để làm cho quá trình đó ít mệt mỏi hơn và ít tổn thương hơn một chút.",
+    "connect": "Kết nối",
+    "website": "Trang web",
+    "support": "Báo cáo sự cố"
+  },
+  "updater": {
+    "available": "Phiên bản mới có sẵn",
+    "downloading": "Đang tải xuống...",
+    "ready": "Cập nhật sẵn sàng",
+    "error": "Lỗi cập nhật",
+    "version": "Phiên bản",
+    "download": "Tải xuống",
+    "restart": "Khởi động lại và cài đặt",
+    "downloadFailed": "Tải xuống thất bại",
+    "restartFailed": "Khởi động lại thất bại"
+  },
+  "errors": {
+    "somethingWentWrong": "Đã xảy ra lỗi",
+    "unknownError": "Đã xảy ra lỗi không xác định",
+    "errorId": "Mã lỗi",
+    "copyErrorId": "Sao chép mã lỗi",
+    "openLogFolder": "Mở thư mục nhật ký",
+    "troubleshootingTips": "Mẹo khắc phục sự cố",
+    "tip1": "Kiểm tra xem tệp có bị hỏng không",
+    "tip2": "Thử khởi động lại ứng dụng",
+    "tip3": "Đảm bảo đường dẫn tệp chỉ chứa ký tự tiếng Anh (tùy chọn)",
+    "label": "Lỗi:",
+    "imageLoadFailed": "Không thể tải hình ảnh"
+  },
+  "errorBoundary": {
+    "title": "Đã xảy ra lỗi",
+    "description": "Ứng dụng gặp phải lỗi không mong muốn. Vui lòng thử lại hoặc liên hệ hỗ trợ nếu vấn đề vẫn tiếp tục.",
+    "errorMessage": "Thông báo lỗi",
+    "tryAgain": "Thử lại",
+    "helpText": "Nếu vấn đề này vẫn tiếp tục, vui lòng báo cáo trên GitHub Issues. Bạn có thể tìm tệp nhật ký bằng cách nhấp vào nút 'Mở thư mục nhật ký' ở trên."
+  },
+  "support": {
+    "title": "Trợ giúp và hỗ trợ",
+    "openLogs": "Mở thư mục nhật ký",
+    "logsDescription": "Nếu bạn gặp sự cố, vui lòng báo cáo trên GitHub Issues. Tệp nhật ký giúp chẩn đoán sự cố ứng dụng.",
+    "supportEmail": "Vui lòng báo cáo vấn đề tại https://github.com/dgdev22/loopmate/issues"
+  },
+  "resetData": {
+    "title": "Đặt lại tất cả dữ liệu",
+    "button": "Xóa tất cả dữ liệu",
+    "description": "Hành động này không thể hoàn tác. Dữ liệu sau sẽ bị xóa:",
+    "warning": "Cảnh báo: Hành động này không thể hoàn tác.",
+    "items": {
+      "settings": "Cài đặt (ngôn ngữ, phần mở rộng tệp, intro/outro)",
+      "history": "Lịch sử công việc",
+      "queue": "Hàng đợi công việc",
+      "onboarding": "Trạng thái onboarding"
+    },
+    "confirm": "Xóa",
+    "cancel": "Hủy",
+    "success": "Tất cả dữ liệu đã được xóa.",
+    "error": "Đã xảy ra lỗi khi xóa dữ liệu."
+  },
+  "analytics": {
+    "consentModal": {
+      "title": "Giúp cải thiện LoopMate",
+      "description": "Dữ liệu sử dụng ẩn danh giúp chúng tôi sửa lỗi và cải thiện tính năng.",
+      "details": "Dữ liệu được thu thập:",
+      "benefit1": "Mô hình sử dụng ứng dụng (tính năng nào được sử dụng nhiều nhất)",
+      "benefit2": "Tần suất và loại lỗi",
+      "benefit3": "Chỉ số hiệu suất (thời gian xử lý, v.v.)",
+      "allow": "Cho phép",
+      "dontAllow": "Không cho phép"
+    }
+  },
+  "warnings": {
+    "slowProcessing": "Tác động hiệu suất",
+    "effectsRequireReencoding": "Hiệu ứng fade/padding yêu cầu mã hóa lại âm thanh, chậm hơn. Để xử lý nhanh nhất (nhanh hơn 10-30 lần), hãy tắt các hiệu ứng này.",
+    "fastMode": "Chế độ nhanh đã bật",
+    "fastModeDesc": "Sử dụng chất lượng âm thanh gốc với stream copy (không mã hóa lại). Xử lý sẽ nhanh hơn 10-30 lần!"
+  },
+  "history": {
+    "duration": "Thời gian"
+  }
+}

@@ -1,0 +1,418 @@
+{
+  "app": {
+    "title": "LoopMate",
+    "tagline": "Create videos in 1 minute, even for beginners"
+  },
+  "time": {
+    "minutes": "min",
+    "seconds": "sec"
+  },
+  "splash": {
+    "loading": "Loading..."
+  },
+  "menu": {
+    "title": "Menu",
+    "imageMusic": "Image + Music",
+    "loopVideo": "Loop Video",
+    "concat": "Concat Videos",
+    "settings": "Settings"
+  },
+  "tabs": {
+    "imageMusic": {
+      "title": "Create YouTube Video",
+      "description": "Music only is OK! Creates a 16:9 YouTube video with a black background if no image is provided."
+    },
+    "loop": {
+      "title": "Extend Video Loop",
+      "description": "Extends a short video loop to your desired length."
+    },
+    "concat": {
+      "title": "Concat Videos",
+      "description": "Merge multiple videos into one."
+    },
+    "settings": {
+      "title": "Settings",
+      "description": "Configure language, file extensions, and audio quality settings."
+    }
+  },
+  "buttons": {
+    "addToQueue": "Add to Queue",
+    "addToQueueWithCount": "Add to Queue ({{count}} items)",
+    "addToQueueWithMusic": "Add to Queue ({{count}} tracks)",
+    "addToQueueWithVideos": "Add to Queue ({{count}} videos)",
+    "addToQueueNeedsVideo": "Add to Queue (Select video required)",
+    "needsAtLeast2Videos": "Need at least 2 videos",
+    "addMusic": "Add Music",
+    "addVideo": "Add Video",
+    "addImage": "Add Image",
+    "selectFile": "Select File",
+    "clear": "Clear",
+    "remove": "Remove",
+    "change": "Change",
+    "save": "Save",
+    "cancel": "Cancel",
+    "buyMeACoffee": "Buy Me a Coffee",
+    "duplicate": "Duplicate"
+  },
+  "labels": {
+    "selectImage": "1. Select Image (Optional)",
+    "selectImageSub": "Black background (16:9) if not provided",
+    "musicPlaylist": "2. Music Playlist (Play in order)",
+    "musicPlaylistSub": "Multiple files can be selected at once",
+    "itemsAdded": "{{count}} items added",
+    "selectVideo": "Video File",
+    "selectLoopVideo": "Select Video to Loop",
+    "videoFileFormats": "MP4, MOV, AVI files",
+    "iterations": "Number of iterations (e.g., 60)",
+    "videoList": "Video List",
+    "videoListMultiple": "Video List (Merge in order)",
+    "videoListSub": "Multiple files: Merge in order"
+  },
+  "options": {
+    "title": "Options",
+    "advanced": "Advanced Options",
+    "showAdvanced": "Show Advanced Options",
+    "hideAdvanced": "Hide Advanced Options",
+    "fadeOut": "Apply fade out at the end of each track",
+    "fadeOutDesc": "Makes tracks end naturally. Essential for compilation videos.",
+    "fadeOutDuration": "Duration:",
+    "seconds": "seconds",
+    "padding": "Add Rest Time (After Each Track)",
+    "paddingDesc": "Adds rest time after each track. Image continues, only music pauses. Added after the last track too for seamless looping!",
+    "paddingDuration": "Rest Time:",
+    "secondsSilence": "seconds (silence, image continues)",
+    "fadeIn": "Apply fade in at the start (Optional)",
+    "fadeInDesc": "Makes the video start smoothly.",
+    "videoFadeOut": "Apply fade out at the end of each video",
+    "videoFadeOutDesc": "Makes videos end naturally. Essential for compilation videos.",
+    "videoPadding": "Add Black Screen Between Videos",
+    "videoPaddingDesc": "Inserts black screen between videos (transition effect). Recommended for compilation videos.",
+    "requiresMultipleTracks": "Requires multiple tracks",
+    "requiresMultipleVideos": "Requires multiple videos",
+    "activeOptions": "Active Options",
+    "active": "Active",
+    "inactive": "Inactive",
+    "fadeOutShort": "Fade Out",
+    "fadeInShort": "Fade In",
+    "paddingShort": "Padding",
+    "noActiveOptions": "No active options"
+  },
+  "settings": {
+    "language": "Language",
+    "selectLanguage": "Select Language",
+    "fastMode": {
+      "title": "⚡ Fast Mode (Recommended)",
+      "description": "Use original audio quality for maximum speed (10-30x faster)",
+      "disabled": "Disabled in Fast Mode",
+      "slowWarning": "Processing will be significantly slower when Fast Mode is disabled."
+    },
+    "audioQuality": {
+      "title": "Audio Quality",
+      "description": "Choose audio quality for video generation. Higher quality = better sound but larger file size.",
+      "low": "Low Quality",
+      "medium": "Medium Quality",
+      "high": "High Quality (Recommended)",
+      "studio": "Studio Quality",
+      "codec": "Codec",
+      "bitrate": "Bitrate",
+      "sampleRate": "Sample Rate",
+      "fileSize": "File Size"
+    },
+    "fileExtensions": {
+      "title": "Allowed File Extensions",
+      "description": "Configure which file extensions are allowed for each file type. Separate multiple extensions with commas (e.g., .jpg, .png, .webp).",
+      "image": "Image Extensions",
+      "video": "Video Extensions",
+      "audio": "Audio Extensions",
+      "formatHint": "Separate extensions with commas. Include the dot (e.g., .jpg, .png)",
+      "save": "Save",
+      "saving": "Saving...",
+      "reset": "Reset to Default",
+      "saveError": "Failed to save file extensions"
+    }
+  },
+  "tos": {
+    "title": "Terms of Service",
+    "content": "1. Disclaimer: This software is provided 'as is' without warranty of any kind. The developer makes no guarantees regarding the software's performance or reliability.\n\n2. Limitation of Liability: In no event shall the developer be liable for any damages (including, without limitation, data loss or business interruption) arising out of the use of this software. Please always backup your files.\n\n3. Open Source: This software uses FFmpeg licensed under the LGPLv2.1.",
+    "button_agree": "I Agree & Start",
+    "notice": "This translation is provided for convenience. The English version is legally binding."
+  },
+  "status": {
+    "processing": "Processing...",
+    "completed": "Completed",
+    "failed": "Failed",
+    "waiting": "Waiting",
+    "cancelled": "Cancelled",
+    "interrupted": "Interrupted",
+    "ready": "Ready"
+  },
+  "messages": {
+    "videoCreated": "A 1920x1080 (16:9) MP4 video will be created next to the original music file when completed.",
+    "estimatedTime": "Estimated video duration:",
+    "noHistory": "No job history.",
+    "historyEmpty": "Completed or failed jobs will appear here.",
+    "noJobs": "No jobs in queue.",
+    "jobsEmpty": "Add jobs to start processing.",
+    "historyCount": "Job history {{count}} items",
+    "completedCount": "Completed: {{count}}",
+    "failedCount": "Failed: {{count}}",
+    "queueCount": "Queue ({{count}} items)"
+  },
+  "history": {
+    "duration": "Duration"
+  },
+  "rightPanel": {
+    "queue": "Queue",
+    "history": "History"
+  },
+  "stepper": {
+    "upload": "Upload",
+    "processing": "Processing",
+    "complete": "Complete"
+  },
+  "videoGenerator": {
+    "steps": {
+      "selectMusic": "Select Music",
+      "generateVideo": "Generate Video",
+      "complete": "Complete"
+    }
+  },
+  "videoLoop": {
+    "step1": "Select Video",
+    "step2": "Loop Processing",
+    "step3": "Complete"
+  },
+  "videoConcat": {
+    "step1": "Select Videos",
+    "step2": "Merging",
+    "step3": "Complete"
+  },
+  "job": {
+    "musicVideo": "Music Video",
+    "videoLoop": "Video Loop",
+    "videoConcat": "Concat Videos",
+    "playlist": "Playlist Video ({{count}} tracks)",
+    "loopIterations": "{{name}} ({{iterations}} iterations)",
+    "concatCount": "Concat Videos ({{count}} items)",
+    "concatMultiple": "Concat Videos ({{count}} items)",
+    "savedLocation": "Saved location",
+    "error": "Error",
+    "inputFiles": "{{count}} input files"
+  },
+  "common": {
+    "required": "Required",
+    "optional": "Optional",
+    "close": "Close",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "dropHere": "Drop here!",
+    "invalidFileFormat": "Invalid file format.\nAllowed: {{extensions}}",
+    "waitingCount": "{{count}} waiting",
+    "video": "Video",
+    "copied": "Copied!",
+    "tracks": "tracks",
+    "singleTrack": "1 track",
+    "videos": "videos",
+    "singleVideo": "1 video",
+    "iterations": "iterations",
+    "openFile": "Open file"
+  },
+  "fileDropZone": {
+    "regionLabel": "File drop zone for {{label}}",
+    "selectFile": "Select {{label}}. Allowed formats: {{extensions}}. Click to browse or drag and drop a file here.",
+    "selectedFile": "{{label}} selected: {{fileName}}. Click to change file.",
+    "currentFile": "Current file: {{fileName}}",
+    "allowedFormats": "Allowed formats: {{extensions}}",
+    "dragActive": "File ready to drop"
+  },
+  "emptyState": {
+    "title": "Drag or click to add files",
+    "description": "1 image + music file = YouTube video!"
+  },
+  "notifications": {
+    "jobCompleted": "Job Completed",
+    "jobCompletedBody": "{{jobName}} job has been completed.",
+    "jobFailed": "Job Failed",
+    "jobFailedBody": "{{jobName}} job has failed."
+  },
+  "resume": {
+    "title": "Unfinished Tasks Detected",
+    "description": "There are {{count}} tasks that were not completed in the last session. Would you like to restart them now?",
+    "cancel": "Cancel",
+    "resume": "Yes, Resume"
+  },
+  "timestamps": {
+    "title": "YouTube Timestamps",
+    "loading": "Loading...",
+    "calculating": "Calculating video durations...",
+    "copy": "Copy to Clipboard",
+    "copyHistory": "Copy Timestamps",
+    "copyTooltip": "Copy YouTube Chapters",
+    "copied": "Copied!",
+    "copiedNotification": "Timestamps copied to clipboard!",
+    "noVideos": "No videos available"
+  },
+  "about": {
+    "title": "About Developer",
+    "version": "Version",
+    "missionTitle": "Our Mission",
+    "mission": "We know that making music takes more emotional energy than you might think. LoopMate was created to make that process a little less tiring and a little less hurtful.",
+    "connect": "Connect",
+    "website": "Website",
+    "support": "Report an Issue"
+  },
+  "updater": {
+    "available": "New Version Available",
+    "downloading": "Downloading...",
+    "ready": "Update Ready",
+    "error": "Update Error",
+    "version": "Version",
+    "download": "Download",
+    "restart": "Restart & Install",
+    "downloadFailed": "Download failed",
+    "restartFailed": "Restart failed"
+  },
+  "errors": {
+    "somethingWentWrong": "Something went wrong",
+    "unknownError": "An unknown error occurred",
+    "errorId": "Error Code",
+    "copyErrorId": "Copy Error ID",
+    "openLogFolder": "Open Log Folder",
+    "troubleshootingTips": "Troubleshooting Tips",
+    "tip1": "Check if the file is not corrupted",
+    "tip2": "Try restarting the app",
+    "tip3": "Ensure the file path contains only English characters (optional)",
+    "label": "Error:",
+    "imageLoadFailed": "Failed to load image"
+  },
+  "errorBoundary": {
+    "title": "Something went wrong",
+    "description": "The application encountered an unexpected error. Please try again or contact support if the problem persists.",
+    "errorMessage": "Error Message",
+    "tryAgain": "Try Again",
+    "helpText": "If this problem continues, please report it on GitHub Issues. You can find the log file by clicking the 'Open Log Folder' button above."
+  },
+  "support": {
+    "title": "Help & Support",
+    "openLogs": "Open Logs Directory",
+    "logsDescription": "If you encounter issues, please report them on GitHub Issues. The log file helps diagnose app problems.",
+    "supportEmail": "Please report issues at https://github.com/dgdev22/loopmate/issues"
+  },
+  "resetData": {
+    "title": "Reset All Data",
+    "button": "Clear All Data",
+    "description": "This action cannot be undone. The following data will be deleted:",
+    "warning": "Warning: This action cannot be undone.",
+    "items": {
+      "settings": "Settings (language, file extensions, audio quality)",
+      "history": "Job history",
+      "queue": "Job queue",
+      "onboarding": "Onboarding status"
+    },
+    "confirm": "Delete",
+    "cancel": "Cancel",
+    "success": "All data has been cleared.",
+    "error": "An error occurred while clearing data."
+  },
+  "analytics": {
+    "consentModal": {
+      "title": "Help improve LoopMate",
+      "description": "Anonymous usage data helps us fix bugs and improve features.",
+      "details": "Data collected:",
+      "benefit1": "App usage patterns (which features are used most)",
+      "benefit2": "Error frequency and types",
+      "benefit3": "Performance metrics (processing times, etc.)",
+      "allow": "Allow",
+      "dontAllow": "Don't Allow"
+    }
+  },
+  "onboarding": {
+    "welcome": "Welcome to LoopMate! 👋",
+    "subtitle": "Create professional videos in minutes",
+    "description": "LoopMate does 3 simple things:",
+    "feature1": {
+      "title": "Music → Video",
+      "description": "Music file + 1 image = YouTube video"
+    },
+    "feature2": {
+      "title": "Loop Video",
+      "description": "1 minute video → 10 hour loop"
+    },
+    "feature3": {
+      "title": "Merge Videos",
+      "description": "Multiple videos → Combined into one"
+    },
+    "getStarted": "Get Started"
+  },
+  "toast": {
+    "addedToQueue": "Added to Queue",
+    "jobWillStartSoon": "Job will start soon",
+    "jobCompleted": "Job Completed!",
+    "jobFailed": "Job Failed"
+  },
+  "warnings": {
+    "slowProcessing": "Performance Impact",
+    "effectsRequireReencoding": "Fade/Padding effects require audio re-encoding, which is slower. For fastest processing (10-30x faster), turn off these effects.",
+    "fastMode": "Fast Mode Active",
+    "fastModeDesc": "Using original audio quality with stream copy (no re-encoding). Processing will be 10-30x faster!"
+  },
+  "progress": {
+    "analyzing": "Analyzing video...",
+    "preparing": "Preparing encoding...",
+    "rendering": "Rendering video...",
+    "processing": "Processing audio...",
+    "finalizing": "Finalizing...",
+    "almostDone": "Almost done!"
+  },
+  "preview": {
+    "title": "Preview",
+    "backgroundImage": "Background Image",
+    "musicTracks": "Music Tracks",
+    "estimatedDuration": "Estimated Video Duration",
+    "multipleTracks": "{{count}} tracks",
+    "audioLength": "Based on audio length",
+    "playlistMode": "Playlist Mode"
+  },
+  "quickStart": {
+    "title": "Quick Start",
+    "description": "Try it out with sample files (one click!)",
+    "lofi": {
+      "name": "Lofi Music",
+      "description": "Calm beats · 3 min"
+    },
+    "playlist": {
+      "name": "Playlist",
+      "description": "3 tracks · 9 min"
+    },
+    "relaxing": {
+      "name": "Relaxing Music",
+      "description": "Meditation/Sleep · 5 min"
+    },
+    "loading": "Loading template...",
+    "loadSuccess": "Template loaded!",
+    "loadSuccessDesc": "\"{{name}}\" is ready. Add it to the queue now.",
+    "loadError": "Template load failed",
+    "sampleNotFound": "Sample files not found",
+    "orSelectFiles": "or select files manually"
+  },
+  "processing": {
+    "stage": {
+      "preparing": "Preparing...",
+      "analyzing": "Analyzing files...",
+      "encoding": "Encoding video...",
+      "processing": "Processing audio...",
+      "compositing": "Compositing...",
+      "finalizing": "Finalizing...",
+      "almostDone": "Almost done!"
+    },
+    "timeRemaining": "About {{seconds}}s remaining"
+  },
+  "shortcuts": {
+    "title": "Shortcuts",
+    "openFile": "Open File",
+    "addToQueue": "Add to Queue",
+    "cancel": "Cancel",
+    "settings": "Settings"
+  }
+}
+

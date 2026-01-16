@@ -1,0 +1,68 @@
+name: Build MSIX for Microsoft Store
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build-msix:
+    name: Build Windows MSIX
+    runs-on: windows-latest
+    permissions:
+      contents: write
+      actions: write
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate Windows icon (if needed)
+        run: |
+          if (!(Test-Path "build/icon.ico")) {
+            Write-Host "ICO file not found, generating from PNG..."
+            if (Test-Path "build/icon.png") {
+              npx --yes png2icons build/icon.png build/icon -icop -i
+            } else {
+              Write-Host "Warning: icon.png not found, build will continue without icon"
+            }
+          } else {
+            Write-Host "ICO file already exists, skipping generation"
+          }
+        shell: pwsh
+        continue-on-error: true
+
+      - name: Build MSIX for Microsoft Store
+        run: npm run build:win:store
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload MSIX artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: msix-build
+          path: |
+            release/**/*-Store-*.appx
+          retention-days: 90
+          if-no-files-found: error
+
+      - name: Create Release Asset (if tag)
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            release/**/*-Store-*.appx
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,299 @@
+{
+  "app": {
+    "title": "LoopMate",
+    "tagline": "Crie vídeos em 1 minuto, mesmo para iniciantes"
+  },
+  "time": {
+    "minutes": "นาที",
+    "seconds": "วินาที"
+  },
+  "splash": {
+    "loading": "กำลังโหลด..."
+  },
+  "menu": {
+    "title": "Menu",
+    "imageMusic": "Imagem + Música",
+    "loopVideo": "Loop de Vídeo",
+    "concat": "Concatenar Vídeos",
+    "settings": "Configurações"
+  },
+  "tabs": {
+    "imageMusic": {
+      "title": "Criar Vídeo do YouTube",
+      "description": "Só música está OK! Cria um vídeo 16:9 do YouTube com fundo preto se nenhuma imagem for fornecida."
+    },
+    "loop": {
+      "title": "Estender Loop de Vídeo",
+      "description": "Estende um loop de vídeo curto para o comprimento desejado."
+    },
+    "concat": {
+      "title": "Concatenar Vídeos",
+      "description": "Mescla vários vídeos em um, ou aplica intro/outro a um único vídeo."
+    },
+    "settings": {
+      "title": "Configurações",
+      "description": "Defina vídeos de intro/outro que podem ser aplicados a cada tarefa via checkbox."
+    }
+  },
+  "buttons": {
+    "addToQueue": "Adicionar à Fila",
+    "addToQueueWithCount": "Adicionar à Fila ({{count}} itens)",
+    "addMusic": "Adicionar Música",
+    "addVideo": "Adicionar Vídeo",
+    "addImage": "Adicionar Imagem",
+    "selectFile": "Selecionar Arquivo",
+    "clear": "Limpar",
+    "remove": "Remover",
+    "change": "เปลี่ยน",
+    "save": "Salvar",
+    "cancel": "ยกเลิก",
+    "buyMeACoffee": "ซื้อกาแฟให้ฉัน",
+    "duplicate": "ทำซ้ำ",
+    "addToQueueWithMusic": "เพิ่มในคิว ({{count}} แทร็ก)",
+    "addToQueueWithVideos": "เพิ่มในคิว ({{count}} วิดีโอ)",
+    "addToQueueNeedsVideo": "เพิ่มในคิว (ต้องเลือกวิดีโอ)",
+    "needsAtLeast2Videos": "ต้องการอย่างน้อย 2 วิดีโอ"
+  },
+  "labels": {
+    "selectImage": "1. Selecionar Imagem (Opcional)",
+    "selectImageSub": "Fundo preto (16:9) se não fornecido",
+    "musicPlaylist": "2. Lista de Reprodução (Reproduzir em ordem)",
+    "musicPlaylistSub": "Múltiplos arquivos podem ser selecionados de uma vez",
+    "itemsAdded": "{{count}} itens adicionados",
+    "selectVideo": "Arquivo de Vídeo",
+    "iterations": "Número de iterações (ex: 60)",
+    "videoList": "Lista de Vídeos",
+    "videoListMultiple": "Lista de Vídeos (Mesclar em ordem)"
+  },
+  "options": {
+    "title": "Opções",
+    "fadeOut": "Aplicar fade out no final de cada faixa",
+    "fadeOutDesc": "Faz as faixas terminarem naturalmente. Essencial para vídeos de compilação.",
+    "fadeOutDuration": "ระยะเวลา:",
+    "seconds": "วินาที",
+    "padding": "เพิ่มเวลาพัก (หลังแต่ละแทร็ก)",
+    "paddingDesc": "เพิ่มเวลาพักหลังแต่ละแทร็ก รูปภาพยังแสดงอยู่ เฉพาะเพลงหยุดชั่วคราว เพิ่มหลังแทร็กสุดท้ายด้วยเพื่อการวนซ้ำที่ลื่นไหล!",
+    "paddingDuration": "เวลาพัก:",
+    "secondsSilence": "วินาที (เงียบ, รูปภาพดำเนินต่อ)",
+    "fadeIn": "Aplicar fade in no início (Opcional)",
+    "fadeInDesc": "Faz o vídeo começar suavemente.",
+    "videoFadeOut": "Aplicar fade out no final de cada vídeo",
+    "videoFadeOutDesc": "Faz os vídeos terminarem naturalmente. Essencial para vídeos de compilação.",
+    "videoPadding": "Adicionar espaço (Preenchimento) entre vídeos",
+    "videoPaddingDesc": "Insere tela preta entre vídeos. Recomendado para vídeos de compilação."
+  },
+  "settings": {
+    "language": "ภาษา",
+    "selectLanguage": "เลือกภาษา",
+    "allowAnalytics": "อนุญาตการวิเคราะห์การใช้งาน",
+    "fileExtensions": {
+      "title": "นามสกุลไฟล์ที่อนุญาต",
+      "description": "กำหนดค่านามสกุลไฟล์ที่อนุญาตสำหรับแต่ละประเภทไฟล์ แยกหลายนามสกุลด้วยเครื่องหมายจุลภาค (เช่น: .jpg, .png, .webp)",
+      "image": "นามสกุลรูปภาพ",
+      "video": "นามสกุลวิดีโอ",
+      "audio": "นามสกุลเสียง",
+      "formatHint": "แยknามสกุลด้วยเครื่องหมายจุลภาค รวมจุดด้วย (เช่น: .jpg, .png)",
+      "save": "บันทึก",
+      "saving": "กำลังบันทึก...",
+      "reset": "รีเซ็ตเป็นค่าเริ่มต้น",
+      "saveError": "บันทึกนามสกุลไฟล์ล้มเหลว"
+    },
+    "analyticsDescription": "ช่วยเราปรับปรุงแอปโดยแชร์ข้อมูลการใช้งาน คุณสามารถเปลี่ยนการตั้งค่านี้ได้ตลอดเวลา",
+    "fastMode": {
+      "title": "⚡ โหมดเร็ว (แนะนำ)",
+      "description": "ใช้คุณภาพเสียงต้นฉบับเพื่อความเร็วสูงสุด (เร็วกว่า 10-30 เท่า)",
+      "disabled": "ปิดใช้งานในโหมดเร็ว",
+      "slowWarning": "การประมวลผลจะช้าลงอย่างมากเมื่อปิดโหมดเร็ว"
+    },
+    "audioQuality": {
+      "title": "คุณภาพเสียง",
+      "description": "เลือกคุณภาพเสียงสำหรับการสร้างวิดีโอ คุณภาพสูง = เสียงดีกว่า ไฟล์ใหญ่กว่า",
+      "low": "คุณภาพต่ำ",
+      "medium": "คุณภาพปานกลาง",
+      "high": "คุณภาพสูง (แนะนำ)",
+      "studio": "คุณภาพสตูดิโอ",
+      "codec": "ตัวแปลงสัญญาณ",
+      "bitrate": "อัตราบิต",
+      "sampleRate": "อัตราการสุ่มตัวอย่าง",
+      "fileSize": "ขนาดไฟล์"
+    }
+  },
+  "status": {
+    "processing": "กำลังประมวลผล...",
+    "completed": "เสร็จสมบูรณ์",
+    "failed": "ล้มเหลว",
+    "waiting": "รอ",
+    "cancelled": "ยกเลิก",
+    "interrupted": "ถูกขัดจังหวะ",
+    "ready": "พร้อม"
+  },
+  "messages": {
+    "videoCreated": "Um vídeo MP4 1920x1080 (16:9) será criado ao lado do arquivo de música original quando concluído.",
+    "estimatedTime": "Duração estimada do vídeo:",
+    "noHistory": "Nenhum histórico de tarefas.",
+    "historyEmpty": "Tarefas concluídas ou falhadas aparecerão aqui.",
+    "noJobs": "Nenhuma tarefa na fila.",
+    "jobsEmpty": "Adicione tarefas para iniciar o processamento.",
+    "historyCount": "Histórico de tarefas {{count}} itens",
+    "completedCount": "Concluídos: {{count}}",
+    "failedCount": "Falhados: {{count}}",
+    "queueCount": "Fila ({{count}} itens)"
+  },
+  "rightPanel": {
+    "queue": "คิว",
+    "history": "ประวัติ"
+  },
+  "stepper": {
+    "upload": "เลือกไฟล์",
+    "processing": "กำลังประมวลผล",
+    "complete": "เสร็จสมบูรณ์"
+  },
+  "videoGenerator": {
+    "steps": {
+      "selectMusic": "เลือกเพลง",
+      "generateVideo": "สร้างวิดีโอ",
+      "complete": "เสร็จสมบูรณ์"
+    }
+  },
+  "videoLoop": {
+    "step1": "เลือกวิดีโอ",
+    "step2": "ประมวลผลลูป",
+    "step3": "เสร็จสมบูรณ์"
+  },
+  "videoConcat": {
+    "step1": "เลือกวิดีโอ",
+    "step2": "กำลังรวม",
+    "step3": "เสร็จสมบูรณ์"
+  },
+  "job": {
+    "musicVideo": "Vídeo Musical",
+    "videoLoop": "Loop de Vídeo",
+    "videoConcat": "Concatenar Vídeos",
+    "playlist": "Vídeo de Lista de Reprodução ({{count}} faixas)",
+    "loopIterations": "{{name}} ({{iterations}} iterações)",
+    "concatCount": "Concatenar Vídeos ({{count}} itens)",
+    "concatMultiple": "เพิ่มในคิว ({{count}} วิดีโอ)",
+    "savedLocation": "ตำแหน่งที่บันทึก",
+    "error": "ข้อผิดพลาด",
+    "inputFiles": "{{count}} ไฟล์อินพุต"
+  },
+  "common": {
+    "required": "Requerido",
+    "optional": "Opcional",
+    "close": "Fechar",
+    "delete": "Excluir",
+    "confirm": "Confirmar",
+    "dropHere": "วางที่นี่!",
+    "invalidFileFormat": "รูปแบบไฟล์ไม่ถูกต้อง\nอนุญาต: {{extensions}}",
+    "waitingCount": "{{count}} รออยู่",
+    "copied": "คัดลอกแล้ว!"
+  },
+  "fileDropZone": {
+    "regionLabel": "พื้นที่วางไฟล์สำหรับ {{label}}",
+    "selectFile": "เลือก {{label}} รูปแบบที่อนุญาต: {{extensions}} คลิกเพื่อเรียกดูหรือลากและวางไฟล์ที่นี่",
+    "selectedFile": "{{label}} ที่เลือก: {{fileName}} คลิกเพื่อเปลี่ยนไฟล์",
+    "currentFile": "ไฟล์ปัจจุบัน: {{fileName}}",
+    "allowedFormats": "รูปแบบที่อนุญาต: {{extensions}}",
+    "dragActive": "ไฟล์พร้อมวางแล้ว"
+  },
+  "tos": {
+    "title": "Termos de Serviço",
+    "content": "1. Isenção de Responsabilidade: Este software é fornecido \"como está\" sem garantia de qualquer tipo. O desenvolvedor não oferece garantias quanto ao desempenho ou confiabilidade do software.\n\n2. Limitação de Responsabilidade: Em nenhuma circunstância o desenvolvedor será responsável por quaisquer danos (incluindo, sem limitação, perda de dados ou interrupção de negócios) decorrentes do uso deste software. Sempre faça backup de seus arquivos.\n\n3. Código Aberto: Este software usa FFmpeg licenciado sob LGPLv2.1.",
+    "button_agree": "Eu Concordo e Inicio",
+    "notice": "Esta tradução é fornecida por conveniência. A versão em inglês é legalmente vinculativa."
+  },
+  "timestamps": {
+    "title": "ไทม์สแตมป์ YouTube",
+    "loading": "กำลังโหลด...",
+    "calculating": "กำลังคำนวณระยะเวลาวิดีโอ...",
+    "copy": "คัดลอกไปยังคลิปบอร์ด",
+    "copied": "คัดลอกแล้ว!",
+    "noVideos": "ไม่มีวิดีโอ",
+    "copyHistory": "คัดลอกไทม์สแตมป์",
+    "copyTooltip": "คัดลอกบท YouTube",
+    "copiedNotification": "คัดลอกไทม์สแตมป์ไปยังคลิปบอร์ดแล้ว!"
+  },
+  "about": {
+    "title": "เกี่ยวกับนักพัฒนา",
+    "version": "เวอร์ชัน",
+    "missionTitle": "พันธกิจของเรา",
+    "mission": "เรารู้ว่าการสร้างดนตรีใช้พลังงานทางอารมณ์มากกว่าที่คุณคิด LoopMate ถูกสร้างขึ้นเพื่อทำให้กระบวนการนั้นเหนื่อยน้อยลงและเจ็บปวดน้อยลงเล็กน้อย",
+    "connect": "เชื่อมต่อ",
+    "website": "เว็บไซต์",
+    "support": "รายงานปัญหา"
+  },
+  "updater": {
+    "available": "เวอร์ชันใหม่พร้อมใช้งาน",
+    "downloading": "กำลังดาวน์โหลด...",
+    "ready": "อัปเดตพร้อม",
+    "error": "ข้อผิดพลาดการอัปเดต",
+    "version": "เวอร์ชัน",
+    "download": "ดาวน์โหลด",
+    "restart": "รีสตาร์ทและติดตั้ง",
+    "downloadFailed": "ดาวน์โหลดล้มเหลว",
+    "restartFailed": "รีสตาร์ทล้มเหลว"
+  },
+  "errors": {
+    "somethingWentWrong": "เกิดข้อผิดพลาด",
+    "unknownError": "เกิดข้อผิดพลาดที่ไม่ทราบสาเหตุ",
+    "errorId": "รหัสข้อผิดพลาด",
+    "copyErrorId": "คัดลอกรหัสข้อผิดพลาด",
+    "openLogFolder": "เปิดโฟลเดอร์บันทึก",
+    "troubleshootingTips": "เคล็ดลับการแก้ปัญหา",
+    "tip1": "ตรวจสอบว่าไฟล์ไม่เสียหาย",
+    "tip2": "ลองรีสตาร์ทแอป",
+    "tip3": "ตรวจสอบให้แน่ใจว่าเส้นทางไฟล์มีเฉพาะตัวอักษรภาษาอังกฤษ (ไม่บังคับ)",
+    "label": "ข้อผิดพลาด:",
+    "imageLoadFailed": "โหลดรูปภาพไม่สำเร็จ"
+  },
+  "errorBoundary": {
+    "title": "เกิดข้อผิดพลาด",
+    "description": "แอปพลิเคชันพบข้อผิดพลาดที่ไม่คาดคิด กรุณาลองอีกครั้งหรือติดต่อฝ่ายสนับสนุนหากปัญหายังคงอยู่",
+    "errorMessage": "ข้อความข้อผิดพลาด",
+    "tryAgain": "ลองอีกครั้ง",
+    "helpText": "หากปัญหานี้ยังคงอยู่ กรุณารายงานบน GitHub Issues คุณสามารถหาไฟล์บันทึกได้โดยคลิกปุ่ม 'เปิดโฟลเดอร์บันทึก' ด้านบน"
+  },
+  "support": {
+    "title": "ความช่วยเหลือและการสนับสนุน",
+    "openLogs": "เปิดไดเรกทอรีบันทึก",
+    "logsDescription": "หากคุณพบปัญหา โปรดรายงานบน GitHub Issues ไฟล์บันทึกช่วยในการวินิจฉัยปัญหาของแอป",
+    "supportEmail": "กรุณารายงานปัญหาที่ https://github.com/dgdev22/loopmate/issues"
+  },
+  "resetData": {
+    "title": "รีเซ็ตข้อมูลทั้งหมด",
+    "button": "ล้างข้อมูลทั้งหมด",
+    "description": "การกระทำนี้ไม่สามารถยกเลิกได้ ข้อมูลต่อไปนี้จะถูกลบ:",
+    "warning": "คำเตือน: การกระทำนี้ไม่สามารถยกเลิกได้",
+    "items": {
+      "settings": "การตั้งค่า (ภาษา, นามสกุลไฟล์, intro/outro)",
+      "history": "ประวัติงาน",
+      "queue": "คิวงาน",
+      "onboarding": "สถานะ onboarding"
+    },
+    "confirm": "ลบ",
+    "cancel": "ยกเลิก",
+    "success": "ข้อมูลทั้งหมดถูกล้างแล้ว",
+    "error": "เกิดข้อผิดพลาดขณะล้างข้อมูล"
+  },
+  "analytics": {
+    "consentModal": {
+      "title": "ช่วยปรับปรุง LoopMate",
+      "description": "ข้อมูลการใช้งานแบบไม่ระบุตัวตนช่วยให้เราระบุและแก้ไขข้อผิดพลาดและปรับปรุงฟีเจอร์",
+      "details": "ข้อมูลที่รวบรวม:",
+      "benefit1": "รูปแบบการใช้งานแอป (ฟีเจอร์ใดที่ใช้บ่อยที่สุด)",
+      "benefit2": "ความถี่และประเภทของข้อผิดพลาด",
+      "benefit3": "เมตริกประสิทธิภาพ (เวลาประมวลผล ฯลฯ)",
+      "allow": "อนุญาต",
+      "dontAllow": "ไม่อนุญาต"
+    }
+  },
+  "warnings": {
+    "slowProcessing": "ผลกระทบต่อประสิทธิภาพ",
+    "effectsRequireReencoding": "เอฟเฟกต์เฟด/แพดดิ้งต้องการการเข้ารหัสเสียงใหม่ ซึ่งช้ากว่า สำหรับการประมวลผลที่เร็วที่สุด (เร็วกว่า 10-30 เท่า) ให้ปิดเอฟเฟกต์เหล่านี้",
+    "fastMode": "โหมดเร็วเปิดใช้งาน",
+    "fastModeDesc": "ใช้คุณภาพเสียงต้นฉบับด้วยการคัดลอกสตรีม (ไม่มีการเข้ารหัสใหม่) การประมวลผลจะเร็วขึ้น 10-30 เท่า!"
+  },
+  "history": {
+    "duration": "ระยะเวลา"
+  }
+}

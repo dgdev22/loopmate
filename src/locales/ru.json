@@ -1,0 +1,299 @@
+{
+  "app": {
+    "title": "LoopMate",
+    "tagline": "Crie vídeos em 1 minuto, mesmo para iniciantes"
+  },
+  "time": {
+    "minutes": "мин",
+    "seconds": "сек"
+  },
+  "splash": {
+    "loading": "Загрузка..."
+  },
+  "menu": {
+    "title": "Menu",
+    "imageMusic": "Imagem + Música",
+    "loopVideo": "Loop de Vídeo",
+    "concat": "Concatenar Vídeos",
+    "settings": "Configurações"
+  },
+  "tabs": {
+    "imageMusic": {
+      "title": "Criar Vídeo do YouTube",
+      "description": "Só música está OK! Cria um vídeo 16:9 do YouTube com fundo preto se nenhuma imagem for fornecida."
+    },
+    "loop": {
+      "title": "Estender Loop de Vídeo",
+      "description": "Estende um loop de vídeo curto para o comprimento desejado."
+    },
+    "concat": {
+      "title": "Concatenar Vídeos",
+      "description": "Mescla vários vídeos em um, ou aplica intro/outro a um único vídeo."
+    },
+    "settings": {
+      "title": "Configurações",
+      "description": "Defina vídeos de intro/outro que podem ser aplicados a cada tarefa via checkbox."
+    }
+  },
+  "buttons": {
+    "addToQueue": "Adicionar à Fila",
+    "addToQueueWithCount": "Adicionar à Fila ({{count}} itens)",
+    "addMusic": "Adicionar Música",
+    "addVideo": "Adicionar Vídeo",
+    "addImage": "Adicionar Imagem",
+    "selectFile": "Selecionar Arquivo",
+    "clear": "Limpar",
+    "remove": "Remover",
+    "change": "Изменить",
+    "save": "Salvar",
+    "cancel": "Отмена",
+    "buyMeACoffee": "Купи мне кофе",
+    "duplicate": "Дублировать",
+    "addToQueueWithMusic": "Добавить в очередь ({{count}} треков)",
+    "addToQueueWithVideos": "Добавить в очередь ({{count}} видео)",
+    "addToQueueNeedsVideo": "Добавить в очередь (Требуется выбор видео)",
+    "needsAtLeast2Videos": "Требуется минимум 2 видео"
+  },
+  "labels": {
+    "selectImage": "1. Selecionar Imagem (Opcional)",
+    "selectImageSub": "Fundo preto (16:9) se não fornecido",
+    "musicPlaylist": "2. Lista de Reprodução (Reproduzir em ordem)",
+    "musicPlaylistSub": "Múltiplos arquivos podem ser selecionados de uma vez",
+    "itemsAdded": "{{count}} itens adicionados",
+    "selectVideo": "Arquivo de Vídeo",
+    "iterations": "Número de iterações (ex: 60)",
+    "videoList": "Lista de Vídeos",
+    "videoListMultiple": "Lista de Vídeos (Mesclar em ordem)"
+  },
+  "options": {
+    "title": "Opções",
+    "fadeOut": "Aplicar fade out no final de cada faixa",
+    "fadeOutDesc": "Faz as faixas terminarem naturalmente. Essencial para vídeos de compilação.",
+    "fadeOutDuration": "Длительность:",
+    "seconds": "секунд",
+    "padding": "Добавить время отдыха (после каждого трека)",
+    "paddingDesc": "Добавляет время отдыха после каждого трека. Изображение продолжается, пауза только в музыке. Также добавляется после последнего трека для плавных циклов!",
+    "paddingDuration": "Время отдыха:",
+    "secondsSilence": "секунд (тишина, изображение продолжается)",
+    "fadeIn": "Aplicar fade in no início (Opcional)",
+    "fadeInDesc": "Faz o vídeo começar suavemente.",
+    "videoFadeOut": "Aplicar fade out no final de cada vídeo",
+    "videoFadeOutDesc": "Faz os vídeos terminarem naturalmente. Essencial para vídeos de compilação.",
+    "videoPadding": "Adicionar espaço (Preenchimento) entre vídeos",
+    "videoPaddingDesc": "Insere tela preta entre vídeos. Recomendado para vídeos de compilação."
+  },
+  "settings": {
+    "language": "Язык",
+    "selectLanguage": "Выбрать Язык",
+    "allowAnalytics": "Разрешить аналитику использования",
+    "fileExtensions": {
+      "title": "Разрешенные Расширения Файлов",
+      "description": "Настройте, какие расширения файлов разрешены для каждого типа файла. Разделяйте несколько расширений запятыми (например: .jpg, .png, .webp).",
+      "image": "Расширения Изображений",
+      "video": "Расширения Видео",
+      "audio": "Расширения Аудио",
+      "formatHint": "Разделяйте расширения запятыми. Включайте точку (например: .jpg, .png)",
+      "save": "Сохранить",
+      "saving": "Сохранение...",
+      "reset": "Сбросить по Умолчанию",
+      "saveError": "Ошибка сохранения расширений файлов"
+    },
+    "analyticsDescription": "Помогите нам улучшить приложение, поделившись данными об использовании. Вы можете изменить этот параметр в любое время.",
+    "fastMode": {
+      "title": "⚡ Быстрый режим (Рекомендуется)",
+      "description": "Используйте исходное качество аудио для максимальной скорости (в 10-30 раз быстрее)",
+      "disabled": "Отключено в быстром режиме",
+      "slowWarning": "Обработка будет значительно медленнее, когда быстрый режим отключен."
+    },
+    "audioQuality": {
+      "title": "Качество Аудио",
+      "description": "Выберите качество аудио для создания видео. Высокое качество = лучший звук, больший размер файла.",
+      "low": "Низкое Качество",
+      "medium": "Среднее Качество",
+      "high": "Высокое Качество (Рекомендуется)",
+      "studio": "Студийное Качество",
+      "codec": "Кодек",
+      "bitrate": "Битрейт",
+      "sampleRate": "Частота Дискретизации",
+      "fileSize": "Размер Файла"
+    }
+  },
+  "status": {
+    "processing": "Обработка...",
+    "completed": "Завершено",
+    "failed": "Ошибка",
+    "waiting": "Ожидание",
+    "cancelled": "Отменено",
+    "interrupted": "Прервано",
+    "ready": "Готово"
+  },
+  "messages": {
+    "videoCreated": "Um vídeo MP4 1920x1080 (16:9) será criado ao lado do arquivo de música original quando concluído.",
+    "estimatedTime": "Duração estimada do vídeo:",
+    "noHistory": "Nenhum histórico de tarefas.",
+    "historyEmpty": "Tarefas concluídas ou falhadas aparecerão aqui.",
+    "noJobs": "Nenhuma tarefa na fila.",
+    "jobsEmpty": "Adicione tarefas para iniciar o processamento.",
+    "historyCount": "Histórico de tarefas {{count}} itens",
+    "completedCount": "Concluídos: {{count}}",
+    "failedCount": "Falhados: {{count}}",
+    "queueCount": "Fila ({{count}} itens)"
+  },
+  "rightPanel": {
+    "queue": "Очередь",
+    "history": "История"
+  },
+  "stepper": {
+    "upload": "Выбор файла",
+    "processing": "Обработка",
+    "complete": "Завершено"
+  },
+  "videoGenerator": {
+    "steps": {
+      "selectMusic": "Выбор музыки",
+      "generateVideo": "Создание видео",
+      "complete": "Завершено"
+    }
+  },
+  "videoLoop": {
+    "step1": "Выбор видео",
+    "step2": "Обработка цикла",
+    "step3": "Завершено"
+  },
+  "videoConcat": {
+    "step1": "Выбор видео",
+    "step2": "Объединение",
+    "step3": "Завершено"
+  },
+  "job": {
+    "musicVideo": "Vídeo Musical",
+    "videoLoop": "Loop de Vídeo",
+    "videoConcat": "Concatenar Vídeos",
+    "playlist": "Vídeo de Lista de Reprodução ({{count}} faixas)",
+    "loopIterations": "{{name}} ({{iterations}} iterações)",
+    "concatCount": "Concatenar Vídeos ({{count}} itens)",
+    "concatMultiple": "Добавить в очередь ({{count}} видео)",
+    "savedLocation": "Сохранено в",
+    "error": "Ошибка",
+    "inputFiles": "{{count}} входных файлов"
+  },
+  "common": {
+    "required": "Requerido",
+    "optional": "Opcional",
+    "close": "Fechar",
+    "delete": "Excluir",
+    "confirm": "Confirmar",
+    "dropHere": "Перетащите сюда!",
+    "invalidFileFormat": "Неверный формат файла.\nРазрешено: {{extensions}}",
+    "waitingCount": "{{count}} в ожидании",
+    "copied": "Скопировано!"
+  },
+  "fileDropZone": {
+    "regionLabel": "Область перетаскивания файлов для {{label}}",
+    "selectFile": "Выбрать {{label}}. Разрешенные форматы: {{extensions}}. Нажмите для просмотра или перетащите файл сюда.",
+    "selectedFile": "{{label}} выбран: {{fileName}}. Нажмите, чтобы изменить файл.",
+    "currentFile": "Текущий файл: {{fileName}}",
+    "allowedFormats": "Разрешенные форматы: {{extensions}}",
+    "dragActive": "Файл готов к размещению"
+  },
+  "tos": {
+    "title": "Termos de Serviço",
+    "content": "1. Isenção de Responsabilidade: Este software é fornecido \"como está\" sem garantia de qualquer tipo. O desenvolvedor não oferece garantias quanto ao desempenho ou confiabilidade do software.\n\n2. Limitação de Responsabilidade: Em nenhuma circunstância o desenvolvedor será responsável por quaisquer danos (incluindo, sem limitação, perda de dados ou interrupção de negócios) decorrentes do uso deste software. Sempre faça backup de seus arquivos.\n\n3. Código Aberto: Este software usa FFmpeg licenciado sob LGPLv2.1.",
+    "button_agree": "Eu Concordo e Inicio",
+    "notice": "Esta tradução é fornecida por conveniência. A versão em inglês é legalmente vinculativa."
+  },
+  "timestamps": {
+    "title": "Временные метки YouTube",
+    "loading": "Загрузка...",
+    "calculating": "Вычисление длительности видео...",
+    "copy": "Копировать в буфер обмена",
+    "copied": "Скопировано!",
+    "noVideos": "Нет доступных видео",
+    "copyHistory": "Копировать временные метки",
+    "copyTooltip": "Копировать главы YouTube",
+    "copiedNotification": "Временные метки скопированы в буфер обмена!"
+  },
+  "about": {
+    "title": "О разработчике",
+    "version": "Версия",
+    "missionTitle": "Наша миссия",
+    "mission": "Мы знаем, что создание музыки требует больше эмоциональной энергии, чем вы думаете. LoopMate был создан, чтобы сделать этот процесс немного менее утомительным и немного менее болезненным.",
+    "connect": "Подключиться",
+    "website": "Веб-сайт",
+    "support": "Сообщить о проблеме"
+  },
+  "updater": {
+    "available": "Доступна новая версия",
+    "downloading": "Загрузка...",
+    "ready": "Обновление готово",
+    "error": "Ошибка обновления",
+    "version": "Версия",
+    "download": "Загрузить",
+    "restart": "Перезапустить и установить",
+    "downloadFailed": "Ошибка загрузки",
+    "restartFailed": "Ошибка перезапуска"
+  },
+  "errors": {
+    "somethingWentWrong": "Что-то пошло не так",
+    "unknownError": "Произошла неизвестная ошибка",
+    "errorId": "Код ошибки",
+    "copyErrorId": "Копировать код ошибки",
+    "openLogFolder": "Открыть папку логов",
+    "troubleshootingTips": "Советы по устранению неполадок",
+    "tip1": "Проверьте, не поврежден ли файл",
+    "tip2": "Попробуйте перезапустить приложение",
+    "tip3": "Убедитесь, что путь к файлу содержит только английские символы (необязательно)",
+    "label": "Ошибка:",
+    "imageLoadFailed": "Не удалось загрузить изображение"
+  },
+  "errorBoundary": {
+    "title": "Что-то пошло не так",
+    "description": "В приложении произошла неожиданная ошибка. Пожалуйста, попробуйте снова или обратитесь в службу поддержки, если проблема сохраняется.",
+    "errorMessage": "Сообщение об ошибке",
+    "tryAgain": "Попробовать снова",
+    "helpText": "Если эта проблема продолжается, пожалуйста, сообщите об этом на GitHub Issues. Вы можете найти файл журнала, нажав кнопку 'Открыть папку логов' выше."
+  },
+  "support": {
+    "title": "Помощь и поддержка",
+    "openLogs": "Открыть каталог логов",
+    "logsDescription": "Если у вас возникли проблемы, сообщите о них на GitHub Issues. Файл журнала помогает диагностировать проблемы приложения.",
+    "supportEmail": "Пожалуйста, сообщите о проблемах на https://github.com/dgdev22/loopmate/issues"
+  },
+  "resetData": {
+    "title": "Сбросить все данные",
+    "button": "Очистить все данные",
+    "description": "Это действие нельзя отменить. Следующие данные будут удалены:",
+    "warning": "Предупреждение: Это действие нельзя отменить.",
+    "items": {
+      "settings": "Настройки (язык, расширения файлов, интро/аутро)",
+      "history": "История заданий",
+      "queue": "Очередь заданий",
+      "onboarding": "Статус адаптации"
+    },
+    "confirm": "Удалить",
+    "cancel": "Отмена",
+    "success": "Все данные были очищены.",
+    "error": "Произошла ошибка при очистке данных."
+  },
+  "analytics": {
+    "consentModal": {
+      "title": "Помогите улучшить LoopMate",
+      "description": "Анонимные данные об использовании помогают нам исправлять ошибки и улучшать функции.",
+      "details": "Собранные данные:",
+      "benefit1": "Модели использования приложения (какие функции используются чаще всего)",
+      "benefit2": "Частота и типы ошибок",
+      "benefit3": "Метрики производительности (время обработки и т.д.)",
+      "allow": "Разрешить",
+      "dontAllow": "Не разрешать"
+    }
+  },
+  "warnings": {
+    "slowProcessing": "Влияние на производительность",
+    "effectsRequireReencoding": "Эффекты затухания/заполнения требуют перекодирования аудио, что медленнее. Для самой быстрой обработки (в 10-30 раз быстрее) отключите эти эффекты.",
+    "fastMode": "Быстрый режим активен",
+    "fastModeDesc": "Использование исходного качества аудио с потоковым копированием (без перекодирования). Обработка будет в 10-30 раз быстрее!"
+  },
+  "history": {
+    "duration": "Время выполнения"
+  }
+}

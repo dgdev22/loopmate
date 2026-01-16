@@ -1,0 +1,56 @@
+name: Build Windows
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Generate Windows icon (if needed)
+        # ICO 파일이 없거나 PNG 파일에서 생성 필요 시
+        run: |
+          if (!(Test-Path "build/icon.ico")) {
+            Write-Host "ICO file not found, generating from PNG..."
+            if (Test-Path "build/icon.png") {
+              npx --yes png2icons build/icon.png build/icon -icowe -i
+            } else {
+              Write-Host "Warning: icon.png not found, build will continue without icon"
+            }
+          } else {
+            Write-Host "ICO file already exists, skipping generation"
+          }
+        shell: pwsh
+        continue-on-error: true
+
+      - name: Build Windows (Portable only)
+        run: npm run build:win:portable
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Upload Windows artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: windows-build
+          path: |
+            release/**/*-Portable.exe
+            release/**/win-unpacked/**
+          retention-days: 30
+          if-no-files-found: error
+

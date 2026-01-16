@@ -1,0 +1,293 @@
+{
+  "app": {
+    "title": "LoopMate",
+    "tagline": "Créez des vidéos en 1 minute, même pour les débutants"
+  },
+  "time": {
+    "minutes": "min",
+    "seconds": "sec"
+  },
+  "splash": {
+    "loading": "Chargement..."
+  },
+  "menu": {
+    "title": "Menu",
+    "imageMusic": "Image + Musique",
+    "loopVideo": "Boucle Vidéo",
+    "concat": "Concaténer Vidéos",
+    "settings": "Paramètres"
+  },
+  "tabs": {
+    "imageMusic": {
+      "title": "Créer une Vidéo YouTube",
+      "description": "La musique seule suffit ! Crée une vidéo YouTube 16:9 avec fond noir si aucune image n'est fournie."
+    },
+    "loop": {
+      "title": "Prolonger la Boucle Vidéo",
+      "description": "Prolonge une boucle vidéo courte à la longueur souhaitée."
+    },
+    "concat": {
+      "title": "Concaténer Vidéos",
+      "description": "Fusionne plusieurs vidéos en une, ou applique intro/outro à une vidéo unique."
+    },
+    "settings": {
+      "title": "Paramètres",
+      "description": "Définissez des vidéos intro/outro qui peuvent être appliquées à chaque tâche via une case à cocher."
+    }
+  },
+  "buttons": {
+    "addToQueue": "Ajouter à la File",
+    "addToQueueWithCount": "Ajouter à la File ({{count}} éléments)",
+    "addMusic": "Ajouter Musique",
+    "addVideo": "Ajouter Vidéo",
+    "addImage": "Ajouter Image",
+    "selectFile": "Sélectionner Fichier",
+    "clear": "Effacer",
+    "remove": "Supprimer",
+    "change": "Changer",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "buyMeACoffee": "Offrez-moi un café",
+    "duplicate": "Dupliquer",
+    "addToQueueWithMusic": "Ajouter à la file ({{count}} pistes)",
+    "addToQueueWithVideos": "Ajouter à la file ({{count}} vidéos)",
+    "addToQueueNeedsVideo": "Ajouter à la file (Sélection de vidéo requise)",
+    "needsAtLeast2Videos": "Au moins 2 vidéos nécessaires"
+  },
+  "labels": {
+    "selectImage": "1. Sélectionner Image (Optionnel)",
+    "selectImageSub": "Fond noir (16:9) si non fourni",
+    "musicPlaylist": "2. Liste de Lecture (Lire dans l'ordre)",
+    "musicPlaylistSub": "Plusieurs fichiers peuvent être sélectionnés à la fois",
+    "itemsAdded": "{{count}} éléments ajoutés",
+    "selectVideo": "Fichier Vidéo",
+    "iterations": "Nombre d'itérations (ex: 60)",
+    "videoList": "Liste de Vidéos",
+    "videoListMultiple": "Liste de Vidéos (Fusionner dans l'ordre)"
+  },
+  "options": {
+    "title": "Options",
+    "fadeOut": "Appliquer fondu à la fin de chaque piste",
+    "fadeOutDesc": "Fait que les pistes se terminent naturellement. Essentiel pour les vidéos de compilation.",
+    "fadeOutDuration": "Durée:",
+    "seconds": "secondes",
+    "padding": "Ajouter temps de repos (après chaque piste)",
+    "paddingDesc": "Ajoute un temps de repos après chaque piste. L'image continue, seule la musique s'arrête. Ajouté aussi après la dernière piste pour des boucles fluides !",
+    "paddingDuration": "Temps de repos:",
+    "secondsSilence": "secondes (silence, image continue)",
+    "fadeIn": "Appliquer fondu au début (Optionnel)",
+    "fadeInDesc": "Fait que la vidéo commence en douceur.",
+    "videoFadeOut": "Appliquer fondu à la fin de chaque vidéo",
+    "videoFadeOutDesc": "Fait que les vidéos se terminent naturellement. Essentiel pour les vidéos de compilation.",
+    "videoPadding": "Ajouter espacement (Remplissage) entre vidéos",
+    "videoPaddingDesc": "Insère un écran noir entre les vidéos. Recommandé pour les vidéos de compilation."
+  },
+  "settings": {
+    "language": "Langue",
+    "selectLanguage": "Sélectionner Langue",
+    "allowAnalytics": "Autoriser l'analyse d'utilisation",
+    "fileExtensions": {
+      "title": "Extensions de Fichier Autorisées",
+      "description": "Configurez quelles extensions de fichier sont autorisées pour chaque type de fichier. Séparez plusieurs extensions par des virgules (ex: .jpg, .png, .webp).",
+      "image": "Extensions d'Image",
+      "video": "Extensions de Vidéo",
+      "audio": "Extensions Audio",
+      "formatHint": "Séparez les extensions par des virgules. Incluez le point (ex: .jpg, .png)",
+      "save": "Enregistrer",
+      "saving": "Enregistrement...",
+      "reset": "Réinitialiser par Défaut",
+      "saveError": "Échec de l'enregistrement des extensions de fichier"
+    },
+    "analyticsDescription": "Aidez-nous à améliorer l'application en partageant des données d'utilisation. Vous pouvez modifier ce paramètre à tout moment.",
+    "fastMode": {
+      "title": "⚡ Mode Rapide (Recommandé)",
+      "description": "Utilisez la qualité audio d'origine pour une vitesse maximale (10 à 30 fois plus rapide)",
+      "disabled": "Désactivé en Mode Rapide",
+      "slowWarning": "Le traitement sera considérablement plus lent lorsque le Mode Rapide est désactivé."
+    },
+    "audioQuality": {
+      "title": "Qualité Audio",
+      "description": "Choisissez la qualité audio pour la génération vidéo. Haute qualité = meilleur son mais fichier plus volumineux.",
+      "low": "Basse Qualité",
+      "medium": "Qualité Moyenne",
+      "high": "Haute Qualité (Recommandé)",
+      "studio": "Qualité Studio",
+      "codec": "Codec",
+      "bitrate": "Débit Binaire",
+      "sampleRate": "Taux d'Échantillonnage",
+      "fileSize": "Taille du Fichier"
+    }
+  },
+  "status": {
+    "processing": "Traitement...",
+    "completed": "Terminé",
+    "failed": "Échoué",
+    "waiting": "En attente",
+    "cancelled": "Annulé",
+    "interrupted": "Interrompu",
+    "ready": "Prêt"
+  },
+  "messages": {
+    "videoCreated": "Une vidéo MP4 1920x1080 (16:9) sera créée à côté du fichier musical original une fois terminée.",
+    "estimatedTime": "Durée estimée de la vidéo:",
+    "noHistory": "Aucun historique de tâches.",
+    "historyEmpty": "Les tâches terminées ou échouées apparaîtront ici.",
+    "noJobs": "Aucune tâche dans la file.",
+    "jobsEmpty": "Ajoutez des tâches pour commencer le traitement.",
+    "historyCount": "Historique de tâches {{count}} éléments",
+    "completedCount": "Terminés: {{count}}",
+    "failedCount": "Échoués: {{count}}",
+    "queueCount": "File ({{count}} éléments)"
+  },
+  "rightPanel": {
+    "queue": "File",
+    "history": "Historique"
+  },
+  "stepper": {
+    "upload": "Télécharger",
+    "processing": "Traitement",
+    "complete": "Terminé"
+  },
+  "videoGenerator": {
+    "steps": {
+      "selectMusic": "Sélectionner la musique",
+      "generateVideo": "Générer la vidéo",
+      "complete": "Terminé"
+    }
+  },
+  "videoLoop": {
+    "step1": "Sélectionner la vidéo",
+    "step2": "Traitement en boucle",
+    "step3": "Terminé"
+  },
+  "videoConcat": {
+    "step1": "Sélectionner les vidéos",
+    "step2": "Fusion",
+    "step3": "Terminé"
+  },
+  "job": {
+    "musicVideo": "Vidéo Musicale",
+    "videoLoop": "Boucle Vidéo",
+    "videoConcat": "Concaténer Vidéos",
+    "playlist": "Vidéo de Liste de Lecture ({{count}} pistes)",
+    "loopIterations": "{{name}} ({{iterations}} itérations)",
+    "concatCount": "Concaténer Vidéos ({{count}} éléments)",
+    "concatMultiple": "Concaténer Vidéos ({{count}} vidéos)",
+    "savedLocation": "Emplacement enregistré",
+    "error": "Erreur",
+    "inputFiles": "{{count}} fichiers d'entrée"
+  },
+  "common": {
+    "required": "Requis",
+    "optional": "Optionnel",
+    "close": "Fermer",
+    "delete": "Supprimer",
+    "confirm": "Confirmer",
+    "dropHere": "Déposez ici !",
+    "invalidFileFormat": "Format de fichier invalide.\nAutorisé: {{extensions}}",
+    "waitingCount": "{{count}} en attente",
+    "copied": "Copié !"
+  },
+  "fileDropZone": {
+    "regionLabel": "Zone de dépôt de fichiers pour {{label}}",
+    "selectFile": "Sélectionner {{label}}. Formats autorisés: {{extensions}}. Cliquez pour parcourir ou faites glisser et déposez un fichier ici.",
+    "selectedFile": "{{label}} sélectionné: {{fileName}}. Cliquez pour changer le fichier.",
+    "currentFile": "Fichier actuel: {{fileName}}",
+    "allowedFormats": "Formats autorisés: {{extensions}}",
+    "dragActive": "Fichier prêt à être déposé"
+  },
+  "timestamps": {
+    "title": "Horodatages YouTube",
+    "loading": "Chargement...",
+    "calculating": "Calcul de la durée des vidéos...",
+    "copy": "Copier dans le presse-papiers",
+    "copied": "Copié !",
+    "noVideos": "Aucune vidéo disponible",
+    "copyHistory": "Copier les horodatages",
+    "copyTooltip": "Copier les chapitres YouTube",
+    "copiedNotification": "Horodatages copiés dans le presse-papiers !"
+  },
+  "about": {
+    "title": "À propos du développeur",
+    "version": "Version",
+    "missionTitle": "Notre mission",
+    "mission": "Nous savons que créer de la musique consomme plus d'énergie émotionnelle qu'on ne le pense. LoopMate a été créé pour rendre ce processus un peu moins fatigant et un peu moins blessant.",
+    "connect": "Se connecter",
+    "website": "Site web",
+    "support": "Signaler un problème"
+  },
+  "updater": {
+    "available": "Nouvelle version disponible",
+    "downloading": "Téléchargement...",
+    "ready": "Mise à jour prête",
+    "error": "Erreur de mise à jour",
+    "version": "Version",
+    "download": "Télécharger",
+    "restart": "Redémarrer et installer",
+    "downloadFailed": "Échec du téléchargement",
+    "restartFailed": "Échec du redémarrage"
+  },
+  "errors": {
+    "somethingWentWrong": "Une erreur s'est produite",
+    "unknownError": "Une erreur inconnue s'est produite",
+    "errorId": "Code d'erreur",
+    "copyErrorId": "Copier le code d'erreur",
+    "openLogFolder": "Ouvrir le dossier des journaux",
+    "troubleshootingTips": "Conseils de dépannage",
+    "tip1": "Vérifiez que le fichier n'est pas corrompu",
+    "tip2": "Essayez de redémarrer l'application",
+    "tip3": "Assurez-vous que le chemin du fichier ne contient que des caractères anglais (optionnel)",
+    "label": "Erreur :",
+    "imageLoadFailed": "Échec du chargement de l'image"
+  },
+  "errorBoundary": {
+    "title": "Une erreur s'est produite",
+    "description": "L'application a rencontré une erreur inattendue. Veuillez réessayer ou contacter le support si le problème persiste.",
+    "errorMessage": "Message d'erreur",
+    "tryAgain": "Réessayer",
+    "helpText": "Si ce problème persiste, veuillez le signaler sur GitHub Issues. Vous pouvez trouver le fichier de journal en cliquant sur le bouton 'Ouvrir le dossier des journaux' ci-dessus."
+  },
+  "support": {
+    "title": "Aide et support",
+    "openLogs": "Ouvrir le répertoire des journaux",
+    "logsDescription": "Si vous rencontrez des problèmes, veuillez les signaler sur GitHub Issues. Le fichier journal aide à diagnostiquer les problèmes de l'application.",
+    "supportEmail": "Veuillez signaler les problèmes sur https://github.com/dgdev22/loopmate/issues"
+  },
+  "resetData": {
+    "title": "Réinitialiser toutes les données",
+    "button": "Effacer toutes les données",
+    "description": "Cette action ne peut pas être annulée. Les données suivantes seront supprimées:",
+    "warning": "Avertissement: Cette action ne peut pas être annulée.",
+    "items": {
+      "settings": "Paramètres (langue, extensions de fichiers, intro/outro)",
+      "history": "Historique des travaux",
+      "queue": "File d'attente des travaux",
+      "onboarding": "État d'intégration"
+    },
+    "confirm": "Supprimer",
+    "cancel": "Annuler",
+    "success": "Toutes les données ont été effacées.",
+    "error": "Une erreur s'est produite lors de l'effacement des données."
+  },
+  "analytics": {
+    "consentModal": {
+      "title": "Aidez à améliorer LoopMate",
+      "description": "Les données d'utilisation anonymes nous aident à corriger les bugs et à améliorer les fonctionnalités.",
+      "details": "Données collectées:",
+      "benefit1": "Modèles d'utilisation de l'application (fonctions les plus utilisées)",
+      "benefit2": "Fréquence et types d'erreurs",
+      "benefit3": "Métriques de performance (temps de traitement, etc.)",
+      "allow": "Autoriser",
+      "dontAllow": "Ne pas autoriser"
+    }
+  },
+  "warnings": {
+    "slowProcessing": "Impact sur les performances",
+    "effectsRequireReencoding": "Les effets de fondu/remplissage nécessitent un réencodage audio, ce qui est plus lent. Pour un traitement ultra-rapide (10 à 30 fois plus rapide), désactivez ces effets.",
+    "fastMode": "Mode rapide activé",
+    "fastModeDesc": "Utilisation de la qualité audio d'origine avec copie de flux (sans réencodage). Le traitement sera 10 à 30 fois plus rapide !"
+  },
+  "history": {
+    "duration": "Durée"
+  }
+}
