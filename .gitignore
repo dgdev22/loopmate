@@ -29,3 +29,6 @@ release/
 # Test reports and results
 playwright-report/
 test-results/
+
+# Generated icons (can be regenerated from source)
+build/store-icons/

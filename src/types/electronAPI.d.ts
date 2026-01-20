@@ -10,6 +10,8 @@ declare global {
       openFile: (filePath: string) => Promise<void>
       fileExists: (filePath: string) => Promise<boolean>
       getAppPath: () => Promise<string>
+      isStoreBuild: () => Promise<{ isStoreBuild: boolean }>
+      getPlatformInfo: () => Promise<{ platform: string; isDev: boolean; isMas: boolean }>
       getImageDataUrl: (filePath: string) => Promise<{ success: boolean; dataUrl?: string; error?: string }>
 
       // Video / Audio

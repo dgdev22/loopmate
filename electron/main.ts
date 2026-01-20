@@ -34,6 +34,25 @@ const __dirname = path.dirname(__filename)
 const isDev = process.env.VITE_DEV_SERVER_URL !== undefined
 const isPackaged = app.isPackaged
 
+/**
+ * Check if running in Microsoft Store build
+ * Uses process.windowsStore (Electron property) or IS_STORE environment variable
+ */
+function isStoreBuild(): boolean {
+  // Check environment variable (set during build)
+  if (process.env.IS_STORE === 'true') {
+    return true
+  }
+  
+  // Check Electron's process.windowsStore property (runtime check)
+  // This is available when running from Microsoft Store
+  if (process.windowsStore) {
+    return true
+  }
+  
+  return false
+}
+
 // 3. Initialize Logger (with console override and global error handlers)
 let win: BrowserWindow | null = null
 
@@ -566,6 +585,20 @@ ipcMain.handle('app:get-path', async () => {
   } catch (err) {
     log.error('Failed to get app path:', err)
     throw new Error('Failed to get app path')
+  }
+})
+
+// Check if running in Microsoft Store build
+ipcMain.handle('app:is-store-build', async () => {
+  return { isStoreBuild: isStoreBuild() }
+})
+
+// Get platform information (platform, isDev, isMas)
+ipcMain.handle('app:get-platform-info', async () => {
+  return {
+    platform: process.platform,
+    isDev: isDev,
+    isMas: process.mas === true,
   }
 })
 

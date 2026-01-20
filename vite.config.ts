@@ -5,6 +5,10 @@ import electron from 'vite-plugin-electron/simple'
 import react from '@vitejs/plugin-react'
 
 export default defineConfig({
+  define: {
+    // Inject VITE_IS_STORE_BUILD environment variable into the app
+    'import.meta.env.VITE_IS_STORE_BUILD': JSON.stringify(process.env.IS_STORE === 'true' ? 'true' : 'false'),
+  },
   plugins: [
     react(),
     ...(process.env.NODE_ENV === 'test'

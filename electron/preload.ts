@@ -17,6 +17,8 @@ contextBridge.exposeInMainWorld('electronAPI', {
   openFile: (filePath) => ipcRenderer.invoke('file:open', filePath),
   fileExists: (filePath) => ipcRenderer.invoke('file:exists', filePath),
   getAppPath: () => ipcRenderer.invoke('app:get-path'),
+  isStoreBuild: () => ipcRenderer.invoke('app:is-store-build'),
+  getPlatformInfo: () => ipcRenderer.invoke('app:get-platform-info'),
   getImageDataUrl: (filePath: string) => ipcRenderer.invoke('file:get-image-data-url', filePath),
   getAudioDuration: (audioPath: string) => ipcRenderer.invoke('audio:get-duration', audioPath),
   onProgress: (callback) => {

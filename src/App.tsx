@@ -18,6 +18,7 @@ import confetti from 'canvas-confetti'
 import { useSettingsStore } from "@/store/useSettingsStore"
 import { useHistory } from "@/hooks/useHistory"
 import { Job, JobType, JobStatus } from "@/types"
+import { shouldHideDonation, initPlatformInfo } from "@/constants/env"
 // Note: window.electronAPI is typed globally in src/types/electronAPI.d.ts
 
 
@@ -91,10 +92,24 @@ export default function App() {
   // History management
   const { history, saveHistory, deleteHistoryItem, clearHistory } = useHistory()
 
+  // Donation UI visibility (hide in store builds, macOS, or dev mode)
+  const [shouldHideDonationState, setShouldHideDonationState] = useState(false)
 
   // Load settings and recover queue
   const [, setShowResumeModal] = useState(false)
   const [, setInterruptedTasks] = useState<Job[]>([])
+
+  // Initialize platform info and check if donation UI should be hidden
+  useEffect(() => {
+    const checkDonationVisibility = async () => {
+      // Initialize platform info first
+      await initPlatformInfo()
+      // Then check if donation should be hidden
+      const hide = await shouldHideDonation()
+      setShouldHideDonationState(hide)
+    }
+    checkDonationVisibility()
+  }, [])
 
   useEffect(() => {
     const loadSettings = async () => {
@@ -962,25 +977,27 @@ export default function App() {
             <p className="text-slate-400 mt-1 text-sm">{t('app.tagline')}</p>
         </div>
         <div className="flex items-center gap-4">
-          <button
-            onClick={async () => {
-              if (window.electronAPI?.openExternal) {
-                try {
-                  const result = await window.electronAPI.openExternal('https://buymeacoffee.com/loopmateapp')
-                  if (result && 'success' in result && !result.success) {
-                    console.error('Failed to open external link:', result.error || 'Unknown error')
+          {!shouldHideDonationState && (
+            <button
+              onClick={async () => {
+                if (window.electronAPI?.openExternal) {
+                  try {
+                    const result = await window.electronAPI.openExternal('https://buymeacoffee.com/loopmateapp')
+                    if (result && typeof result === 'object' && 'success' in result && !result.success) {
+                      console.error('Failed to open external link:', (result as { error?: string }).error || 'Unknown error')
+                    }
+                  } catch (error) {
+                    console.error('Failed to open external link:', error)
                   }
-                } catch (error) {
-                  console.error('Failed to open external link:', error)
                 }
-              }
-            }}
-            className="flex items-center gap-2 px-3 py-1.5 text-xs text-slate-400 hover:text-orange-400 transition-colors rounded-md hover:bg-slate-800/50 border border-slate-700/50 hover:border-orange-500/30"
-            title={t('buttons.buyMeACoffee')}
-          >
-            <Coffee className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">{t('buttons.buyMeACoffee')}</span>
-          </button>
+              }}
+              className="flex items-center gap-2 px-3 py-1.5 text-xs text-slate-400 hover:text-orange-400 transition-colors rounded-md hover:bg-slate-800/50 border border-slate-700/50 hover:border-orange-500/30"
+              title={t('buttons.buyMeACoffee')}
+            >
+              <Coffee className="w-3.5 h-3.5" />
+              <span className="hidden sm:inline">{t('buttons.buyMeACoffee')}</span>
+            </button>
+          )}
         </div>
         </div>
       </header>
