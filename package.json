@@ -12,8 +12,8 @@
     "build": "vite build && electron-builder",
     "build:win": "vite build && electron-builder --win portable appx --x64",
     "build:win:portable": "vite build && electron-builder --win portable --x64",
-    "build:win:store": "vite build && electron-builder --win appx --x64",
-    "build:ms-store": "IS_STORE=true vite build && electron-builder --win appx --x64",
+    "build:win:store": "vite build && npm run build:appx-assets && electron-builder --win appx --x64",
+    "build:ms-store": "IS_STORE=true vite build && npm run build:appx-assets && electron-builder --win appx --x64",
     "build:mac": "vite build && electron-builder --mac dmg zip",
     "build:mac:dmg": "vite build && electron-builder --mac dmg",
     "build:mac:zip": "vite build && electron-builder --mac zip",
@@ -30,7 +30,9 @@
     "test:e2e:headed": "playwright test --headed",
     "test:e2e:debug": "playwright test --debug",
     "generate:store-icons": "node scripts/generate-store-icons.js",
-    "generate:electron-icons": "npx electron-icon-builder --input=./assets/windows.png --output=./build --flatten"
+    "generate:electron-icons": "npx electron-icon-builder --input=./assets/windows.png --output=./build --flatten",
+    "prepare:appx-assets": "node scripts/copy-appx-assets.js",
+    "build:appx-assets": "npm run generate:store-icons && npm run prepare:appx-assets"
   },
   "dependencies": {
     "@radix-ui/react-alert-dialog": "^1.1.15",

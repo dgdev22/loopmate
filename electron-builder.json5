@@ -77,7 +77,26 @@
     ],
     "artifactName": "${productName}-Store-${version}.${ext}",
     "backgroundColor": "#020617",
-    "displayName": "LoopMate"
+    "displayName": "LoopMate",
+    // AppX Assets 경로 설정
+    // electron-builder는 build/appx/assets/ 폴더에서 아이콘을 찾습니다
+    // Policy 10.1.1.11 (On Device Tiles) 준수를 위해 모든 필수 아이콘 포함
+    "assets": "build/appx/assets",
+    // Visual Elements 설정 - 모든 필수 아이콘 명시
+    // 특히 Square44x44Logo는 AppList 로고로 필수 (Policy 10.1.1.11)
+    "visualElements": {
+      "Square44x44Logo": "Square44x44Logo.png",
+      "Square50x50Logo": "Square50x50Logo.png",
+      "Square71x71Logo": "Square71x71Logo.png",
+      "Square89x89Logo": "Square89x89Logo.png",
+      "Square107x107Logo": "Square107x107Logo.png",
+      "Square142x142Logo": "Square142x142Logo.png",
+      "Square150x150Logo": "Square150x150Logo.png",
+      "Square284x284Logo": "Square284x284Logo.png",
+      "Square310x310Logo": "Square310x310Logo.png",
+      "Wide310x150Logo": "Wide310x150Logo.png",
+      "StoreLogo": "StoreLogo.png"
+    }
   },
   // NSIS 설치 프로그램은 더 이상 기본으로 사용하지 않습니다 (포터블이 트렌드)
   // 필요시 아래 설정을 사용하세요:
