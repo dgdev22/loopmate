@@ -32,4 +32,4 @@ test-results/
 
 # Generated icons (can be regenerated from source)
 build/store-icons/
-build/appx/assets/
+# build/appx/assets/ - Keep in git for electron-builder to use
