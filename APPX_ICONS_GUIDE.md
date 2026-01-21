@@ -38,32 +38,19 @@ build/
 
 ### 1. electron-builder.json5 설정
 
-`electron-builder.json5`의 `appx` 섹션에 다음 설정이 포함되어 있습니다:
+`electron-builder.json5`의 `appx` 섹션은 기본 설정만 포함합니다:
 
 ```json5
 "appx": {
-  // ... 기타 설정 ...
-  
-  // AppX Assets 경로 설정
-  "assets": "build/appx/assets",
-  
-  // Visual Elements 설정 - 모든 필수 아이콘 명시
-  // 특히 Square44x44Logo는 AppList 로고로 필수 (Policy 10.1.1.11)
-  "visualElements": {
-    "Square44x44Logo": "Square44x44Logo.png",
-    "Square50x50Logo": "Square50x50Logo.png",
-    "Square71x71Logo": "Square71x71Logo.png",
-    "Square89x89Logo": "Square89x89Logo.png",
-    "Square107x107Logo": "Square107x107Logo.png",
-    "Square142x142Logo": "Square142x142Logo.png",
-    "Square150x150Logo": "Square150x150Logo.png",
-    "Square284x284Logo": "Square284x284Logo.png",
-    "Square310x310Logo": "Square310x310Logo.png",
-    "Wide310x150Logo": "Wide310x150Logo.png",
-    "StoreLogo": "StoreLogo.png"
-  }
+  // ... 기타 설정 (publisher, identityName, etc.) ...
+  "backgroundColor": "#020617",
+  "displayName": "LoopMate"
+  // Note: electron-builder automatically detects icons from build/appx/assets/ folder
+  // Required icons are automatically included if present in build/appx/assets/
 }
 ```
+
+**중요**: electron-builder 24.13.3은 `assets`와 `visualElements` 속성을 지원하지 않습니다. 대신 `build/appx/assets/` 폴더에 올바른 이름의 아이콘 파일이 있으면 자동으로 감지하여 사용합니다.
 
 ### 2. 아이콘 생성 및 준비
 
@@ -158,7 +145,8 @@ npm run build:win:store
 **해결**:
 1. `build/appx/assets/` 폴더 확인
 2. 파일 이름이 정확한지 확인 (대소문자 포함)
-3. `electron-builder.json5`의 `assets` 경로 확인
+3. `npm run build:appx-assets` 실행하여 아이콘 준비 확인
+4. electron-builder는 `build/appx/assets/` 폴더를 자동으로 스캔합니다
 
 ### 문제: 빌드 시 아이콘을 찾을 수 없다는 오류
 
