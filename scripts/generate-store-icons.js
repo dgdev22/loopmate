@@ -25,14 +25,14 @@ const __dirname = path.dirname(__filename);
 const rootDir = path.join(__dirname, '..');
 
 // Input and output paths
-// Use favicon.png as source for Microsoft Store icons (Policy 10.1.1.11 compliance)
-// Check both public/ and assets/ directories for favicon.png
-const faviconPaths = [
-  path.join(rootDir, 'public', 'favicon.png'),
-  path.join(rootDir, 'assets', 'favicon.png'),
-  path.join(rootDir, 'assets', 'windows.png') // Fallback to windows.png if favicon.png not found
+// Use assets/windows.png as primary source for Microsoft Store icons (Policy 10.1.1.11 compliance)
+// This ensures consistent branding across all UWP tile icons
+const inputImagePaths = [
+  path.join(rootDir, 'assets', 'windows.png'), // Primary source
+  path.join(rootDir, 'public', 'favicon.png'), // Fallback
+  path.join(rootDir, 'assets', 'favicon.png')  // Fallback
 ];
-const inputImage = faviconPaths.find(p => fs.existsSync(p)) || faviconPaths[0];
+const inputImage = inputImagePaths.find(p => fs.existsSync(p)) || inputImagePaths[0];
 const outputDir = path.join(rootDir, 'build', 'store-icons');
 
 // Microsoft Store required icon sizes
