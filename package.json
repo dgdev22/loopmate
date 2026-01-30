@@ -31,6 +31,8 @@
     "test:e2e:debug": "playwright test --debug",
     "sync:version": "node scripts/sync-version-from-tag.js",
     "verify:appx-icons": "node scripts/verify-appx-icons.js",
+    "verify:icon-content": "node scripts/verify-icon-content.js",
+    "preview:appx-icons": "node scripts/open-icon-preview.js",
     "generate:store-icons": "node scripts/generate-store-icons.js",
     "generate:electron-icons": "npx electron-icon-builder --input=./assets/windows.png --output=./build --flatten",
     "prepare:appx-assets": "node scripts/copy-appx-assets.js",
