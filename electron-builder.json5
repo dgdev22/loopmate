@@ -104,7 +104,10 @@
     "artifactName": "${productName}-Store-${version}.${ext}",
     "backgroundColor": "#020617",
     "displayName": "LoopMate"
-    // Note: electron-builder automatically detects icons from build/appx/assets/ folder
+    // CRITICAL: electron-builder automatically detects icons from build/appx/assets/ folder
+    // All icons must be present BEFORE building to prevent default Electron icon (atom logo)
+    // The buildResources is set to "build", so icons should be in build/appx/assets/
+    // Run "npm run build:appx-assets" before building AppX to ensure all icons are ready
     // All required icons for Policy 10.1.1.11 must be present in build/appx/assets/:
     // Required icons (Policy 10.1.1.11 compliance):
     // - Square44x44Logo.png (AppList logo - required) ⭐
