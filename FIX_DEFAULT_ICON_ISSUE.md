@@ -94,6 +94,51 @@ npm run build:win:store
 - [ ] 아이콘 파일 이름이 정확한지 확인 (대소문자 포함)
 - [ ] `build/appx/assets/` 폴더에 총 11개 아이콘이 있는지 확인
 
+## 즉시 확인 방법
+
+### 1단계: 원본 소스 폴더 확인 (가장 중요)
+
+**Mac Finder에서:**
+1. 프로젝트 폴더 열기
+2. `build/appx/assets/` 폴더로 이동
+3. 다음 파일들을 미리보기로 확인:
+   - `Square44x44Logo.png`
+   - `Square150x150Logo.png`
+   - `StoreLogo.png`
+   - `Wide310x150Logo.png`
+
+**검증 기준:** 이미지가 LoopMate 로고인가요, 아니면 파란색 원자(Electron 기본) 모양인가요?
+
+**자동 검증:**
+```bash
+npm run verify:appx-icons
+```
+이 명령어는 모든 필수 아이콘을 확인하고 Finder를 자동으로 엽니다.
+
+### 2단계: 결과물 검증 (확실한 검증)
+
+빌드된 `.appx` 파일을 직접 확인하는 방법:
+
+```bash
+# 1. 빌드 실행
+npm run build:ms-store
+
+# 2. 생성된 .appx 파일 찾기
+# 보통 release/1.0.0/ 폴더에 생성됩니다
+
+# 3. .appx 파일을 .zip으로 이름 변경
+cd release/1.0.0
+mv LoopMate-Store-1.0.0.appx LoopMate-Store-1.0.0.zip
+
+# 4. 압축 해제
+unzip LoopMate-Store-1.0.0.zip -d appx-contents
+
+# 5. Assets 폴더 확인
+open appx-contents/Assets
+```
+
+**검증:** `Assets/` 폴더 안의 `StoreLogo.png`, `Square150x150Logo.png` 등이 LoopMate 로고인지 확인하세요.
+
 ## 문제 해결
 
 ### 문제: 여전히 기본 Electron 아이콘이 포함됨
