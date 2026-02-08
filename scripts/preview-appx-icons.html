@@ -160,6 +160,60 @@
     </div>
     
     <script>
+        // === Section 1: Core App Icons (icon.ico, icon.png) ===
+        // These are the MOST IMPORTANT - electron-builder uses these for the exe and AppX
+        const coreIcons = [
+            { name: 'icon.png', path: '../build/icon.png', size: '1024×1024', critical: true, desc: 'EXE 및 AppX 메인 아이콘' },
+        ];
+        
+        // Add core icons section
+        const coreSection = document.createElement('div');
+        coreSection.innerHTML = `
+            <h2 style="color: #ef4444; margin: 20px 0 10px;">🚨 핵심 아이콘 (electron-builder가 사용)</h2>
+            <p style="color: #fca5a5; margin-bottom: 15px;">이 아이콘이 Electron 기본 아이콘이면 AppX에도 기본 아이콘이 들어갑니다!</p>
+        `;
+        const coreGrid = document.createElement('div');
+        coreGrid.className = 'icon-grid';
+        coreSection.appendChild(coreGrid);
+        document.getElementById('iconGrid').before(coreSection);
+        
+        coreIcons.forEach(icon => {
+            const card = document.createElement('div');
+            card.className = 'icon-card critical';
+            card.style.borderColor = '#ef4444';
+            
+            const img = document.createElement('img');
+            img.src = icon.path;
+            img.alt = icon.name;
+            img.className = 'icon-image';
+            
+            const name = document.createElement('div');
+            name.className = 'icon-name';
+            name.textContent = icon.name;
+            
+            const size = document.createElement('div');
+            size.className = 'icon-size';
+            size.textContent = `${icon.size} — ${icon.desc}`;
+            
+            const status = document.createElement('div');
+            status.className = 'status valid';
+            status.style.background = '#7f1d1d';
+            status.textContent = '🚨 반드시 LoopMate 로고여야 합니다';
+            
+            card.appendChild(img);
+            card.appendChild(name);
+            card.appendChild(size);
+            card.appendChild(status);
+            card.addEventListener('click', () => window.open(img.src, '_blank'));
+            coreGrid.appendChild(card);
+        });
+
+        // === Section 2: AppX Tile Icons ===
+        const tileHeader = document.createElement('h2');
+        tileHeader.style.cssText = 'color: #f59e0b; margin: 30px 0 10px;';
+        tileHeader.textContent = '📐 AppX 타일 아이콘 (build/appx/assets/)';
+        document.getElementById('iconGrid').before(tileHeader);
+
         const icons = [
             { name: 'Square44x44Logo.png', size: '44×44', critical: true },
             { name: 'Square50x50Logo.png', size: '50×50', critical: false },

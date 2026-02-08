@@ -10,8 +10,8 @@
     "dev:debug": "ENABLE_DEVTOOLS=true vite",
     "dev:profile": "PROFILE=dev vite",
     "build": "npm run sync:version && vite build && electron-builder",
-    "build:win": "npm run sync:version && vite build && electron-builder --win portable appx --x64",
-    "build:win:portable": "npm run sync:version && vite build && electron-builder --win portable --x64",
+    "build:win": "npm run sync:version && npm run generate:app-icons && vite build && electron-builder --win portable appx --x64",
+    "build:win:portable": "npm run sync:version && npm run generate:app-icons && vite build && electron-builder --win portable --x64",
     "build:win:store": "npm run sync:version && vite build && npm run build:appx-assets && electron-builder --win appx --x64",
     "build:ms-store": "npm run sync:version && IS_STORE=true vite build && npm run build:appx-assets && electron-builder --win appx --x64",
     "build:mac": "npm run sync:version && vite build && electron-builder --mac dmg zip",
@@ -34,9 +34,10 @@
     "verify:icon-content": "node scripts/verify-icon-content.js",
     "preview:appx-icons": "node scripts/open-icon-preview.js",
     "generate:store-icons": "node scripts/generate-store-icons.js",
+    "generate:app-icons": "node scripts/generate-app-icons.js",
     "generate:electron-icons": "npx electron-icon-builder --input=./assets/windows.png --output=./build --flatten",
     "prepare:appx-assets": "node scripts/copy-appx-assets.js",
-    "build:appx-assets": "npm run generate:store-icons && npm run prepare:appx-assets",
+    "build:appx-assets": "npm run generate:app-icons && npm run generate:store-icons && npm run prepare:appx-assets",
     "prebuild": "npm run sync:version"
   },
   "dependencies": {
