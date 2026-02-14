@@ -21,7 +21,8 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const rootDir = path.join(__dirname, '..');
 
-const appxAssetsDir = path.join(rootDir, 'build', 'appx', 'assets');
+// CRITICAL: electron-builder reads from build/appx/ directly, NOT build/appx/assets/
+const appxAssetsDir = path.join(rootDir, 'build', 'appx');
 const sourceImagePath = path.join(rootDir, 'assets', 'windows.png');
 const storeIconsDir = path.join(rootDir, 'build', 'store-icons');
 
@@ -161,7 +162,7 @@ function verifyIconContent() {
   if (allValid) {
     console.log('\n✅ Icon content verification passed!');
     console.log('\n💡 However, visual verification is still recommended:');
-    console.log('   1. Open Finder: build/appx/assets/');
+    console.log('   1. Open Finder: build/appx/');
     console.log('   2. Check Square150x150Logo.png visually');
     console.log('   3. Should show LoopMate logo (infinity symbol with play button)');
     console.log('   4. Should NOT show Electron atom icon');

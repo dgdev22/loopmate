@@ -4,158 +4,130 @@
 
 Microsoft Store 제출 시 다음 오류로 거절될 수 있습니다:
 - **"The available product tile icons include a default image"**
+- **Policy 10.1.1.11 On Device Tiles** 위반
 - 앱이 Electron 프레임워크의 기본 아이콘(원자 모양)을 사용하고 있음
 
-## 원인
+## 근본 원인 (2026년 2월 확인)
 
-electron-builder가 `build/appx/assets/` 폴더의 아이콘을 찾지 못하거나, 빌드 전에 아이콘이 준비되지 않았을 때 기본 Electron 아이콘이 포함됩니다.
+**electron-builder v24.13.3은 `build/appx/` 폴더에서 직접 아이콘을 읽습니다.**
+
+`AppxTarget.js`의 `computeUserAssets()` 함수가 `readdir(build/appx/)`를 실행하여 파일 목록을 가져옵니다.
+
+### ❌ 잘못된 위치 (이전 설정)
+```
+build/appx/assets/Square44x44Logo.png  ← electron-builder가 찾지 못함!
+```
+
+`readdir(build/appx/)` → `['assets']` → `'assets'.includes('.')` → `false` → 필터링됨 → `userAssets = []` → **기본 Electron 아이콘 사용!**
+
+### ✅ 올바른 위치
+```
+build/appx/Square44x44Logo.png  ← electron-builder가 직접 찾음
+build/appx/Square150x150Logo.png
+build/appx/StoreLogo.png
+build/appx/Wide310x150Logo.png
+build/appx/LargeTile.png        ← 310x310 타일 (electron-builder 전용 이름)
+build/appx/SmallTile.png        ← 71x71 타일 (electron-builder 전용 이름)
+```
+
+### electron-builder의 타일 아이콘 이름 규칙
+
+electron-builder는 `defaultTileTag()` 함수에서 특수한 파일 이름을 사용합니다:
+
+| 용도 | electron-builder가 찾는 이름 | Manifest에서의 이름 |
+|------|----------------------------|-------------------|
+| 대형 타일 (310x310) | `LargeTile.png` | `Square310x310Logo` |
+| 소형 타일 (71x71) | `SmallTile.png` | `Square71x71Logo` |
+| 잠금 화면 | `BadgeLogo.png` | `BadgeLogo` |
+| 스플래시 화면 | `SplashScreen.png` | `SplashScreen` |
 
 ## 해결 방법
 
-### 1. 필수 아이콘 확인
-
-빌드 전에 다음 아이콘이 모두 존재하는지 확인:
+### 1. 아이콘 생성 및 준비
 
 ```bash
-# 필수 아이콘 확인
-ls -la build/appx/assets/ | grep -E "(Square44x44|Square150x150|StoreLogo)"
-```
-
-필수 아이콘:
-- ✅ `Square44x44Logo.png` (AppList 로고 - Policy 10.1.1.11 필수)
-- ✅ `Square150x150Logo.png` (기본 타일 - Policy 10.1.1.11 필수)
-- ✅ `StoreLogo.png` (스토어 로고 - Policy 10.1.1.11 필수)
-- ✅ 기타 타일 크기 (50x50, 71x71, 89x89, 107x107, 142x142, 284x284, 310x310, Wide310x150)
-
-### 2. 아이콘 생성 및 준비
-
-빌드 전에 반드시 아이콘을 생성하고 준비해야 합니다:
-
-```bash
-# AppX 자산 준비 (아이콘 생성 + 복사)
+# AppX 자산 준비 (아이콘 생성 + 올바른 위치로 복사)
 npm run build:appx-assets
 ```
 
 이 명령어는:
-1. `assets/windows.png`를 기반으로 모든 스토어 아이콘 생성
-2. 필수 AppX 아이콘을 `build/appx/assets/` 폴더로 복사
+1. `assets/windows.png`를 기반으로 모든 스토어 아이콘 생성 (`build/store-icons/`)
+2. 필수 AppX 아이콘을 `build/appx/` 폴더로 복사 (올바른 이름으로 변환 포함)
+3. `Square310x310Logo.png` → `LargeTile.png`으로 이름 변경
+4. `Square71x71Logo.png` → `SmallTile.png`으로 이름 변경
 
-### 3. 올바른 빌드 워크플로우
+### 2. 아이콘 확인
 
-**❌ 잘못된 방법:**
 ```bash
-npm run build:ms-store  # 아이콘이 없으면 기본 Electron 아이콘이 포함됨
+# 올바른 위치에 아이콘이 있는지 확인
+ls -la build/appx/*.png
+
+# 자동 검증
+npm run verify:appx-icons
 ```
 
-**✅ 올바른 방법:**
+### 3. 빌드
+
 ```bash
-# 방법 1: build:ms-store는 자동으로 아이콘을 준비합니다
+# Microsoft Store용 빌드 (아이콘 자동 준비 포함)
+npm run build:ms-store
+```
+
+### 4. 빌드된 패키지 검증
+
+```bash
+# 1. 빌드 실행
 npm run build:ms-store
 
-# 방법 2: 수동으로 준비 후 빌드
-npm run build:appx-assets
-npm run build:win:store
+# 2. .appx 파일을 .zip으로 이름 변경하여 내용 확인
+cd release/<version>
+cp LoopMate-Store-*.appx LoopMate-check.zip
+unzip LoopMate-check.zip -d appx-contents
+
+# 3. Assets 폴더 확인 - LoopMate 로고가 있어야 함 (Electron 원자 아이콘 X)
+open appx-contents/assets
+
+# 4. AppxManifest.xml 확인
+cat appx-contents/AppxManifest.xml
 ```
-
-### 4. electron-builder.json5 설정 확인
-
-`electron-builder.json5`의 설정이 올바른지 확인:
-
-```json5
-{
-  "directories": {
-    "buildResources": "build"  // build/appx/assets/ 폴더를 찾습니다
-  },
-  "appx": {
-    // electron-builder는 build/appx/assets/ 폴더를 자동으로 감지합니다
-    // 모든 아이콘이 빌드 전에 준비되어 있어야 합니다
-  }
-}
-```
-
-### 5. 빌드된 패키지 검증
-
-빌드 후 생성된 `.appx` 파일을 확인:
-
-1. `.appx` 파일을 `.zip`으로 이름 변경
-2. 압축 해제
-3. `AppxManifest.xml` 파일 확인
-4. `Assets/` 폴더에 올바른 아이콘이 포함되어 있는지 확인
 
 ## 체크리스트
 
 빌드 전 확인사항:
 
 - [ ] `npm run build:appx-assets` 실행 완료
-- [ ] `build/appx/assets/Square44x44Logo.png` 존재 확인
-- [ ] `build/appx/assets/Square150x150Logo.png` 존재 확인
-- [ ] `build/appx/assets/StoreLogo.png` 존재 확인
-- [ ] 모든 아이콘 파일이 PNG 형식인지 확인
-- [ ] 아이콘 파일 이름이 정확한지 확인 (대소문자 포함)
-- [ ] `build/appx/assets/` 폴더에 총 11개 아이콘이 있는지 확인
+- [ ] `build/appx/Square44x44Logo.png` 존재 확인 ⭐
+- [ ] `build/appx/Square150x150Logo.png` 존재 확인 ⭐
+- [ ] `build/appx/StoreLogo.png` 존재 확인 ⭐
+- [ ] `build/appx/Wide310x150Logo.png` 존재 확인 ⭐
+- [ ] `build/appx/LargeTile.png` 존재 확인 (310x310)
+- [ ] `build/appx/SmallTile.png` 존재 확인 (71x71)
+- [ ] `build/appx/assets/` 하위 폴더가 없는지 확인 (있으면 삭제됨)
+- [ ] 모든 아이콘이 LoopMate 로고인지 시각적 확인
 
-## 즉시 확인 방법
+## 참고: electron-builder 소스코드 분석
 
-### 1단계: 원본 소스 폴더 확인 (가장 중요)
+`node_modules/app-builder-lib/out/targets/AppxTarget.js`:
 
-**Mac Finder에서:**
-1. 프로젝트 폴더 열기
-2. `build/appx/assets/` 폴더로 이동
-3. 다음 파일들을 미리보기로 확인:
-   - `Square44x44Logo.png`
-   - `Square150x150Logo.png`
-   - `StoreLogo.png`
-   - `Wide310x150Logo.png`
+```js
+// electron-builder가 아이콘을 찾는 방법:
+const userAssetDir = await this.packager.getResource(undefined, "appx");
+// → build/appx/ 폴더를 가리킴
 
-**검증 기준:** 이미지가 LoopMate 로고인가요, 아니면 파란색 원자(Electron 기본) 모양인가요?
+// 파일 목록 읽기:
+userAssets = (await readdir(userAssetDir)).filter(it => 
+  !it.startsWith(".") && !it.endsWith(".db") && it.includes(".")
+);
+// → "assets" 디렉토리는 "."이 없어서 필터링됨!
 
-**자동 검증:**
-```bash
-npm run verify:appx-icons
+// 기본 아이콘 fallback:
+const vendorAssetsForDefaultAssets = {
+  "StoreLogo.png": "SampleAppx.50x50.png",           // ← 기본 Electron 아이콘
+  "Square150x150Logo.png": "SampleAppx.150x150.png",  // ← 기본 Electron 아이콘
+  "Square44x44Logo.png": "SampleAppx.44x44.png",      // ← 기본 Electron 아이콘
+  "Wide310x150Logo.png": "SampleAppx.310x150.png",    // ← 기본 Electron 아이콘
+};
 ```
-이 명령어는 모든 필수 아이콘을 확인하고 Finder를 자동으로 엽니다.
-
-### 2단계: 결과물 검증 (확실한 검증)
-
-빌드된 `.appx` 파일을 직접 확인하는 방법:
-
-```bash
-# 1. 빌드 실행
-npm run build:ms-store
-
-# 2. 생성된 .appx 파일 찾기
-# 보통 release/1.0.0/ 폴더에 생성됩니다
-
-# 3. .appx 파일을 .zip으로 이름 변경
-cd release/1.0.0
-mv LoopMate-Store-1.0.0.appx LoopMate-Store-1.0.0.zip
-
-# 4. 압축 해제
-unzip LoopMate-Store-1.0.0.zip -d appx-contents
-
-# 5. Assets 폴더 확인
-open appx-contents/Assets
-```
-
-**검증:** `Assets/` 폴더 안의 `StoreLogo.png`, `Square150x150Logo.png` 등이 LoopMate 로고인지 확인하세요.
-
-## 문제 해결
-
-### 문제: 여전히 기본 Electron 아이콘이 포함됨
-
-**해결:**
-1. `build/appx/assets/` 폴더를 완전히 삭제
-2. `npm run build:appx-assets` 재실행
-3. 모든 아이콘이 올바르게 생성되었는지 확인
-4. 빌드 전에 `build/appx/assets/` 폴더 내용 확인
-
-### 문제: 아이콘이 빌드에 포함되지 않음
-
-**해결:**
-1. `electron-builder.json5`의 `buildResources` 설정 확인
-2. `build/appx/assets/` 폴더 경로 확인
-3. 파일 이름이 정확한지 확인 (대소문자 포함)
-4. 빌드 로그에서 아이콘 관련 오류 확인
 
 ## 참고 자료
 

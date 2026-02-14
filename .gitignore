@@ -32,4 +32,5 @@ test-results/
 
 # Generated icons (can be regenerated from source)
 build/store-icons/
-# build/appx/assets/ - Keep in git for electron-builder to use
+# build/appx/ icons are kept in git for electron-builder to use
+# CRITICAL: icons must be directly in build/appx/ (NOT build/appx/assets/)

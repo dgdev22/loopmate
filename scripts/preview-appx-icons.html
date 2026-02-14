@@ -154,7 +154,7 @@
             <ol>
                 <li>터미널에서 실행: <code>npm run build:appx-assets</code></li>
                 <li>이 페이지를 새로고침하세요</li>
-                <li>여전히 문제가 있으면 <code>build/appx/assets/</code> 폴더의 이미지를 직접 확인하세요</li>
+                <li>여전히 문제가 있으면 <code>build/appx/</code> 폴더의 이미지를 직접 확인하세요</li>
             </ol>
         </div>
     </div>
@@ -211,7 +211,7 @@
         // === Section 2: AppX Tile Icons ===
         const tileHeader = document.createElement('h2');
         tileHeader.style.cssText = 'color: #f59e0b; margin: 30px 0 10px;';
-        tileHeader.textContent = '📐 AppX 타일 아이콘 (build/appx/assets/)';
+        tileHeader.textContent = '📐 AppX 타일 아이콘 (build/appx/)';
         document.getElementById('iconGrid').before(tileHeader);
 
         const icons = [
@@ -229,7 +229,7 @@
         ];
         
         const iconGrid = document.getElementById('iconGrid');
-        const assetsPath = '../build/appx/assets/';
+        const assetsPath = '../build/appx/';
         
         icons.forEach(icon => {
             const card = document.createElement('div');

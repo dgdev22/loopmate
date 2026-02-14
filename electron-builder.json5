@@ -104,16 +104,19 @@
     "artifactName": "${productName}-Store-${version}.${ext}",
     "backgroundColor": "#020617",
     "displayName": "LoopMate"
-    // CRITICAL: electron-builder automatically detects icons from build/appx/assets/ folder
-    // All icons must be present BEFORE building to prevent default Electron icon (atom logo)
-    // The buildResources is set to "build", so icons should be in build/appx/assets/
-    // Run "npm run build:appx-assets" before building AppX to ensure all icons are ready
-    // All required icons for Policy 10.1.1.11 must be present in build/appx/assets/:
-    // Required icons (Policy 10.1.1.11 compliance):
-    // - Square44x44Logo.png (AppList logo - required) ⭐
-    // - Square150x150Logo.png (default tile - required) ⭐
-    // - StoreLogo.png (store logo - required) ⭐
-    // - And other tile sizes (50x50, 71x71, 89x89, 107x107, 142x142, 284x284, 310x310, Wide310x150)
+    // CRITICAL: electron-builder reads icons from build/appx/ folder DIRECTLY (NOT build/appx/assets/)
+    // The AppxTarget.computeUserAssets() does readdir(build/appx/) and filters for files with "."
+    // Subdirectory names like "assets" are filtered out because they don't contain "."
+    // If icons are missing, electron-builder uses DEFAULT Electron icons (SampleAppx.*.png = atom logo)
+    //
+    // Required icons in build/appx/ (Policy 10.1.1.11 compliance):
+    // - Square44x44Logo.png (AppList logo) ⭐ MUST exist to avoid default icon
+    // - Square150x150Logo.png (default tile) ⭐ MUST exist to avoid default icon
+    // - StoreLogo.png (store logo) ⭐ MUST exist to avoid default icon
+    // - Wide310x150Logo.png (wide tile) ⭐ MUST exist to avoid default icon
+    // - LargeTile.png (310x310 large tile, electron-builder specific name)
+    // - SmallTile.png (71x71 small tile, electron-builder specific name)
+    //
     // Run "npm run build:appx-assets" before building AppX to prepare icons
   },
   // NSIS 설치 프로그램은 더 이상 기본으로 사용하지 않습니다 (포터블이 트렌드)
