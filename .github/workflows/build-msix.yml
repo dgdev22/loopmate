@@ -17,6 +17,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Required for sync:version to read Git tags
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -27,33 +29,28 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Prepare AppX assets (icons)
+      - name: Build MSIX for Microsoft Store
+        run: npm run build:ms-store
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Verify AppX icons were included
         run: |
-          Write-Host "Generating app icons and AppX assets..."
-          npm run build:appx-assets
-          Write-Host ""
           Write-Host "Verifying AppX icons in build/appx/..."
           $icons = Get-ChildItem -Path "build/appx" -Filter "*.png" -File
           Write-Host "Found $($icons.Count) icon files in build/appx/:"
           foreach ($icon in $icons) {
             Write-Host "  - $($icon.Name) ($([math]::Round($icon.Length / 1024, 1)) KB)"
           }
-          # Verify critical icons exist
           $critical = @("Square44x44Logo.png", "Square150x150Logo.png", "StoreLogo.png", "Wide310x150Logo.png")
           foreach ($name in $critical) {
             if (!(Test-Path "build/appx/$name")) {
-              Write-Error "CRITICAL: Missing $name in build/appx/ - this will cause default Electron icon!"
+              Write-Error "CRITICAL: Missing $name in build/appx/"
               exit 1
             }
           }
-          Write-Host ""
           Write-Host "All critical AppX icons are present!"
         shell: pwsh
-
-      - name: Build MSIX for Microsoft Store
-        run: npm run build:ms-store
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Upload MSIX artifact
         uses: actions/upload-artifact@v4
