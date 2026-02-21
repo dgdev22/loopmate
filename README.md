@@ -6,7 +6,7 @@
 <div style="text-align: center;">
   <img src="./assets/pic1.gif" alt="LoopMate Demo 1" style="width: 100%;">
   <p><strong>Create 10x videos in just 5 seconds</strong></p>
-  
+
   <img src="./assets/pic2.gif" alt="LoopMate Demo 2" style="width: 100%;">
   <p><strong>Create playlists with just buttons</strong></p>
 </div>
@@ -14,6 +14,7 @@
 <p style="text-align: center;">
   <img src="https://img.shields.io/badge/Speed-3_Seconds-ff69b4.svg?style=for-the-badge" alt="Speed">
   <img src="https://img.shields.io/badge/platform-macOS%20%7C%20Windows-lightgrey.svg?style=for-the-badge" alt="Platform">
+  <img src="https://img.shields.io/badge/Microsoft_Store-Verified-0078D4.svg?style=for-the-badge&logo=microsoft" alt="Microsoft Store">
   <img src="https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge" alt="License">
   <img src="https://img.shields.io/badge/version-1.0.0-green.svg?style=for-the-badge" alt="Version">
 </p>
@@ -28,12 +29,14 @@
 
 <div style="text-align: center;">
 
-| Platform | Download |
-|:--------:|:--------:|
-| 🍎 **macOS** | [Download .dmg](https://github.com/dgdev22/loopmate/releases/latest) |
-| 🪟 **Windows** | [Download Setup.exe](https://github.com/dgdev22/loopmate/releases/latest) |
+| Platform | Option A | Option B |
+|:--------:|:--------:|:--------:|
+| 🍎 **macOS** | [Download .dmg](https://github.com/dgdev22/loopmate/releases/latest) | — |
+| 🪟 **Windows** | [<img src="https://get.microsoft.com/images/en-us%20dark.svg" alt="Get it from Microsoft" height="51" />](https://apps.microsoft.com/detail/9mt1x7n9vqm4) | [Download Setup.exe](https://github.com/dgdev22/loopmate/releases/latest) |
 
 *v1.0.0 • 100% Free • No Watermarks*
+
+> 💡 **Windows users:** The Microsoft Store version installs with **no security warnings** (verified by Microsoft ✅). The direct `.exe` download includes an **in-app support link** if you'd like to help fund development ☕ — both are identical in features.
 
 </div>
 
@@ -61,6 +64,13 @@ See how easy it is to create a playlist with 6 songs in just 19 seconds:
 
 ## 🔒 Installation & Security
 
+### 🪟 Windows Users — Now on the Microsoft Store! ✅
+LoopMate is now officially listed on the **Microsoft Store**, so you can install it with confidence — no more security warnings, no "Run anyway" clicks required.
+
+**[→ Get LoopMate on the Microsoft Store](https://apps.microsoft.com/detail/9mt1x7n9vqm4)**
+
+> Already downloaded the `.exe` directly? The Store version is identical, just verified by Microsoft. We recommend switching for the smoothest experience.
+
 ### 🍎 macOS Users (Important)
 LoopMate is an open-source project. Currently, I haven't paid Apple's $99/year fee, so you may see a "Developer cannot be verified" warning.
 
@@ -69,8 +79,7 @@ LoopMate is an open-source project. Currently, I haven't paid Apple's $99/year f
 2. **Right-click** (Control-click) the app and select **Open**.
 3. Click **Open** again in the dialog. (This is only required once).
 
-### 🪟 Windows Users
-If Windows Defender shows a warning, click **"More info"** → **"Run anyway"**.
+> ☕ If you'd like to help cover Apple's developer fee so macOS gets the same verified treatment, consider [buying me a coffee](https://buymeacoffee.com/loopmateapp)!
 
 ---
 
@@ -86,11 +95,12 @@ If LoopMate saved your time, please consider supporting its development:
 - ☕ **[Buy Me a Coffee](https://buymeacoffee.com/loopmateapp)**: Quick one-time support (helps cover Apple's $99/year developer fee 🍎)
 
 > Your support keeps LoopMate free and open-source forever.
+
 ---
 
 ## 🛠️ Behind the Code (Vibe Coding)
 
-This app was built using **"Vibe Coding"**—leveraging AI to solve real-world problems quickly. I'm a backend developer by trade, but I needed this tool for my own AI music, so I built it. It’s not about perfect code; it’s about **making things that work.**
+This app was built using **"Vibe Coding"**—leveraging AI to solve real-world problems quickly. I'm a backend developer by trade, but I needed this tool for my own AI music, so I built it. It's not about perfect code; it's about **making things that work.**
 
 - **Tech Stack**: Electron, React, TypeScript, Tailwind CSS, FFmpeg.
 - **Contribution**: Bug reports and PRs are always welcome! See [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -126,14 +136,29 @@ LoopMate is built for the global creator community. We currently support:
 
 [![6개 곡 플레이리스트 19초만에 만들기](https://img.youtube.com/vi/KAG_xNF6q04/maxresdefault.jpg)](https://youtu.be/KAG_xNF6q04)
 
-## 📥 설치 방법 (macOS 사용자 필독)
+## 📥 설치 방법
+
+### 🪟 윈도우 사용자 — 이제 마이크로소프트 스토어에서 설치하세요! ✅
+
+드디어 **마이크로소프트 공식 스토어**에 등록되었습니다! 이제 보안 경고 없이 안심하고 설치할 수 있어요.
+
+| 방법 | 링크 | 특징 |
+|:---:|:---:|:---|
+| ✅ Microsoft Store | [스토어에서 설치](https://apps.microsoft.com/detail/9mt1x7n9vqm4) | 보안 경고 없음, Microsoft 공식 인증 |
+| 💾 직접 다운로드 | [Setup.exe 다운로드](https://github.com/dgdev22/loopmate/releases/latest) | 앱 내 후원 링크 포함 ☕ |
+
+> 두 버전은 기능이 동일합니다. 간편하게 설치하고 싶다면 스토어를, 개발자를 응원하고 싶다면 직접 다운로드를 추천드려요!
+
+### 🍎 macOS 사용자 (필독)
 
 개인 개발자가 무료로 배포하는 앱이라 Apple 정식 서명이 없습니다. 실행 시 보안 경고가 뜨면 당황하지 마세요!
 
 **해결 방법:**
 1. 앱을 `응용 프로그램` 폴더로 옮깁니다.
-2. 앱 아이콘을 **우클릭**한 뒤 **'열기'**를 선택합니다.
-3. 팝업창에서 다시 한번 **'열기'**를 누르면 이후부터 정상 실행됩니다.
+2. 앱 아이콘을 **우클릭**한 뒤 '열기'를 선택합니다.
+3. 팝업창에서 다시 한번 '열기'를 누르면 이후부터 정상 실행됩니다.
+
+> ☕ 애플 개발자 등록비 후원을 통해 macOS도 스토어 인증 버전을 받을 수 있도록 도와주세요!
 
 ## 🙏 아빠 개발자 후원하기
 LoopMate는 육아 짬짬이 만든 소중한 프로젝트입니다. 여러분의 후원은 앱을 정식 등록하여 보안 경고를 제거하고, 지속적으로 기능을 개선하는 힘이 됩니다.
@@ -157,6 +182,9 @@ A: Yes! LoopMate supports batch processing. You can add multiple files to the qu
 
 **Q: Commercial use?**  
 A: Yes! MIT license allows commercial use. Create and sell your content freely.
+
+**Q: Is the Microsoft Store version safe?**  
+A: Absolutely. The Microsoft Store version has passed Microsoft's official app verification process, so you can install it with full confidence — no warnings, no extra steps.
 
 ---
 
